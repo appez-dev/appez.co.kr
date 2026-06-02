@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문의하기 - 주식회사 앱이지</title>
+  <meta name="description" content="주식회사 앱이지(AppEZ)로의 통합유지보수, 시스템구축, 솔루션도입, 장비임대 견적 및 도입 제안 문의를 접수받습니다. 본사 주소 및 오시는 길을 제공합니다.">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              orange: '#FF6A00',
+              amber: '#FF9900',
+              darkBg: '#0B0F17',
+              cardBg: '#131924',
+              border: '#1A2332'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/custom.css">
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-brand-darkBg text-slate-100 selection:bg-brand-orange selection:text-white">
+
+  <!-- 네비게이션 헤더 -->
+  <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent py-4 px-6 md:px-12">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <!-- 로고 -->
+      <a href="../index.html" class="flex items-center gap-2 group">
+        <span class="text-2xl font-extrabold tracking-tight font-outfit text-white">
+          App<span class="text-brand-orange group-hover:text-brand-amber transition-colors">EZ</span>
+        </span>
+      </a>
+
+      <!-- 데스크톱 메뉴 -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
+        <a href="../company/index.html" class="text-slate-300 hover:text-brand-orange transition-colors">회사소개</a>
+        
+        <!-- Dropdown 메뉴 -->
+        <div class="relative group">
+          <button class="flex items-center gap-1 text-slate-300 hover:text-brand-orange transition-colors focus:outline-none">
+            사업영역 <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="absolute top-full -left-4 mt-2 w-48 rounded-lg shadow-xl bg-brand-cardBg border border-white/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-2">
+            <a href="../business/infra/index.html" class="block px-4 py-2 text-slate-300 hover:bg-brand-orange hover:text-white transition-colors">IT Infra</a>
+            <a href="../business/solution/index.html" class="block px-4 py-2 text-slate-300 hover:bg-brand-orange hover:text-white transition-colors">IT Solution</a>
+          </div>
+        </div>
+
+        <a href="../references/index.html" class="text-slate-300 hover:text-brand-orange transition-colors">레퍼런스</a>
+        <a href="../recruit/index.html" class="text-slate-300 hover:text-brand-orange transition-colors">인재채용</a>
+      </nav>
+
+      <!-- 우측 상단 문의 버튼 -->
+      <div class="hidden md:flex items-center">
+        <a href="./index.html" class="px-5 py-2 rounded-full bg-brand-orange hover:bg-brand-amber text-white text-xs font-semibold tracking-wider transition-all duration-300 shadow-md shadow-brand-orange/20">
+          문의하기
+        </a>
+      </div>
+
+      <!-- 모바일 햄버거 버튼 -->
+      <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none hover:text-brand-orange transition-colors">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- 모바일 네비게이션 드로어 -->
+  <div id="mobile-menu" class="fixed inset-0 z-50 hidden bg-brand-darkBg/95 backdrop-blur-lg flex flex-col justify-between p-6">
+    <div>
+      <div class="flex items-center justify-between mb-8">
+        <a href="../index.html" class="text-2xl font-extrabold tracking-tight font-outfit text-white">
+          App<span class="text-brand-orange">EZ</span>
+        </a>
+        <button id="mobile-menu-close-btn" class="text-white hover:text-brand-orange transition-colors">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-6 text-lg font-medium">
+        <a href="../company/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors">회사소개</a>
+        <a href="../business/infra/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors pl-4"><span class="text-brand-orange mr-2">▪</span>IT Infra 사업</a>
+        <a href="../business/solution/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors pl-4"><span class="text-brand-orange mr-2">▪</span>IT Solution 사업</a>
+        <a href="../references/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors">레퍼런스</a>
+        <a href="../recruit/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors">인재채용</a>
+      </nav>
+    </div>
+    <div class="mb-8">
+      <a href="./index.html" class="block w-full py-4 text-center rounded-xl bg-brand-orange hover:bg-brand-amber text-white font-semibold transition-all duration-300 font-bold">
+        프로젝트 문의하기
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="relative pt-48 pb-24 overflow-hidden bg-brand-darkBg flex items-center">
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1920&q=80" alt="Contact context" class="w-full h-full object-cover opacity-10 filter grayscale">
+      <div class="absolute inset-0 bg-gradient-to-t from-brand-darkBg via-brand-darkBg/60 to-transparent"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 text-center w-full">
+      <span class="text-brand-orange font-bold text-xs uppercase tracking-widest mb-3 inline-block" data-aos="fade-down">Connect With Us</span>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold font-outfit tracking-tight text-white mb-6 animate-pulse" data-aos="fade-up" data-aos-delay="100">
+        프로젝트 문의 및 오시는 길
+      </h1>
+      <p class="max-w-2xl mx-auto text-slate-400 text-sm sm:text-base leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+        하이브리드 인프라 아키텍처 설계, 유지보수 제안 요청, 장비 임대 등 성공 비즈니스를 위한 모든 협업을 신속하고 구체적으로 답변해 드립니다.
+      </p>
+    </div>
+  </section>
+
+  <!-- 지점 안내 및 지도 / Web3forms 문의 폼 그리드 -->
+  <section class="py-24 relative bg-brand-darkBg">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+        
+        <!-- 왼쪽: 연락 정보 및 지도 플레이스홀더 -->
+        <div class="lg:col-span-5 space-y-8" data-aos="fade-right">
+          <span class="text-brand-orange font-bold text-xs uppercase tracking-widest block">Contact Information</span>
+          <h2 class="text-3xl font-bold font-outfit text-white tracking-tight">
+            가까운 거리에 있는<br>
+            <span class="text-gradient-orange">AppEZ 기술 본부</span>
+          </h2>
+          
+          <address class="not-italic space-y-6 text-sm text-slate-300">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-brand-orange/10 border border-brand-orange/20 text-brand-orange flex items-center justify-center shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-extrabold text-slate-200 text-base mb-1">본사 주소</h4>
+                <p class="text-2xs text-slate-400 leading-relaxed">
+                  서울시 강서구 양천로 583, B동 907~908호<br>(염창동, 우림블루나인 비즈니스 타워)
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-brand-orange/10 border border-brand-orange/20 text-brand-orange flex items-center justify-center shrink-0">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-extrabold text-slate-200 text-base mb-1">대표 번호 및 팩스</h4>
+                <p class="text-2xs text-slate-400 leading-relaxed">
+                  T. 02-2135-5030<br>F. 02-2135-5040 (대표 팩스)
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-brand-orange/10 border border-brand-orange/20 text-brand-orange flex items-center justify-center shrink-0">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-extrabold text-slate-200 text-base mb-1">비즈니스 메일</h4>
+                <p class="text-2xs text-slate-400 leading-relaxed">
+                  info@appez.co.kr (상시 견적 수령용)
+                </p>
+              </div>
+            </div>
+          </address>
+
+          <!-- Interactive Map Placeholder -->
+          <div class="glass-panel border border-white/5 rounded-2xl p-4 relative overflow-hidden h-[300px]">
+            <!-- 고화질 위성/지도 느낌의 Unsplash 이미지 -->
+            <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=600&q=80" alt="Stylized map placeholder" class="w-full h-full object-cover rounded-xl opacity-20 filter grayscale">
+            
+            <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center z-20">
+              <div class="w-12 h-12 rounded-full bg-brand-orange/20 border-2 border-brand-orange text-brand-orange flex items-center justify-center mb-4 animate-bounce">
+                <i data-lucide="navigation" class="w-6 h-6"></i>
+              </div>
+              <h4 class="text-xs font-bold text-slate-200 mb-1">Naver & Google Map Integration Ready</h4>
+              <p class="text-[9px] text-slate-500 max-w-xs leading-relaxed">
+                9호선 증미역 2번 출구 도보 5분 거리 (우림블루나인 B동)<br>향후 네이버/구글 맵 API 연계를 지원하기 위한 플레이스홀더 영역입니다.
+              </p>
+            </div>
+            <div class="absolute inset-0 bg-brand-darkBg/60 backdrop-blur-[1px] pointer-events-none rounded-2xl"></div>
+          </div>
+        </div>
+
+        <!-- 오른쪽: Web3forms 문의하기 폼 -->
+        <div class="lg:col-span-7" data-aos="fade-left">
+          <div class="glass-panel border border-white/5 rounded-3xl p-8 sm:p-10">
+            <h3 class="text-xl font-bold font-outfit text-white mb-6 flex items-center gap-2 border-b border-white/5 pb-4">
+              <i data-lucide="send" class="w-5 h-5 text-brand-orange animate-pulse"></i> 제안 및 프로젝트 문의 접수
+            </h3>
+
+            <!-- Web3forms Form -->
+            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+              
+              <!-- Required Web3forms Hidden Inputs -->
+              <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+              
+              <!-- Spam Botcheck Checkbox (Hidden) -->
+              <input type="checkbox" name="botcheck" style="display: none;" class="hidden">
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- 문의 유형 -->
+                <div class="sm:col-span-2">
+                  <label for="inquiry_type" class="block text-2xs font-bold text-slate-400 uppercase tracking-wider mb-2">문의 유형 <span class="text-brand-orange">*</span></label>
+                  <div class="relative">
+                    <select id="inquiry_type" name="inquiry_type" required class="w-full bg-brand-darkBg border border-white/10 rounded-xl px-4 py-3.5 text-xs text-slate-200 focus:outline-none focus:border-brand-orange/60 appearance-none transition-colors">
+                      <option value="" disabled selected>문의 유형을 선택해주세요</option>
+                      <option value="통합유지보수">통합유지보수 (24x7 관제 및 유지관리)</option>
+                      <option value="시스템구축">시스템구축 (서버/스토리지 SI)</option>
+                      <option value="솔루션도입">솔루션도입 (Veeam 백업 / WhaTap 관제)</option>
+                      <option value="장비임대">장비임대 (프로젝트 단기/장기 대여)</option>
+                    </select>
+                    <div class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 pointer-events-none">
+                      <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 기업/기관명 -->
+                <div>
+                  <label for="company_name" class="block text-2xs font-bold text-slate-400 uppercase tracking-wider mb-2">기업/기관명 <span class="text-brand-orange">*</span></label>
+                  <input type="text" id="company_name" name="company_name" required placeholder="예: 주식회사 앱이지" class="w-full bg-brand-darkBg border border-white/10 rounded-xl px-4 py-3.5 text-xs text-slate-200 focus:outline-none focus:border-brand-orange/60 transition-colors">
+                </div>
+
+                <!-- 담당자명 -->
+                <div>
+                  <label for="contact_name" class="block text-2xs font-bold text-slate-400 uppercase tracking-wider mb-2">담당자명 <span class="text-brand-orange">*</span></label>
+                  <input type="text" id="contact_name" name="name" required placeholder="예: 홍길동 팀장" class="w-full bg-brand-darkBg border border-white/10 rounded-xl px-4 py-3.5 text-xs text-slate-200 focus:outline-none focus:border-brand-orange/60 transition-colors">
+                </div>
+
+                <!-- 이메일 주소 -->
+                <div class="sm:col-span-2">
+                  <label for="email_address" class="block text-2xs font-bold text-slate-400 uppercase tracking-wider mb-2">이메일 주소 <span class="text-brand-orange">*</span></label>
+                  <input type="email" id="email_address" name="email" required placeholder="예: contact@domain.com" class="w-full bg-brand-darkBg border border-white/10 rounded-xl px-4 py-3.5 text-xs text-slate-200 focus:outline-none focus:border-brand-orange/60 transition-colors">
+                </div>
+
+                <!-- 문의 내용 -->
+                <div class="sm:col-span-2">
+                  <label for="message_content" class="block text-2xs font-bold text-slate-400 uppercase tracking-wider mb-2">문의 내용 <span class="text-brand-orange">*</span></label>
+                  <textarea id="message_content" name="message" required rows="5" placeholder="프로젝트 세부 사양, 희망 납기 및 도입 목적 등을 명확히 기재해주시면 기술 부서 검토가 빨라집니다." class="w-full bg-brand-darkBg border border-white/10 rounded-xl px-4 py-3.5 text-xs text-slate-200 focus:outline-none focus:border-brand-orange/60 transition-colors resize-none"></textarea>
+                </div>
+              </div>
+
+              <!-- 동의 약관 체크박스 -->
+              <div class="flex items-start gap-3 text-3xs text-slate-500 leading-normal">
+                <input type="checkbox" id="privacy_agree" required class="mt-0.5 accent-brand-orange shrink-0">
+                <label for="privacy_agree">
+                  개인정보 수집 및 이용에 동의합니다. 주식회사 앱이지는 문의 사항의 성실한 답변 및 피드백 제안 전달 목적 외에 수집된 정보를 무단 노출하거나 마케팅에 유출하지 않습니다.
+                </label>
+              </div>
+
+              <!-- 전송 버튼 -->
+              <button type="submit" class="w-full py-4 text-center rounded-xl bg-brand-orange hover:bg-brand-amber text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-brand-orange/10 hover:shadow-brand-orange/20 transition-all">
+                보내기 <i data-lucide="send" class="w-3.5 h-3.5 inline-block ml-1"></i>
+              </button>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 푸터 영역 -->
+  <footer class="bg-brand-darkBg text-slate-500 py-16 px-6 md:px-12 border-t border-white/5">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        
+        <!-- 푸터 열 1: 브랜드 -->
+        <div class="md:col-span-2">
+          <a href="../index.html" class="text-xl font-bold text-white tracking-tight font-outfit mb-4 inline-block">
+            App<span class="text-brand-orange">EZ</span>
+          </a>
+          <p class="text-xs text-slate-400 leading-relaxed mb-6 max-w-sm">
+            최고의 기술력과 신뢰를 바탕으로 기업 IT 환경에 필요한 통합 유지보수, 시스템 통합, 컨설팅을 제공하는 동반자입니다.
+          </p>
+          <div class="flex gap-4">
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="github" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+
+        <!-- 푸터 열 2: 메뉴 맵 -->
+        <div>
+          <h4 class="text-xs font-bold text-slate-300 uppercase tracking-widest mb-4">Quick Links</h4>
+          <ul class="space-y-3 text-xs">
+            <li><a href="../company/index.html" class="hover:text-brand-orange transition-colors">회사개요 및 연혁</a></li>
+            <li><a href="../business/infra/index.html" class="hover:text-brand-orange transition-colors">IT Infra 사업</a></li>
+            <li><a href="../business/solution/index.html" class="hover:text-brand-orange transition-colors">IT Solution 사업</a></li>
+            <li><a href="../references/index.html" class="hover:text-brand-orange transition-colors">사업 실적 리스트</a></li>
+            <li><a href="../recruit/index.html" class="hover:text-brand-orange transition-colors">인재 채용 정보</a></li>
+          </ul>
+        </div>
+
+        <!-- 푸터 열 3: 본사 정보 -->
+        <div>
+          <h4 class="text-xs font-bold text-slate-300 uppercase tracking-widest mb-4">Office Info</h4>
+          <address class="not-italic space-y-3 text-xs leading-relaxed">
+            <p class="flex items-start gap-2.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-brand-orange shrink-0"></i>
+              <span>서울시 강서구 양천로 583,<br>B동 907~908호 (우림블루나인)</span>
+            </p>
+            <p class="flex items-center gap-2.5">
+              <i data-lucide="phone" class="w-4 h-4 text-brand-orange shrink-0"></i>
+              <span>T. 02-2135-5030</span>
+            </p>
+            <p class="flex items-center gap-2.5">
+              <i data-lucide="printer" class="w-4 h-4 text-brand-orange shrink-0"></i>
+              <span>F. 02-2135-5040</span>
+            </p>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-2xs gap-4">
+        <p>&copy; 2026 주식회사 앱이지 (AppEZ Co., Ltd.). All Rights Reserved.</p>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-brand-orange transition-colors">이용약관</a>
+          <a href="#" class="hover:text-brand-orange transition-colors">개인정보처리방침</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- Custom Common JS -->
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

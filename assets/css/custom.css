@@ -1,0 +1,101 @@
+/* 
+  주식회사 앱이지(AppEZ) 공식 홈페이지 - 프리미엄 커스텀 CSS
+  다크 모드 및 오렌지 테마에 맞춰 고품격 UI 효과 추가
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+body {
+  font-family: 'Inter', 'Noto Sans KR', sans-serif;
+  background-color: #0B0F17;
+  color: #F1F5F9;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .font-outfit {
+  font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+}
+
+/* 프리미엄 주황색 테마 스크롤바 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0F17;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 4px;
+  border: 2px solid #0B0F17;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF6A00;
+}
+
+/* 글래스모피즘 (Glassmorphism) 스타일 */
+.glass-panel {
+  background: rgba(19, 25, 36, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-panel-heavy {
+  background: rgba(11, 15, 23, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 106, 0, 0.15);
+}
+
+/* 오렌지 네온 글로우 테두리 호버 효과 */
+.neon-glow-hover {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.neon-glow-hover:hover {
+  border-color: rgba(255, 106, 0, 0.4);
+  box-shadow: 0 0 25px rgba(255, 106, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+/* 미세 텍스트 그라디언트 */
+.text-gradient-orange {
+  background: linear-gradient(135deg, #FFF 30%, #FF9900 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-fire {
+  background: linear-gradient(135deg, #FF9900 0%, #FF6A00 50%, #FF3C00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 도넛 차트 애니메이션용 스타일 */
+.chart-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+/* 스무스 스크롤 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 네비게이션 액티브 표시 */
+.nav-link-active {
+  color: #FF6A00;
+  font-weight: 600;
+  border-bottom: 2px solid #FF6A00;
+}
+
+/* 아웃라인 텍스트 */
+.text-outline-gray {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+  color: transparent;
+}

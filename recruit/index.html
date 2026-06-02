@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>인재채용 - 주식회사 앱이지</title>
+  <meta name="description" content="전문 엔지니어 중심의 초고속 숙련 IT 기업, 주식회사 앱이지(AppEZ)의 채용 안내입니다. 사내근로복지기금 설립, 교육/자격 취득 지원 등 고품격 엔지니어 성장 혜택을 소개합니다.">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              orange: '#FF6A00',
+              amber: '#FF9900',
+              darkBg: '#0B0F17',
+              cardBg: '#131924',
+              border: '#1A2332'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/custom.css">
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-brand-darkBg text-slate-100 selection:bg-brand-orange selection:text-white">
+
+  <!-- 네비게이션 헤더 -->
+  <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent py-4 px-6 md:px-12">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <!-- 로고 -->
+      <a href="../index.html" class="flex items-center gap-2 group">
+        <span class="text-2xl font-extrabold tracking-tight font-outfit text-white">
+          App<span class="text-brand-orange group-hover:text-brand-amber transition-colors">EZ</span>
+        </span>
+      </a>
+
+      <!-- 데스크톱 메뉴 -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
+        <a href="../company/index.html" class="text-slate-300 hover:text-brand-orange transition-colors">회사소개</a>
+        
+        <!-- Dropdown 메뉴 -->
+        <div class="relative group">
+          <button class="flex items-center gap-1 text-slate-300 hover:text-brand-orange transition-colors focus:outline-none">
+            사업영역 <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="absolute top-full -left-4 mt-2 w-48 rounded-lg shadow-xl bg-brand-cardBg border border-white/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-2">
+            <a href="../business/infra/index.html" class="block px-4 py-2 text-slate-300 hover:bg-brand-orange hover:text-white transition-colors">IT Infra</a>
+            <a href="../business/solution/index.html" class="block px-4 py-2 text-slate-300 hover:bg-brand-orange hover:text-white transition-colors">IT Solution</a>
+          </div>
+        </div>
+
+        <a href="../references/index.html" class="text-slate-300 hover:text-brand-orange transition-colors">레퍼런스</a>
+        <a href="./index.html" class="text-brand-orange font-semibold border-b-2 border-brand-orange pb-1">인재채용</a>
+      </nav>
+
+      <!-- 우측 상단 문의 버튼 -->
+      <div class="hidden md:flex items-center">
+        <a href="../contact/index.html" class="px-5 py-2 rounded-full bg-brand-orange hover:bg-brand-amber text-white text-xs font-semibold tracking-wider transition-all duration-300 shadow-md shadow-brand-orange/20">
+          문의하기
+        </a>
+      </div>
+
+      <!-- 모바일 햄버거 버튼 -->
+      <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none hover:text-brand-orange transition-colors">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- 모바일 네비게이션 드로어 -->
+  <div id="mobile-menu" class="fixed inset-0 z-50 hidden bg-brand-darkBg/95 backdrop-blur-lg flex flex-col justify-between p-6">
+    <div>
+      <div class="flex items-center justify-between mb-8">
+        <a href="../index.html" class="text-2xl font-extrabold tracking-tight font-outfit text-white">
+          App<span class="text-brand-orange">EZ</span>
+        </a>
+        <button id="mobile-menu-close-btn" class="text-white hover:text-brand-orange transition-colors">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-6 text-lg font-medium">
+        <a href="../company/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors">회사소개</a>
+        <a href="../business/infra/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors pl-4"><span class="text-brand-orange mr-2">▪</span>IT Infra 사업</a>
+        <a href="../business/solution/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors pl-4"><span class="text-brand-orange mr-2">▪</span>IT Solution 사업</a>
+        <a href="../references/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors">레퍼런스</a>
+        <a href="./index.html" class="text-brand-orange py-2 border-b border-white/5 transition-colors font-bold">인재채용</a>
+      </nav>
+    </div>
+    <div class="mb-8">
+      <a href="../contact/index.html" class="block w-full py-4 text-center rounded-xl bg-brand-orange hover:bg-brand-amber text-white font-semibold transition-all duration-300">
+        프로젝트 문의하기
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="relative pt-48 pb-24 overflow-hidden bg-brand-darkBg flex items-center">
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1920&q=80" alt="Teamwork context" class="w-full h-full object-cover opacity-10 filter grayscale">
+      <div class="absolute inset-0 bg-gradient-to-t from-brand-darkBg via-brand-darkBg/60 to-transparent"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 text-center w-full">
+      <span class="text-brand-orange font-bold text-xs uppercase tracking-widest mb-3 inline-block" data-aos="fade-down">Join Our Team</span>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold font-outfit tracking-tight text-white mb-6 animate-pulse" data-aos="fade-up" data-aos-delay="100">
+        엔지니어가 대우받는 기업, 앱이지
+      </h1>
+      <p class="max-w-2xl mx-auto text-slate-400 text-sm sm:text-base leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+        엔지니어링 중심의 열린 기술 문화를 개척하며, 업계 최고의 숙련 인력들과 함께 글로벌 IT 인프라 리더로 성장해나갈 인재를 모십니다.
+      </p>
+    </div>
+  </section>
+
+  <!-- 인재상 & 조직의 강점 -->
+  <section class="py-24 relative bg-brand-darkBg">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        
+        <!-- 왼쪽: 통계 지표 활용 강조 카드 -->
+        <div class="lg:col-span-5 space-y-6" data-aos="fade-right">
+          <div class="glass-panel border border-brand-orange/20 rounded-3xl p-8 bg-brand-orange/5 relative overflow-hidden">
+            <span class="text-brand-orange text-xs font-bold uppercase tracking-widest block mb-2">Our Strength</span>
+            <h3 class="text-xl font-bold font-outfit text-white mb-4">엔지니어 맞춤 최적화 조직</h3>
+            
+            <p class="text-slate-400 text-xs leading-relaxed mb-6">
+              앱이지는 단순 영업 중심의 유통 구조를 탈피하여, 필드 경험이 집약된 숙련 SE가 주도하는 기술 중심 기업입니다.
+            </p>
+
+            <div class="space-y-4">
+              <div class="flex items-center justify-between border-b border-white/5 pb-2">
+                <span class="text-2xs text-slate-400">전체 인력 중 전문 엔지니어 비중</span>
+                <span class="text-sm font-bold text-brand-orange">62%</span>
+              </div>
+              <div class="flex items-center justify-between border-b border-white/5 pb-2">
+                <span class="text-2xs text-slate-400">엔지니어 중 특급 등급 비율</span>
+                <span class="text-sm font-bold text-brand-orange">48%</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-2xs text-slate-400">고급 엔지니어 이상 비율</span>
+                <span class="text-sm font-bold text-brand-orange">63%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 오른쪽: 3대 인재상 -->
+        <div class="lg:col-span-7 space-y-8" data-aos="fade-left">
+          <span class="text-brand-orange font-bold text-xs uppercase tracking-widest block">Talent Model</span>
+          <h2 class="text-3xl sm:text-4xl font-bold font-outfit text-white tracking-tight">
+            AppEZ가 추구하는 <span class="text-gradient-orange">3가지 인재 가치</span>
+          </h2>
+          
+          <div class="space-y-6">
+            <!-- 인재 1 -->
+            <div class="flex gap-4">
+              <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-brand-orange shrink-0">
+                <i data-lucide="book-open" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-200 mb-1">끊임없이 기술을 탐구하는 전문가 (Expertise)</h4>
+                <p class="text-2xs text-slate-400 leading-relaxed">
+                  서버 가상화, 데이터 백업, HCI 등 급변하는 인프라 트렌드에 흥미를 느끼고, 글로벌 벤더 자격증 취득과 전문 지식 함양에 노력을 게을리하지 않는 인재를 지향합니다.
+                </p>
+              </div>
+            </div>
+
+            <!-- 인재 2 -->
+            <div class="flex gap-4">
+              <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-brand-orange shrink-0">
+                <i data-lucide="handshake" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-200 mb-1">신뢰와 배려를 실천하는 동료 (Integrity)</h4>
+                <p class="text-2xs text-slate-400 leading-relaxed">
+                  IT 장애 예방 및 인프라 이전은 개인이 아닌 팀 전체의 정교한 합작품입니다. 동료를 존중하며, 고객과의 비즈니스 약속을 소중히 지키는 신의가 두터운 분을 모십니다.
+                </p>
+              </div>
+            </div>
+
+            <!-- 인재 3 -->
+            <div class="flex gap-4">
+              <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-brand-orange shrink-0">
+                <i data-lucide="compass" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-200 mb-1">주도적 도전과 주인의식 (Ownership)</h4>
+                <p class="text-2xs text-slate-400 leading-relaxed">
+                  지시에 안주해 기계적으로 가동하는 데 머물지 않고, 아키텍처 설계를 직접 주도하고 기술적 비효율을 선제적으로 개혁하여 능동적 성과를 입증하는 도전자를 모십니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 복리후생 (사내근로복지기금 설립 등) -->
+  <section class="py-24 relative bg-brand-cardBg border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="text-center max-w-3xl mx-auto mb-20">
+        <span class="text-brand-orange font-bold text-xs uppercase tracking-widest mb-3 block">Benefits & Welfare</span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-outfit text-white tracking-tight mb-6">
+          엔지니어 성장을 지원하는 <span class="text-brand-orange">차별화된 사내 혜택</span>
+        </h2>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          구성원들이 불안 없이 업무에만 온전히 몰입하고, 자신의 기술적 가치를 마음껏 팽창시킬 수 있도록 빈틈없는 복지 시스템을 마련했습니다.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- 혜택 1: 사내근로복지기금 -->
+        <div class="glass-panel border border-white/5 rounded-2xl p-8 neon-glow-hover flex flex-col justify-between h-72" data-aos="fade-up">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-6">
+              <i data-lucide="landmark" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-200 mb-3 font-outfit">사내근로복지기금 공식 수립</h3>
+            <p class="text-2xs text-slate-400 leading-relaxed">
+              2022년 사내근로복지기금 법인을 정식 설립하여 주택 자금 대부 지원, 자녀 학자금 지원, 긴급 생활 안정 자금 융통 등 직원의 가정을 평안하게 지원합니다.
+            </p>
+          </div>
+        </div>
+
+        <!-- 혜택 2: 교육 지원 -->
+        <div class="glass-panel border border-white/5 rounded-2xl p-8 neon-glow-hover flex flex-col justify-between h-72" data-aos="fade-up" data-aos-delay="100">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-6">
+              <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-200 mb-3 font-outfit">교육비 및 자격증 취득 지원</h3>
+            <p class="text-2xs text-slate-400 leading-relaxed">
+              IBM Storage Expert, Dell Gold, Veeam VMCE 등 고비용의 글로벌 공인 벤더 교육 과정을 무상 제공하며 시험 응시료 및 자격 취득에 따른 현금 포상까지 보장합니다.
+            </p>
+          </div>
+        </div>
+
+        <!-- 혜택 3: 성과급 -->
+        <div class="glass-panel border border-white/5 rounded-2xl p-8 neon-glow-hover flex flex-col justify-between h-72" data-aos="fade-up" data-aos-delay="200">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-6">
+              <i data-lucide="award" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-200 mb-3 font-outfit">우수 성과 포상 & 성과 보상</h3>
+            <p class="text-2xs text-slate-400 leading-relaxed">
+              정량적 사업 수주 달성 및 난해한 프로젝트 완수 시, 확실한 인센티브 및 특별 휴가를 제공하여 구성원 개개인의 헌신적인 노력을 금전적 보상으로 치하합니다.
+            </p>
+          </div>
+        </div>
+
+        <!-- 혜택 4: 헬스 케어 -->
+        <div class="glass-panel border border-white/5 rounded-2xl p-8 neon-glow-hover flex flex-col justify-between h-72" data-aos="fade-up">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-6">
+              <i data-lucide="heart-pulse" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-200 mb-3 font-outfit">종합 정밀 건강검진 지원</h3>
+            <p class="text-2xs text-slate-400 leading-relaxed">
+              장기 근속 직원과 배우자까지 대학병원 전문 종합 정밀 검진 항목을 매년 무상 제공함으로써 육체적 안전을 조기에 케어합니다.
+            </p>
+          </div>
+        </div>
+
+        <!-- 혜택 5: 리프레시 -->
+        <div class="glass-panel border border-white/5 rounded-2xl p-8 neon-glow-hover flex flex-col justify-between h-72" data-aos="fade-up" data-aos-delay="100">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-6">
+              <i data-lucide="calendar" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-200 mb-3 font-outfit">장기근속 리프레시 포상</h3>
+            <p class="text-2xs text-slate-400 leading-relaxed">
+              3년, 5년, 10년 단위의 장기 헌신 직원들에게 유급 안식 휴가와 별도의 해외여행 지원 경비를 실비 지원하여 노고를 확실하게 안락한 휴식으로 달래줍니다.
+            </p>
+          </div>
+        </div>
+
+        <!-- 혜택 6: 수평적 소통 -->
+        <div class="glass-panel border border-white/5 rounded-2xl p-8 neon-glow-hover flex flex-col justify-between h-72" data-aos="fade-up" data-aos-delay="200">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-6">
+              <i data-lucide="message-square" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-200 mb-3 font-outfit">자율 복장 및 열린 소통</h3>
+            <p class="text-2xs text-slate-400 leading-relaxed">
+              수직적인 보고 체계 대신 타운홀 비정기 미팅을 운영하며, 복장 완전 자유화 및 직급 대신 영어 닉네임 사용을 권고하여 창의적이고 자율적인 토론 분위기를 옹호합니다.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 채용 전형 안내 -->
+  <section class="py-24 relative bg-brand-darkBg overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="text-center max-w-3xl mx-auto mb-20">
+        <span class="text-brand-orange font-bold text-xs uppercase tracking-widest mb-3 block">Recruitment Process</span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-outfit text-white tracking-tight mb-6">
+          인재 영입 및 <span class="text-brand-orange">전형 절차</span>
+        </h2>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          서류 전형부터 기술 면접, 최종 합격에 이르는 명확하고 투명한 절차를 통해 역량을 검토하고 조속히 동료로 연계합니다.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+        <!-- 데스크톱용 연결 실선 -->
+        <div class="hidden md:block absolute top-[40px] left-[10%] right-[10%] h-0.5 bg-slate-800 z-0"></div>
+
+        <!-- 1단계 -->
+        <div class="bg-brand-cardBg border border-white/5 rounded-2xl p-6 text-center relative z-10" data-aos="fade-up">
+          <div class="w-12 h-12 rounded-full bg-brand-darkBg border border-slate-700 flex items-center justify-center mx-auto mb-4 font-black font-outfit text-brand-orange shadow-md">01</div>
+          <h4 class="text-sm font-bold text-slate-200 mb-2">서류 전형</h4>
+          <p class="text-3xs text-slate-500 leading-relaxed">지원 이력서 및 보유 기술 스택, 벤더 공인 자격 요건 정밀 분석</p>
+        </div>
+
+        <!-- 2단계 -->
+        <div class="bg-brand-cardBg border border-white/5 rounded-2xl p-6 text-center relative z-10" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-12 h-12 rounded-full bg-brand-darkBg border border-slate-700 flex items-center justify-center mx-auto mb-4 font-black font-outfit text-brand-orange shadow-md">02</div>
+          <h4 class="text-sm font-bold text-slate-200 mb-2">기술 인터뷰</h4>
+          <p class="text-3xs text-slate-500 leading-relaxed">실무진 면접을 통한 아키텍처 해석력, 필드 트러블 슈팅 가설 역량 검증</p>
+        </div>
+
+        <!-- 3단계 -->
+        <div class="bg-brand-cardBg border border-white/5 rounded-2xl p-6 text-center relative z-10" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-12 h-12 rounded-full bg-brand-darkBg border border-slate-700 flex items-center justify-center mx-auto mb-4 font-black font-outfit text-brand-orange shadow-md">03</div>
+          <h4 class="text-sm font-bold text-slate-200 mb-2">임원 면접</h4>
+          <p class="text-3xs text-slate-500 leading-relaxed">임직원 가치관, 조직 협업 매칭 적격 여부 및 연봉 등 처우 최종 협상</p>
+        </div>
+
+        <!-- 4단계 -->
+        <div class="bg-brand-cardBg border border-white/5 rounded-2xl p-6 text-center relative z-10" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-12 h-12 rounded-full bg-brand-darkBg border border-brand-orange flex items-center justify-center mx-auto mb-4 font-black font-outfit text-white bg-brand-orange shadow-md shadow-brand-orange/10">04</div>
+          <h4 class="text-sm font-bold text-slate-200 mb-2">최종 입사</h4>
+          <p class="text-3xs text-slate-500 leading-relaxed">오리엔테이션, 벤더 공인 웰컴 키트 증정 및 기술 세션 즉시 온보딩</p>
+        </div>
+      </div>
+      
+      <!-- 입사 문의 안내 문구 -->
+      <div class="mt-16 text-center" data-aos="fade-up">
+        <p class="text-xs text-slate-500">
+          * 현재 상시 인재 영입(SE 부문)이 활발하게 열려 있습니다. 지원 및 문의는 <a href="../contact/index.html" class="text-brand-orange font-bold underline hover:text-brand-amber transition-colors">문의처(Contact Us)</a>를 통해서도 접수가 가능합니다.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 푸터 영역 -->
+  <footer class="bg-brand-darkBg text-slate-500 py-16 px-6 md:px-12 border-t border-white/5">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        
+        <!-- 푸터 열 1: 브랜드 -->
+        <div class="md:col-span-2">
+          <a href="../index.html" class="text-xl font-bold text-white tracking-tight font-outfit mb-4 inline-block">
+            App<span class="text-brand-orange">EZ</span>
+          </a>
+          <p class="text-xs text-slate-400 leading-relaxed mb-6 max-w-sm">
+            최고의 기술력과 신뢰를 바탕으로 기업 IT 환경에 필요한 통합 유지보수, 시스템 통합, 컨설팅을 제공하는 동반자입니다.
+          </p>
+          <div class="flex gap-4">
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="github" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+
+        <!-- 푸터 열 2: 메뉴 맵 -->
+        <div>
+          <h4 class="text-xs font-bold text-slate-300 uppercase tracking-widest mb-4">Quick Links</h4>
+          <ul class="space-y-3 text-xs">
+            <li><a href="../company/index.html" class="hover:text-brand-orange transition-colors">회사개요 및 연혁</a></li>
+            <li><a href="../business/infra/index.html" class="hover:text-brand-orange transition-colors">IT Infra 사업</a></li>
+            <li><a href="../business/solution/index.html" class="hover:text-brand-orange transition-colors">IT Solution 사업</a></li>
+            <li><a href="../references/index.html" class="hover:text-brand-orange transition-colors">사업 실적 리스트</a></li>
+            <li><a href="./index.html" class="hover:text-brand-orange transition-colors">인재 채용 정보</a></li>
+          </ul>
+        </div>
+
+        <!-- 푸터 열 3: 본사 정보 -->
+        <div>
+          <h4 class="text-xs font-bold text-slate-300 uppercase tracking-widest mb-4">Office Info</h4>
+          <address class="not-italic space-y-3 text-xs leading-relaxed">
+            <p class="flex items-start gap-2.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-brand-orange shrink-0"></i>
+              <span>서울시 강서구 양천로 583,<br>B동 907~908호 (우림블루나인)</span>
+            </p>
+            <p class="flex items-center gap-2.5">
+              <i data-lucide="phone" class="w-4 h-4 text-brand-orange shrink-0"></i>
+              <span>T. 02-2135-5030</span>
+            </p>
+            <p class="flex items-center gap-2.5">
+              <i data-lucide="printer" class="w-4 h-4 text-brand-orange shrink-0"></i>
+              <span>F. 02-2135-5040</span>
+            </p>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-2xs gap-4">
+        <p>&copy; 2026 주식회사 앱이지 (AppEZ Co., Ltd.). All Rights Reserved.</p>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-brand-orange transition-colors">이용약관</a>
+          <a href="#" class="hover:text-brand-orange transition-colors">개인정보처리방침</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- Custom Common JS -->
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

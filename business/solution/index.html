@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Solution 사업영역 - 주식회사 앱이지</title>
+  <meta name="description" content="주식회사 앱이지(AppEZ)는 글로벌 데이터 보호 솔루션 Veeam 백업 및 풀스택 실시간 관제 와탭(WhaTap) 솔루션을 공급하며, 환경 분석부터 사후 관리까지 책임지는 All-In-One IT 컨설팅 서비스를 제공합니다.">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              orange: '#FF6A00',
+              amber: '#FF9900',
+              darkBg: '#0B0F17',
+              cardBg: '#131924',
+              border: '#1A2332'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../../assets/css/custom.css">
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-brand-darkBg text-slate-100 selection:bg-brand-orange selection:text-white">
+
+  <!-- 네비게이션 헤더 -->
+  <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent py-4 px-6 md:px-12">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <!-- 로고 -->
+      <a href="../../index.html" class="flex items-center gap-2 group">
+        <span class="text-2xl font-extrabold tracking-tight font-outfit text-white">
+          App<span class="text-brand-orange group-hover:text-brand-amber transition-colors">EZ</span>
+        </span>
+      </a>
+
+      <!-- 데스크톱 메뉴 -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
+        <a href="../../company/index.html" class="text-slate-300 hover:text-brand-orange transition-colors">회사소개</a>
+        
+        <!-- Dropdown 메뉴 -->
+        <div class="relative group">
+          <button class="flex items-center gap-1 text-brand-orange font-semibold border-b-2 border-brand-orange pb-1 focus:outline-none">
+            사업영역 <i data-lucide="chevron-down" class="w-4 h-4 text-brand-orange"></i>
+          </button>
+          <div class="absolute top-full -left-4 mt-2 w-48 rounded-lg shadow-xl bg-brand-cardBg border border-white/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-2">
+            <a href="../infra/index.html" class="block px-4 py-2 text-slate-300 hover:bg-brand-orange hover:text-white transition-colors">IT Infra</a>
+            <a href="./index.html" class="block px-4 py-2 text-brand-orange bg-white/5 font-bold transition-colors">IT Solution</a>
+          </div>
+        </div>
+
+        <a href="../../references/index.html" class="text-slate-300 hover:text-brand-orange transition-colors">레퍼런스</a>
+        <a href="../../recruit/index.html" class="text-slate-300 hover:text-brand-orange transition-colors">인재채용</a>
+      </nav>
+
+      <!-- 우측 상단 문의 버튼 -->
+      <div class="hidden md:flex items-center">
+        <a href="../../contact/index.html" class="px-5 py-2 rounded-full bg-brand-orange hover:bg-brand-amber text-white text-xs font-semibold tracking-wider transition-all duration-300 shadow-md shadow-brand-orange/20">
+          문의하기
+        </a>
+      </div>
+
+      <!-- 모바일 햄버거 버튼 -->
+      <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none hover:text-brand-orange transition-colors">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- 모바일 네비게이션 드로어 -->
+  <div id="mobile-menu" class="fixed inset-0 z-50 hidden bg-brand-darkBg/95 backdrop-blur-lg flex flex-col justify-between p-6">
+    <div>
+      <div class="flex items-center justify-between mb-8">
+        <a href="../../index.html" class="text-2xl font-extrabold tracking-tight font-outfit text-white">
+          App<span class="text-brand-orange">EZ</span>
+        </a>
+        <button id="mobile-menu-close-btn" class="text-white hover:text-brand-orange transition-colors">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-6 text-lg font-medium">
+        <a href="../../company/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors">회사소개</a>
+        <a href="../infra/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors pl-4"><span class="text-brand-orange mr-2">▪</span>IT Infra 사업</a>
+        <a href="./index.html" class="text-brand-orange py-2 border-b border-white/5 transition-colors pl-4 font-bold"><span class="text-brand-orange mr-2">▪</span>IT Solution 사업</a>
+        <a href="../../references/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors">레퍼런스</a>
+        <a href="../../recruit/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors">인재채용</a>
+      </nav>
+    </div>
+    <div class="mb-8">
+      <a href="../../contact/index.html" class="block w-full py-4 text-center rounded-xl bg-brand-orange hover:bg-brand-amber text-white font-semibold transition-all duration-300">
+        프로젝트 문의하기
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="relative pt-48 pb-24 overflow-hidden bg-brand-darkBg flex items-center">
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80" alt="Technology background" class="w-full h-full object-cover opacity-10 filter grayscale">
+      <div class="absolute inset-0 bg-gradient-to-t from-brand-darkBg via-brand-darkBg/60 to-transparent"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 text-center w-full">
+      <span class="text-brand-orange font-bold text-xs uppercase tracking-widest mb-3 inline-block" data-aos="fade-down">Advanced Solutions</span>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold font-outfit tracking-tight text-white mb-6 animate-pulse" data-aos="fade-up" data-aos-delay="100">
+        지능형 IT 솔루션 & 컨설팅
+      </h1>
+      <p class="max-w-2xl mx-auto text-slate-400 text-sm sm:text-base leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+        중단 없는 비즈니스를 보장하는 백업 보안 시스템 및 AI 기반 풀스택 실시간 IT 관제 솔루션을 탑재하여 최적의 안정성을 구축합니다.
+      </p>
+    </div>
+  </section>
+
+  <!-- 1. Veeam Backup Section -->
+  <section class="py-24 relative bg-brand-darkBg">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        
+        <!-- 왼쪽 상세 및 그리드 -->
+        <div class="lg:col-span-7 space-y-8" data-aos="fade-right">
+          <div class="flex items-center gap-4">
+            <span class="text-3xl font-black font-outfit text-white tracking-widest">VEEAM</span>
+            <span class="px-3 py-1 rounded-full bg-[#00B159]/10 border border-[#00B159]/20 text-[#00B159] text-2xs font-extrabold uppercase tracking-widest">Backup & Replication</span>
+          </div>
+          
+          <h3 class="text-2xl sm:text-3xl font-bold font-outfit text-slate-200">
+            가상화 및 랜섬웨어로부터<br>
+            <span class="text-gradient-orange">100% 데이터를 보호</span>합니다.
+          </h3>
+          
+          <p class="text-slate-400 text-sm leading-relaxed">
+            비즈니스 연속성의 핵심은 완벽한 복구력입니다. 앱이지가 공급하는 Veeam 솔루션은 가상 환경(VM)과 파일 서버를 무중단 상태에서 실시간 복제하고 검증합니다.
+          </p>
+
+          <!-- 4대 핵심 기능 -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm">
+            <div class="bg-brand-cardBg border border-white/5 rounded-2xl p-5">
+              <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
+                <i data-lucide="layers" class="w-4 h-4 text-brand-orange"></i> 가상환경 백업/복제
+              </h4>
+              <p class="text-3xs text-slate-500 leading-relaxed">VMware, Hyper-V 에이전트리스 방식의 초고속 실시간 백업 및 이중화 마이그레이션</p>
+            </div>
+            
+            <div class="bg-brand-cardBg border border-white/5 rounded-2xl p-5">
+              <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
+                <i data-lucide="hard-drive" class="w-4 h-4 text-brand-orange"></i> 서버 OS 이미지 백업
+              </h4>
+              <p class="text-3xs text-slate-500 leading-relaxed">윈도우, 리눅스 시스템 OS+DB 통합 이미지 백업으로 장애 시 1클릭 복구 가동</p>
+            </div>
+
+            <div class="bg-brand-cardBg border border-white/5 rounded-2xl p-5">
+              <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
+                <i data-lucide="server-crash" class="w-4 h-4 text-brand-orange"></i> NAS 초고속 백업
+              </h4>
+              <p class="text-3xs text-slate-500 leading-relaxed">스캔 타임을 혁신적으로 줄인 고속 CIFS/NFS 파일 백업 및 중복 제거 압축</p>
+            </div>
+
+            <div class="bg-brand-cardBg border border-white/5 rounded-2xl p-5">
+              <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
+                <i data-lucide="shield-check" class="w-4 h-4 text-brand-orange"></i> 검증 & 재해복구 (DR)
+              </h4>
+              <p class="text-3xs text-slate-500 leading-relaxed">랜섬웨어 감염 탐지용 자동 샌드박스 백업본 정밀 검증 및 100% 무결성 복구 보장</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4 pt-4">
+            <a href="../../assets/brochures/dummy.pdf" download="Veeam_Brochure_AppEZ.pdf" class="flex items-center gap-2 px-5 py-3 text-xs font-bold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/15 rounded-xl transition-all shadow-lg">
+              <i data-lucide="download" class="w-4 h-4 text-brand-orange"></i> 솔루션 브로셔 다운로드
+            </a>
+            <a href="https://www.veeam.com/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-5 py-3 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-xl transition-all shadow-lg">
+              Veeam 공식 사이트 <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 오른쪽: Unsplash 백업서버 이미지 -->
+        <div class="lg:col-span-5 relative" data-aos="fade-left">
+          <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#00B159]/10 to-brand-orange/10 blur-3xl"></div>
+          <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=800&q=80" alt="Server backup rack" class="rounded-2xl relative z-10 w-full border border-white/10 shadow-2xl object-cover h-[500px]">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. WhaTap Monitoring Section -->
+  <section class="py-24 relative bg-brand-cardBg border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        
+        <!-- 왼쪽: Unsplash 대시보드 이미지 -->
+        <div class="lg:col-span-5 relative" data-aos="fade-right">
+          <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-brand-orange/10 to-[#1F71FF]/10 blur-3xl"></div>
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Dashboard stats" class="rounded-2xl relative z-10 w-full border border-white/10 shadow-2xl object-cover h-[500px]">
+        </div>
+
+        <!-- 오른쪽 상세 및 그리드 -->
+        <div class="lg:col-span-7 space-y-8" data-aos="fade-left">
+          <div class="flex items-center gap-4">
+            <span class="text-3xl font-black font-outfit text-white tracking-widest">WhaTap</span>
+            <span class="px-3 py-1 rounded-full bg-[#1F71FF]/10 border border-[#1F71FF]/20 text-[#1F71FF] text-2xs font-extrabold uppercase tracking-widest">IT Full-Stack Monitoring</span>
+          </div>
+          
+          <h3 class="text-2xl sm:text-3xl font-bold font-outfit text-slate-200">
+            애플리케이션부터 인프라까지<br>
+            <span class="text-gradient-orange">지능형 365 관제 시스템</span>
+          </h3>
+          
+          <p class="text-slate-400 text-sm leading-relaxed">
+            장애 징후를 실시간 탐지하는 인공지능 기반의 SaaS형 풀스택 모니터링입니다. 서버, 데이터베이스, 네트워크 패킷, 쿠버네티스 컨테이너 성능을 단 하나의 통합 대시보드로 관제합니다.
+          </p>
+
+          <!-- 4대 핵심 기능 -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm">
+            <div class="bg-brand-darkBg/60 border border-white/5 rounded-2xl p-5">
+              <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
+                <i data-lucide="bar-chart-2" class="w-4 h-4 text-brand-orange"></i> 통합 모니터링
+              </h4>
+              <p class="text-3xs text-slate-500 leading-relaxed">애플리케이션(APM), 서버 자원(CPU/MEM), DB 쿼리 부하 및 네트워크 패킷 통합 트래킹</p>
+            </div>
+            
+            <div class="bg-brand-darkBg/60 border border-white/5 rounded-2xl p-5">
+              <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
+                <i data-lucide="cloud-lightning" class="w-4 h-4 text-brand-orange"></i> One-Stop SaaS 서비스
+              </h4>
+              <p class="text-3xs text-slate-500 leading-relaxed">에이전트 단 5분 설치로 복잡한 인프라 관리자 서버 구축 비용 없이 클라우드 관제 시작</p>
+            </div>
+
+            <div class="bg-brand-darkBg/60 border border-white/5 rounded-2xl p-5">
+              <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
+                <i data-lucide="cpu" class="w-4 h-4 text-brand-orange"></i> 실시간 조회 (AI/ML)
+              </h4>
+              <p class="text-3xs text-slate-500 leading-relaxed">과거 특정 시점 이력 추적 및 기계학습 모형을 통한 병목/과부하 위험 징후 선제적 알림</p>
+            </div>
+
+            <div class="bg-brand-darkBg/60 border border-white/5 rounded-2xl p-5">
+              <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
+                <i data-lucide="lock" class="w-4 h-4 text-brand-orange"></i> 안전성 및 보안 보장
+              </h4>
+              <p class="text-3xs text-slate-500 leading-relaxed">수집 데이터 유출 우려를 불식하는 종단간 암호화 전송 및 유연한 자원 임계치 세부 세팅 지원</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4 pt-4">
+            <a href="../../assets/brochures/dummy.pdf" download="WhaTap_Brochure_AppEZ.pdf" class="flex items-center gap-2 px-5 py-3 text-xs font-bold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/15 rounded-xl transition-all shadow-lg">
+              <i data-lucide="download" class="w-4 h-4 text-brand-orange"></i> 솔루션 브로셔 다운로드
+            </a>
+            <a href="https://www.whatap.io/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-5 py-3 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-xl transition-all shadow-lg">
+              WhaTap 공식 사이트 <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- IT 컨설팅 5단계 프로세스 -->
+  <section class="py-24 relative bg-brand-darkBg overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="text-center max-w-3xl mx-auto mb-20">
+        <span class="text-brand-orange font-bold text-xs uppercase tracking-widest mb-3 block">03. All-In-One Consulting</span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-outfit text-white tracking-tight mb-6">
+          AppEZ <span class="text-brand-orange">IT 컨설팅 지원 프로세스</span>
+        </h2>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          장비 통합 도입부터 하이브리드 아키텍처 맞춤 설계, 무장애 구축 및 사후 유지보수 기술 지원까지 총 5단계의 명확하고 검증된 로드맵을 선사합니다.
+        </p>
+      </div>
+
+      <!-- 가로형 5단계 스텝 레이아웃 -->
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-8 items-stretch relative" data-aos="zoom-in">
+        
+        <!-- 데스크톱용 연결 화살표 배경선 (MD 이상에서만 표시) -->
+        <div class="hidden md:block absolute top-[44px] left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-brand-orange/30 via-brand-amber/30 to-brand-orange/30 z-0"></div>
+
+        <!-- STEP 01 -->
+        <div class="glass-panel border border-white/5 rounded-2xl p-6 text-center flex flex-col justify-between neon-glow-hover relative z-10">
+          <div>
+            <div class="w-14 h-14 rounded-full bg-brand-darkBg border-2 border-brand-orange flex flex-col items-center justify-center mx-auto mb-6 shadow-lg shadow-brand-orange/10 shrink-0">
+              <span class="text-[9px] font-black text-brand-orange tracking-widest uppercase">Step 01</span>
+              <span class="text-sm font-bold text-white mt-0.5">수립</span>
+            </div>
+            <h4 class="text-sm font-extrabold text-slate-200 mb-2">방향 수립</h4>
+            <p class="text-3xs text-slate-400 leading-relaxed">
+              사전 긴밀한 협의를 통해 비즈니스 확장 시나리오 기반 인프라 중장기 마스터 플랜 및 주요 아키텍처 기본 방향을 정의합니다.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/5 text-[10px] text-brand-orange font-semibold">사전 협의 & 기획</div>
+        </div>
+
+        <!-- STEP 02 -->
+        <div class="glass-panel border border-white/5 rounded-2xl p-6 text-center flex flex-col justify-between neon-glow-hover relative z-10">
+          <div>
+            <div class="w-14 h-14 rounded-full bg-brand-darkBg border-2 border-slate-700 flex flex-col items-center justify-center mx-auto mb-6 shadow-lg shrink-0">
+              <span class="text-[9px] font-black text-slate-500 tracking-widest uppercase">Step 02</span>
+              <span class="text-sm font-bold text-white mt-0.5">진단</span>
+            </div>
+            <h4 class="text-sm font-extrabold text-slate-200 mb-2">정밀 진단</h4>
+            <p class="text-3xs text-slate-400 leading-relaxed">
+              고객사의 현행 하드웨어(CPU/MEM 부하), 상용 DB 병목 구간, 보안 컴플라이언스 취약점 등 인프라 가동 실태를 정밀 점검합니다.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/5 text-[10px] text-slate-500 font-semibold">요구사항 파악 & 실사</div>
+        </div>
+
+        <!-- STEP 03 -->
+        <div class="glass-panel border border-white/5 rounded-2xl p-6 text-center flex flex-col justify-between neon-glow-hover relative z-10">
+          <div>
+            <div class="w-14 h-14 rounded-full bg-brand-darkBg border-2 border-slate-700 flex flex-col items-center justify-center mx-auto mb-6 shadow-lg shrink-0">
+              <span class="text-[9px] font-black text-slate-500 tracking-widest uppercase">Step 03</span>
+              <span class="text-sm font-bold text-white mt-0.5">설계</span>
+            </div>
+            <h4 class="text-sm font-extrabold text-slate-200 mb-2">아키텍처 설계</h4>
+            <p class="text-3xs text-slate-400 leading-relaxed">
+              진단 결과에 기반하여 가상화 노드 구성, 네트워크 망 분리, 데이터 백업 주기 및 재해복구(DR) 토폴로지 설계를 구축하여 제공합니다.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/5 text-[10px] text-slate-500 font-semibold">아키텍처 설계 & 로드맵</div>
+        </div>
+
+        <!-- STEP 04 -->
+        <div class="glass-panel border border-white/5 rounded-2xl p-6 text-center flex flex-col justify-between neon-glow-hover relative z-10">
+          <div>
+            <div class="w-14 h-14 rounded-full bg-brand-darkBg border-2 border-slate-700 flex flex-col items-center justify-center mx-auto mb-6 shadow-lg shrink-0">
+              <span class="text-[9px] font-black text-slate-500 tracking-widest uppercase">Step 04</span>
+              <span class="text-sm font-bold text-white mt-0.5">구축</span>
+            </div>
+            <h4 class="text-sm font-extrabold text-slate-200 mb-2">무장애 구축</h4>
+            <p class="text-3xs text-slate-400 leading-relaxed">
+              숙련 SE 기술팀이 개입하여 데이터 마이그레이션, 벤더사 H/W 랙 마운팅 및 운영계 OS 이미지 연동 작업을 완벽히 통제 구축합니다.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/5 text-[10px] text-slate-500 font-semibold">시스템 통합 & 구축</div>
+        </div>
+
+        <!-- STEP 05 -->
+        <div class="glass-panel border border-white/5 rounded-2xl p-6 text-center flex flex-col justify-between neon-glow-hover relative z-10">
+          <div>
+            <div class="w-14 h-14 rounded-full bg-brand-darkBg border-2 border-slate-700 flex flex-col items-center justify-center mx-auto mb-6 shadow-lg shrink-0">
+              <span class="text-[9px] font-black text-slate-500 tracking-widest uppercase">Step 05</span>
+              <span class="text-sm font-bold text-white mt-0.5">유지보수</span>
+            </div>
+            <h4 class="text-sm font-extrabold text-slate-200 mb-2">365 유지보수</h4>
+            <p class="text-3xs text-slate-400 leading-relaxed">
+              성공적인 안정화 지원 단계로, 24시간 실시간 성능 수집 모니터링 관제 기술 연계 및 전담 장애 대응 예방 정비를 전격 유지합니다.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/5 text-[10px] text-slate-500 font-semibold">안정화 지원 & 기술케어</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 푸터 영역 -->
+  <footer class="bg-brand-darkBg text-slate-500 py-16 px-6 md:px-12 border-t border-white/5">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        
+        <!-- 푸터 열 1: 브랜드 -->
+        <div class="md:col-span-2">
+          <a href="../../index.html" class="text-xl font-bold text-white tracking-tight font-outfit mb-4 inline-block">
+            App<span class="text-brand-orange">EZ</span>
+          </a>
+          <p class="text-xs text-slate-400 leading-relaxed mb-6 max-w-sm">
+            최고의 기술력과 신뢰를 바탕으로 기업 IT 환경에 필요한 통합 유지보수, 시스템 통합, 컨설팅을 제공하는 동반자입니다.
+          </p>
+          <div class="flex gap-4">
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="github" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+
+        <!-- 푸터 열 2: 메뉴 맵 -->
+        <div>
+          <h4 class="text-xs font-bold text-slate-300 uppercase tracking-widest mb-4">Quick Links</h4>
+          <ul class="space-y-3 text-xs">
+            <li><a href="../../company/index.html" class="hover:text-brand-orange transition-colors">회사개요 및 연혁</a></li>
+            <li><a href="../infra/index.html" class="hover:text-brand-orange transition-colors">IT Infra 사업</a></li>
+            <li><a href="./index.html" class="hover:text-brand-orange transition-colors">IT Solution 사업</a></li>
+            <li><a href="../../references/index.html" class="hover:text-brand-orange transition-colors">사업 실적 리스트</a></li>
+            <li><a href="../../recruit/index.html" class="hover:text-brand-orange transition-colors">인재 채용 정보</a></li>
+          </ul>
+        </div>
+
+        <!-- 푸터 열 3: 본사 정보 -->
+        <div>
+          <h4 class="text-xs font-bold text-slate-300 uppercase tracking-widest mb-4">Office Info</h4>
+          <address class="not-italic space-y-3 text-xs leading-relaxed">
+            <p class="flex items-start gap-2.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-brand-orange shrink-0"></i>
+              <span>서울시 강서구 양천로 583,<br>B동 907~908호 (우림블루나인)</span>
+            </p>
+            <p class="flex items-center gap-2.5">
+              <i data-lucide="phone" class="w-4 h-4 text-brand-orange shrink-0"></i>
+              <span>T. 02-2135-5030</span>
+            </p>
+            <p class="flex items-center gap-2.5">
+              <i data-lucide="printer" class="w-4 h-4 text-brand-orange shrink-0"></i>
+              <span>F. 02-2135-5040</span>
+            </p>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-2xs gap-4">
+        <p>&copy; 2026 주식회사 앱이지 (AppEZ Co., Ltd.). All Rights Reserved.</p>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-brand-orange transition-colors">이용약관</a>
+          <a href="#" class="hover:text-brand-orange transition-colors">개인정보처리방침</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- Custom Common JS -->
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
