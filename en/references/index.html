@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>References - AppEZ</title>
+  <meta name="description" content="Explore AppEZ's major project milestones, financial stability ($8M USD revenue), and global IT partnerships with leaders like IBM, Dell, Lenovo, Nutanix, and Veeam.">
+  <!-- Pretendard Font CDN -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              orange: '#f97316', /* orange-500 */
+              amber: '#ea580c',  /* orange-600 */
+              darkBg: '#0f172a', /* slate-900 */
+              cardBg: '#1e293b', /* slate-800 */
+              border: '#334155'  /* slate-700 */
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../../assets/css/custom.css">
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- SEO Multilingual Link Tags -->
+  <link class="seo-hreflang" rel="alternate" hreflang="ko" href="../../references/index.html" />
+  <link class="seo-hreflang" rel="alternate" hreflang="en" href="./index.html" />
+  <link class="seo-hreflang" rel="alternate" hreflang="vi" href="../../vn/references/index.html" />
+</head>
+<body class="bg-brand-darkBg text-slate-300 selection:bg-brand-orange selection:text-white leading-relaxed text-base">
+
+  <!-- Navigation Header -->
+  <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent py-4 px-6 md:px-12">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <a href="../index.html" class="flex items-center gap-2 group">
+        <span class="text-2xl font-extrabold tracking-tight font-outfit text-white">
+          App<span class="text-brand-orange group-hover:text-brand-amber transition-colors">EZ</span>
+        </span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex items-center gap-8 text-base font-medium tracking-wide">
+        <a href="../company/index.html" class="text-slate-300 hover:text-brand-orange transition-colors">Company</a>
+        
+        <!-- Dropdown Menu -->
+        <div class="relative group">
+          <button class="flex items-center gap-1 text-slate-300 hover:text-brand-orange transition-colors focus:outline-none">
+            Business <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="absolute top-full -left-4 mt-2 w-48 rounded-lg shadow-xl bg-brand-cardBg border border-white/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-2">
+            <a href="../business/infra/index.html" class="block px-4 py-2 text-slate-300 hover:bg-brand-orange hover:text-white transition-colors">IT Infra</a>
+            <a href="../business/solution/index.html" class="block px-4 py-2 text-slate-300 hover:bg-brand-orange hover:text-white transition-colors">IT Solution</a>
+          </div>
+        </div>
+
+        <a href="./index.html" class="text-brand-orange font-bold border-b-2 border-brand-orange pb-1">References</a>
+      </nav>
+
+      <!-- Right Nav Buttons -->
+      <div class="hidden md:flex items-center gap-6">
+        <!-- Language Switcher -->
+        <div class="relative group">
+          <button class="flex items-center gap-1.5 text-slate-300 hover:text-brand-orange transition-colors focus:outline-none text-base font-semibold">
+            <i data-lucide="globe" class="w-4.5 h-4.5"></i> <span class="ml-1 uppercase">EN</span> <i data-lucide="chevron-down" class="w-3 h-3"></i>
+          </button>
+          <div class="absolute right-0 top-full mt-2 w-24 rounded-lg shadow-xl bg-brand-cardBg border border-white/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-1 text-sm font-medium z-50">
+            <a href="../../references/index.html" class="block px-4 py-2 text-slate-300 hover:text-brand-orange hover:bg-white/5 transition-colors">KO</a>
+            <a href="./index.html" class="block px-4 py-2 text-brand-orange font-bold hover:bg-white/5 transition-colors">EN</a>
+            <a href="../../vn/references/index.html" class="block px-4 py-2 text-slate-300 hover:text-brand-orange hover:bg-white/5 transition-colors">VN</a>
+          </div>
+        </div>
+
+        <a href="../contact/index.html" class="px-5 py-2 rounded-full bg-brand-orange hover:bg-brand-amber text-white text-base font-semibold tracking-wider transition-all duration-300 shadow-md shadow-brand-orange/20">
+          Contact Us
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none hover:text-brand-orange transition-colors">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-menu" class="fixed inset-0 z-50 hidden bg-brand-darkBg/95 backdrop-blur-lg flex flex-col justify-between p-6">
+    <div>
+      <div class="flex items-center justify-between mb-8">
+        <a href="../index.html" class="text-2xl font-extrabold tracking-tight font-outfit text-white">
+          App<span class="text-brand-orange">EZ</span>
+        </a>
+        <button id="mobile-menu-close-btn" class="text-white hover:text-brand-orange transition-colors">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-6 text-lg font-medium">
+        <a href="../company/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors">Company</a>
+        <a href="../business/infra/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors pl-4"><span class="text-brand-orange mr-2">▪</span>IT Infra</a>
+        <a href="../business/solution/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors pl-4"><span class="text-brand-orange mr-2">▪</span>IT Solution</a>
+        <a href="./index.html" class="text-brand-orange py-2 border-b border-white/5 transition-colors font-bold">References</a>
+      </nav>
+      <!-- Mobile Language Switcher -->
+      <div class="mt-8 pt-6 border-t border-white/5">
+        <span class="text-xs text-slate-500 font-semibold uppercase tracking-widest block mb-3">Language</span>
+        <div class="flex gap-4 text-base font-semibold">
+          <a href="../../references/index.html" class="text-slate-400 hover:text-brand-orange">KO</a>
+          <span class="text-white/20">|</span>
+          <a href="./index.html" class="text-brand-orange">EN</a>
+          <span class="text-white/20">|</span>
+          <a href="../../vn/references/index.html" class="text-slate-400 hover:text-brand-orange">VN</a>
+        </div>
+      </div>
+    </div>
+    <div class="mb-8">
+      <a href="../contact/index.html" class="block w-full py-4 text-center rounded-xl bg-brand-orange hover:bg-brand-amber text-white font-semibold transition-all duration-300">
+        Inquire Now
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="relative pt-48 pb-24 overflow-hidden bg-brand-darkBg flex items-center">
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1920&q=80" alt="Business charts" class="w-full h-full object-cover opacity-15 filter grayscale hover:scale-105 transition-transform duration-[10000ms]">
+      <div class="absolute inset-0 bg-gradient-to-t from-brand-darkBg via-brand-darkBg/60 to-transparent"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 text-center w-full">
+      <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-base font-semibold tracking-widest uppercase mb-6 animate-pulse" data-aos="fade-down">
+        Track Records
+      </span>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold font-outfit tracking-tight text-white mb-6" data-aos="fade-up" data-aos-delay="100">
+        Proven Project Success
+      </h1>
+      <p class="max-w-2xl mx-auto text-slate-300 text-base leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+        From systems integration for global corporations and financial institutions to datacenter migrations, we deliver reliable, high-availability IT environments.
+      </p>
+    </div>
+  </section>
+
+  <!-- Big Stat Cards -->
+  <section class="py-24 relative bg-brand-darkBg">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+        
+        <!-- Card 1 -->
+        <div class="glass-panel border border-white/5 rounded-3xl p-12 text-center relative overflow-hidden bg-brand-cardBg" data-aos="fade-right">
+          <div class="absolute top-0 right-0 w-48 h-48 rounded-full bg-brand-orange/5 blur-3xl pointer-events-none"></div>
+          <span class="text-slate-400 text-base font-bold uppercase tracking-widest block mb-4">Financial Growth</span>
+          <h3 class="text-base text-slate-300 font-medium mb-2">Annual Revenue (2025)</h3>
+          <div class="text-6xl sm:text-7xl font-extrabold font-outfit text-white tracking-tight mb-4 font-outfit">
+            $<span class="text-brand-orange">8</span><span class="text-2xl font-bold text-slate-300 font-outfit"> Million USD</span>
+          </div>
+          <div class="w-16 h-1.5 bg-brand-orange rounded-full mx-auto mb-6"></div>
+          <p class="text-base text-slate-300 max-w-sm mx-auto leading-relaxed">
+            Consistently securing major corporate and public infrastructure projects, proving our financial health and operational trust.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="glass-panel border border-white/5 rounded-3xl p-12 text-center relative overflow-hidden bg-brand-cardBg" data-aos="fade-left">
+          <div class="absolute top-0 left-0 w-48 h-48 rounded-full bg-brand-amber/5 blur-3xl pointer-events-none"></div>
+          <span class="text-slate-400 text-base font-bold uppercase tracking-widest block mb-4">Client Trust</span>
+          <h3 class="text-base text-slate-300 font-medium mb-2">Cumulative Enterprise Clients</h3>
+          <div class="text-6xl sm:text-7xl font-extrabold font-outfit text-white tracking-tight mb-4">
+            <span class="text-brand-orange">150</span><span class="text-2xl font-bold text-slate-300 font-outfit"> + Clients</span>
+          </div>
+          <div class="w-16 h-1.5 bg-brand-orange rounded-full mx-auto mb-6"></div>
+          <p class="text-base text-slate-300 max-w-sm mx-auto leading-relaxed">
+            Major financial firms, top-tier healthcare providers, and high-security government ministries rely on AppEZ's engineering services.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Partnerships Section -->
+  <section class="py-24 relative bg-brand-darkBg border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="text-center max-w-3xl mx-auto mb-20" data-aos="fade-up">
+        <span class="text-brand-orange font-bold text-base uppercase tracking-widest mb-3 block">Global Partnerships</span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-outfit text-white tracking-tight mb-6">
+          Official <span class="text-brand-orange">IT Partner Certifications</span>
+        </h2>
+        <p class="text-slate-300 text-base leading-relaxed">
+          Providing optimal solutions through solid partnerships with global IT leaders.
+        </p>
+      </div>
+
+      <!-- Partner Grid (Large, high visual weight cards with Gold partner badges) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full" data-aos="fade-up" data-aos-delay="100">
+        
+        <!-- IBM (Gold Partner) -->
+        <div class="group relative bg-white rounded-xl shadow-md p-6 flex flex-col items-center justify-between h-48 border border-slate-200 hover:border-brand-orange/40 transition-all duration-300">
+          <div class="absolute top-3 right-3">
+            <span class="bg-yellow-100 text-yellow-700 font-bold px-3 py-1 rounded-full text-xs shadow-sm">Gold Partner</span>
+          </div>
+          <div class="flex-grow flex items-center justify-center w-full mt-4">
+            <span class="text-slate-900 font-black font-outfit text-3xl tracking-widest">IBM</span>
+          </div>
+          <span class="text-sm font-extrabold text-slate-800 tracking-wider mt-2 group-hover:text-brand-orange transition-colors">IBM</span>
+        </div>
+
+        <!-- Dell Technologies (Gold Partner) -->
+        <div class="group relative bg-white rounded-xl shadow-md p-6 flex flex-col items-center justify-between h-48 border border-slate-200 hover:border-brand-orange/40 transition-all duration-300">
+          <div class="absolute top-3 right-3">
+            <span class="bg-yellow-100 text-yellow-700 font-bold px-3 py-1 rounded-full text-xs shadow-sm">Gold Partner</span>
+          </div>
+          <div class="flex-grow flex items-center justify-center w-full mt-4">
+            <span class="text-slate-900 font-black font-outfit text-2xl tracking-widest">DELL Tech</span>
+          </div>
+          <span class="text-sm font-extrabold text-slate-800 tracking-wider mt-2 group-hover:text-brand-orange transition-colors">Dell Technologies</span>
+        </div>
+
+        <!-- Lenovo -->
+        <div class="group relative bg-white rounded-xl shadow-md p-6 flex flex-col items-center justify-between h-48 border border-slate-200 hover:border-brand-orange/40 transition-all duration-300">
+          <div class="flex-grow flex items-center justify-center w-full mt-4">
+            <span class="text-slate-900 font-black font-outfit text-2xl tracking-widest">LENOVO</span>
+          </div>
+          <span class="text-sm font-extrabold text-slate-800 tracking-wider mt-2 group-hover:text-brand-orange transition-colors">Lenovo</span>
+        </div>
+
+        <!-- HPE -->
+        <div class="group relative bg-white rounded-xl shadow-md p-6 flex flex-col items-center justify-between h-48 border border-slate-200 hover:border-brand-orange/40 transition-all duration-300">
+          <div class="flex-grow flex items-center justify-center w-full mt-4">
+            <span class="text-slate-900 font-black font-outfit text-2xl tracking-widest">HPE</span>
+          </div>
+          <span class="text-sm font-extrabold text-slate-800 tracking-wider mt-2 group-hover:text-brand-orange transition-colors">HPE</span>
+        </div>
+
+        <!-- Nutanix -->
+        <div class="group relative bg-white rounded-xl shadow-md p-6 flex flex-col items-center justify-between h-48 border border-slate-200 hover:border-brand-orange/40 transition-all duration-300">
+          <div class="flex-grow flex items-center justify-center w-full mt-4">
+            <span class="text-slate-900 font-black font-outfit text-2xl tracking-widest">NUTANIX</span>
+          </div>
+          <span class="text-sm font-extrabold text-slate-800 tracking-wider mt-2 group-hover:text-brand-orange transition-colors">Nutanix</span>
+        </div>
+
+        <!-- Veeam -->
+        <div class="group relative bg-white rounded-xl shadow-md p-6 flex flex-col items-center justify-between h-48 border border-slate-200 hover:border-brand-orange/40 transition-all duration-300">
+          <div class="flex-grow flex items-center justify-center w-full mt-4">
+            <span class="text-slate-900 font-black font-outfit text-2xl tracking-widest">VEEAM</span>
+          </div>
+          <span class="text-sm font-extrabold text-slate-800 tracking-wider mt-2 group-hover:text-brand-orange transition-colors">Veeam</span>
+        </div>
+
+        <!-- WhaTap -->
+        <div class="group relative bg-white rounded-xl shadow-md p-6 flex flex-col items-center justify-between h-48 border border-slate-200 hover:border-brand-orange/40 transition-all duration-300">
+          <div class="flex-grow flex items-center justify-center w-full mt-4">
+            <span class="text-slate-900 font-black font-outfit text-2xl tracking-widest">WHATAP</span>
+          </div>
+          <span class="text-sm font-extrabold text-slate-800 tracking-wider mt-2 group-hover:text-brand-orange transition-colors">WhaTap</span>
+        </div>
+
+        <!-- Piolink -->
+        <div class="group relative bg-white rounded-xl shadow-md p-6 flex flex-col items-center justify-between h-48 border border-slate-200 hover:border-brand-orange/40 transition-all duration-300">
+          <div class="flex-grow flex items-center justify-center w-full mt-4">
+            <span class="text-slate-900 font-black font-outfit text-2xl tracking-widest">PIOLINK</span>
+          </div>
+          <span class="text-sm font-extrabold text-slate-800 tracking-wider mt-2 group-hover:text-brand-orange transition-colors">Piolink</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Performance Filter List -->
+  <section class="py-24 relative bg-brand-darkBg overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-brand-orange font-bold text-base uppercase tracking-widest mb-3 block">Performance History</span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-outfit text-white tracking-tight mb-6">
+          Major Project <span class="text-brand-orange">Milestones</span>
+        </h2>
+        <p class="text-slate-300 text-base leading-relaxed">
+          Select a year below to explore major system integrations, operations, and technical consulting projects.
+        </p>
+      </div>
+
+      <!-- Tab Buttons -->
+      <div class="flex justify-center mb-12" data-aos="fade-up">
+        <div class="inline-flex p-1.5 bg-brand-cardBg border border-white/5 rounded-2xl gap-2">
+          <button onclick="switchTab('2026')" id="btn-2026" class="tab-btn px-6 py-3 rounded-xl text-base font-bold transition-all bg-brand-orange text-white">2026</button>
+          <button onclick="switchTab('2025')" id="btn-2025" class="tab-btn px-6 py-3 rounded-xl text-base font-bold transition-all text-slate-400 hover:text-white">2025</button>
+          <button onclick="switchTab('2024')" id="btn-2024" class="tab-btn px-6 py-3 rounded-xl text-base font-bold transition-all text-slate-400 hover:text-white">2024</button>
+          <button onclick="switchTab('2023')" id="btn-2023" class="tab-btn px-6 py-3 rounded-xl text-base font-bold transition-all text-slate-400 hover:text-white">2023 ~ 2018</button>
+        </div>
+      </div>
+
+      <!-- Tab Contents Area -->
+      <div class="max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+        
+        <!-- 2026 TAB CONTENT -->
+        <div id="content-2026" class="tab-content space-y-4">
+          <div class="bg-brand-cardBg/60 border border-white/5 rounded-2xl p-6 flex items-start gap-4 hover:border-brand-orange/30 transition-colors">
+            <span class="px-2.5 py-1 rounded bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-xs font-black font-outfit mt-0.5 font-outfit">2026</span>
+            <div>
+              <h4 class="text-base font-bold text-slate-200 mb-1">Nairobi Intelligent Transport System (ITS) & Intersection Improvement ODA Project</h4>
+              <p class="text-base text-slate-400 leading-relaxed">Public ODA / Enterprise server infrastructure and communications networking package installation.</p>
+            </div>
+          </div>
+          <div class="bg-brand-cardBg/60 border border-white/5 rounded-2xl p-6 flex items-start gap-4 hover:border-brand-orange/30 transition-colors">
+            <span class="px-2.5 py-1 rounded bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-xs font-black font-outfit mt-0.5 font-outfit">2026</span>
+            <div>
+              <h4 class="text-base font-bold text-slate-200 mb-1">High-ranking Officials Crime Investigation Office - Criminal Justice Information System Maintenance</h4>
+              <p class="text-base text-slate-400 leading-relaxed">Public Law Enforcement / 24/7/365 highly secured database and integrated systems maintenance.</p>
+            </div>
+          </div>
+          <div class="bg-brand-cardBg/60 border border-white/5 rounded-2xl p-6 flex items-start gap-4 hover:border-brand-orange/30 transition-colors">
+            <span class="px-2.5 py-1 rounded bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-xs font-black font-outfit mt-0.5 font-outfit">2026</span>
+            <div>
+              <h4 class="text-base font-bold text-slate-200 mb-1">Korea Information & Communications (KICC) - Unified Infrastructure SLA Maintenance</h4>
+              <p class="text-base text-slate-400 leading-relaxed">Private Payment Finance / High-capacity core server rack monitoring and preventative tuning.</p>
+            </div>
+          </div>
+          <div class="bg-brand-cardBg/60 border border-white/5 rounded-2xl p-6 flex items-start gap-4 hover:border-brand-orange/30 transition-colors">
+            <span class="px-2.5 py-1 rounded bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-xs font-black font-outfit mt-0.5 font-outfit">2026</span>
+            <div>
+              <h4 class="text-base font-bold text-slate-200 mb-1">Mirae Asset Life Insurance - Veeam Backup System Maintenance & Support</h4>
+              <p class="text-base text-slate-400 leading-relaxed">Financial Sector / Regular verification and restore audits for Veeam Backup & Replication environments.</p>
+            </div>
+          </div>
+          <div class="bg-brand-cardBg/60 border border-white/5 rounded-2xl p-6 flex items-start gap-4 hover:border-brand-orange/30 transition-colors">
+            <span class="px-2.5 py-1 rounded bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-xs font-black font-outfit mt-0.5 font-outfit">2026</span>
+            <div>
+              <h4 class="text-base font-bold text-slate-200 mb-1">POSCO A&C - CAD Workstation & Fileserver System Maintenance</h4>
+              <p class="text-base text-slate-400 leading-relaxed">Engineering Design / High-performance workstation clusters and file storage rack maintenance.</p>
+            </div>
+          </div>
+          <div class="bg-brand-cardBg/60 border border-white/5 rounded-2xl p-6 flex items-start gap-4 hover:border-brand-orange/30 transition-colors">
+            <span class="px-2.5 py-1 rounded bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-xs font-black font-outfit mt-0.5 font-outfit">2026</span>
+            <div>
+              <h4 class="text-base font-bold text-slate-200 mb-1">Defense Media Agency - Video Broadcast Infrastructure & Archival System Maintenance</h4>
+              <p class="text-base text-slate-400 leading-relaxed">Public Media / Real-time streaming servers and media archiving infrastructure maintenance.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2025 TAB CONTENT -->
+        <div id="content-2025" class="tab-content space-y-4 hidden">
+          <div class="bg-brand-cardBg/60 border border-white/5 rounded-2xl p-6 flex items-start gap-4">
+            <span class="px-2.5 py-1 rounded bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-xs font-black font-outfit mt-0.5 font-outfit">2025</span>
+            <div>
+              <h4 class="text-base font-bold text-slate-200 mb-1">Ministry of Justice - Next-Generation Criminal Justice Information System (KICS) Deployment</h4>
+              <p class="text-base text-slate-400 leading-relaxed">Public Law Enforcement / Server/storage cluster procurement and secure database layout integration.</p>
+            </div>
+          </div>
+          <div class="bg-brand-cardBg/60 border border-white/5 rounded-2xl p-6 flex items-start gap-4">
+            <span class="px-2.5 py-1 rounded bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-xs font-black font-outfit mt-0.5 font-outfit">2025</span>
+            <div>
+              <h4 class="text-base font-bold text-slate-200 mb-1">IBK Industrial Bank of Korea - Hanam Datacenter Server Migration Project</h4>
+              <p class="text-base text-slate-400 leading-relaxed">Financial Sector / Multi-node server datacenter migration, rack relocation, and cabling verification.</p>
+            </div>
+          </div>
+          <div class="bg-brand-cardBg/60 border border-white/5 rounded-2xl p-6 flex items-start gap-4">
+            <span class="px-2.5 py-1 rounded bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-xs font-black font-outfit mt-0.5 font-outfit">2025</span>
+            <div>
+              <h4 class="text-base font-bold text-slate-200 mb-1">Ministry of Justice - Next-Generation Crime Prevention System Infrastructure Setup</h4>
+              <p class="text-base text-slate-400 leading-relaxed">Public Safety / Server virtualization cluster design and Veeam backup systems integration.</p>
+            </div>
+          </div>
+          <div class="bg-brand-cardBg/60 border border-white/5 rounded-2xl p-6 flex items-start gap-4">
+            <span class="px-2.5 py-1 rounded bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-xs font-black font-outfit mt-0.5 font-outfit">2025</span>
+            <div>
+              <h4 class="text-base font-bold text-slate-200 mb-1">National Police Agency - Crime Statistics Cluster Server System Integration</h4>
+              <p class="text-base text-slate-400 leading-relaxed">Public Security / X86 high-density server cluster setup for large-scale calculations.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2024 TAB CONTENT -->
+        <div id="content-2024" class="tab-content space-y-4 hidden">
+          <div class="bg-brand-cardBg/60 border border-white/5 rounded-2xl p-6 flex items-start gap-4">
+            <span class="px-2.5 py-1 rounded bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-xs font-black font-outfit mt-0.5 font-outfit">2024</span>
+            <div>
+              <h4 class="text-base font-bold text-slate-200 mb-1">Construction Guarantee - IBM Power System Server & Storage SLA Maintenance</h4>
+              <p class="text-base text-slate-400 leading-relaxed">Financial Sector / IBM Power enterprise systems and storage array maintenance support.</p>
+            </div>
+          </div>
+          <div class="bg-brand-cardBg/60 border border-white/5 rounded-2xl p-6 flex items-start gap-4">
+            <span class="px-2.5 py-1 rounded bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-xs font-black font-outfit mt-0.5 font-outfit">2024</span>
+            <div>
+              <h4 class="text-base font-bold text-slate-200 mb-1">Mirae Asset Securities - IBM TS Tape Library & High-capacity Storage Expansion</h4>
+              <p class="text-base text-slate-400 leading-relaxed">Financial Sector / TS Tape Library integration and backup storage capacity upgrades.</p>
+            </div>
+          </div>
+          <div class="bg-brand-cardBg/60 border border-white/5 rounded-2xl p-6 flex items-start gap-4">
+            <span class="px-2.5 py-1 rounded bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-xs font-black font-outfit mt-0.5 font-outfit">2024</span>
+            <div>
+              <h4 class="text-base font-bold text-slate-200 mb-1">Korea Insurance Development Institute - Medical Insurance Electronic Billing Server Deployment</h4>
+              <p class="text-base text-slate-400 leading-relaxed">Financial Sector / High-availability x86 servers design and database compliance implementation.</p>
+            </div>
+          </div>
+          <div class="bg-brand-cardBg/60 border border-white/5 rounded-2xl p-6 flex items-start gap-4">
+            <span class="px-2.5 py-1 rounded bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-xs font-black font-outfit mt-0.5 font-outfit">2024</span>
+            <div>
+              <h4 class="text-base font-bold text-slate-200 mb-1">Chubb Life Insurance Korea - Data Center IT Systems Operation & Maintenance Support</h4>
+              <p class="text-base text-slate-400 leading-relaxed">Global Insurance / Datacenter hardware resource maintenance and proactive systems tuning.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2023 ~ 2018 TAB CONTENT -->
+        <div id="content-2023" class="tab-content space-y-4 hidden">
+          <div class="bg-brand-cardBg/60 border border-white/5 rounded-2xl p-6 flex items-start gap-4">
+            <span class="px-2.5 py-1 rounded bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-xs font-black font-outfit mt-0.5 font-outfit">2023</span>
+            <div>
+              <h4 class="text-base font-bold text-slate-200 mb-1">Supreme Court of Korea - Electronic Payment Service X86 Server Procurement</h4>
+              <p class="text-base text-slate-400 leading-relaxed">Public Judicial / Server procurement and storage deployment for electronic payment networks.</p>
+            </div>
+          </div>
+          <div class="bg-brand-cardBg/60 border border-white/5 rounded-2xl p-6 flex items-start gap-4">
+            <span class="px-2.5 py-1 rounded bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-xs font-black font-outfit mt-0.5 font-outfit">2022</span>
+            <div>
+              <h4 class="text-base font-bold text-slate-200 mb-1">Ministry of National Defense - Navy/Air Force On-Nara GPFS Storage File System Technical Support</h4>
+              <p class="text-base text-slate-400 leading-relaxed">Public Military / IBM GPFS cluster file system tuning, troubleshooting, and optimization.</p>
+            </div>
+          </div>
+          <div class="bg-brand-cardBg/60 border border-white/5 rounded-2xl p-6 flex items-start gap-4">
+            <span class="px-2.5 py-1 rounded bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-xs font-black font-outfit mt-0.5 font-outfit">2021</span>
+            <div>
+              <h4 class="text-base font-bold text-slate-200 mb-1">Incheon International Airport - Deep Learning Video Auto-Read GPU System Maintenance</h4>
+              <p class="text-base text-slate-400 leading-relaxed">Public Airport / High-performance GPU server infrastructure regular maintenance and tuning.</p>
+            </div>
+          </div>
+          <div class="bg-brand-cardBg/60 border border-white/5 rounded-2xl p-6 flex items-start gap-4">
+            <span class="px-2.5 py-1 rounded bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-xs font-black font-outfit mt-0.5 font-outfit">2020</span>
+            <div>
+              <h4 class="text-base font-bold text-slate-200 mb-1">Korean Air - Private Cloud Infrastructure Integration & Storage Alignment</h4>
+              <p class="text-base text-slate-400 leading-relaxed">Aviation Sector / Private cloud node virtualization migration and storage alignment support.</p>
+            </div>
+          </div>
+          <div class="bg-brand-cardBg/60 border border-white/5 rounded-2xl p-6 flex items-start gap-4">
+            <span class="px-2.5 py-1 rounded bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-xs font-black font-outfit mt-0.5 font-outfit">2019</span>
+            <div>
+              <h4 class="text-base font-bold text-slate-200 mb-1">Suhyup Bank - Disaster Recovery (DR) Remote IBM Power Replication Center Setup</h4>
+              <p class="text-base text-slate-400 leading-relaxed">Financial Sector / Kangrung remote backup node design and active-active IBM Power systems replication.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <hr class="border-slate-800 mt-24">
+    </div>
+  </section>
+
+  <!-- Client Logos Grid Section -->
+  <section class="py-24 relative bg-brand-darkBg">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="text-center max-w-3xl mx-auto mb-20">
+        <span class="text-brand-orange font-bold text-base uppercase tracking-widest mb-3 block">Our Clients</span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-outfit text-white tracking-tight mb-6">
+          AppEZ <span class="text-brand-orange">Major Client Portfolio</span>
+        </h2>
+        <p class="text-slate-300 text-base leading-relaxed">
+          Public ministries, military agencies, major financial groups, enterprises, and hospital centers rely on AppEZ's engineering services.
+        </p>
+      </div>
+
+      <div class="space-y-16 max-w-5xl mx-auto">
+        
+        <!-- Public Sectors -->
+        <div data-aos="fade-up">
+          <h3 class="text-base font-bold text-slate-400 uppercase tracking-widest border-l-2 border-brand-orange pl-3 mb-6">Government & Public Sectors</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <!-- Ministry of Justice -->
+            <div class="group relative bg-white rounded-xl shadow-sm h-24 p-4 flex items-center justify-center border border-slate-200 hover:border-brand-orange/40 overflow-hidden transition-all duration-300">
+              <span class="text-slate-900 font-extrabold text-base tracking-wide text-center">Ministry of Justice</span>
+            </div>
+            <!-- Supreme Court -->
+            <div class="group relative bg-white rounded-xl shadow-sm h-24 p-4 flex items-center justify-center border border-slate-200 hover:border-brand-orange/40 overflow-hidden transition-all duration-300">
+              <span class="text-slate-900 font-extrabold text-base tracking-wide text-center">Supreme Court</span>
+            </div>
+            <!-- CIO -->
+            <div class="group relative bg-white rounded-xl shadow-sm h-24 p-4 flex items-center justify-center border border-slate-200 hover:border-brand-orange/40 overflow-hidden transition-all duration-300">
+              <span class="text-slate-900 font-extrabold text-base tracking-wide text-center">CIO Office</span>
+            </div>
+            <!-- NPA -->
+            <div class="group relative bg-white rounded-xl shadow-sm h-24 p-4 flex items-center justify-center border border-slate-200 hover:border-brand-orange/40 overflow-hidden transition-all duration-300">
+              <span class="text-slate-900 font-extrabold text-base tracking-wide text-center">National Police</span>
+            </div>
+            <!-- MND -->
+            <div class="group relative bg-white rounded-xl shadow-sm h-24 p-4 flex items-center justify-center border border-slate-200 hover:border-brand-orange/40 overflow-hidden transition-all duration-300">
+              <span class="text-slate-900 font-extrabold text-base tracking-wide text-center">Ministry of Defense</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Financial Institutions -->
+        <div data-aos="fade-up">
+          <h3 class="text-base font-bold text-slate-400 uppercase tracking-widest border-l-2 border-brand-orange pl-3 mb-6">Financial Institutions & Insurance</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <!-- IBK -->
+            <div class="group relative bg-white rounded-xl shadow-sm h-24 p-4 flex items-center justify-center border border-slate-200 hover:border-brand-orange/40 overflow-hidden transition-all duration-300">
+              <span class="text-slate-900 font-extrabold text-base tracking-wide text-center">IBK Bank</span>
+            </div>
+            <!-- NH Bank -->
+            <div class="group relative bg-white rounded-xl shadow-sm h-24 p-4 flex items-center justify-center border border-slate-200 hover:border-brand-orange/40 overflow-hidden transition-all duration-300">
+              <span class="text-slate-900 font-extrabold text-base tracking-wide text-center">NH Bank</span>
+            </div>
+            <!-- Mirae Asset -->
+            <div class="group relative bg-white rounded-xl shadow-sm h-24 p-4 flex items-center justify-center border border-slate-200 hover:border-brand-orange/40 overflow-hidden transition-all duration-300">
+              <span class="text-slate-900 font-extrabold text-base tracking-wide text-center">Mirae Asset Life</span>
+            </div>
+            <!-- Chubb -->
+            <div class="group relative bg-white rounded-xl shadow-sm h-24 p-4 flex items-center justify-center border border-slate-200 hover:border-brand-orange/40 overflow-hidden transition-all duration-300">
+              <span class="text-slate-900 font-extrabold text-base tracking-wide text-center">Chubb Life</span>
+            </div>
+            <!-- DB Life -->
+            <div class="group relative bg-white rounded-xl shadow-sm h-24 p-4 flex items-center justify-center border border-slate-200 hover:border-brand-orange/40 overflow-hidden transition-all duration-300">
+              <span class="text-slate-900 font-extrabold text-base tracking-wide text-center">DB Life</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enterprises -->
+        <div data-aos="fade-up">
+          <h3 class="text-base font-bold text-slate-400 uppercase tracking-widest border-l-2 border-brand-orange pl-3 mb-6">Enterprises & Manufacturing</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <!-- Korean Air -->
+            <div class="group relative bg-white rounded-xl shadow-sm h-24 p-4 flex items-center justify-center border border-slate-200 hover:border-brand-orange/40 overflow-hidden transition-all duration-300">
+              <span class="text-slate-900 font-extrabold text-base tracking-wide text-center">Korean Air</span>
+            </div>
+            <!-- Lotte -->
+            <div class="group relative bg-white rounded-xl shadow-sm h-24 p-4 flex items-center justify-center border border-slate-200 hover:border-brand-orange/40 overflow-hidden transition-all duration-300">
+              <span class="text-slate-900 font-extrabold text-base tracking-wide text-center">Lotte Logis</span>
+            </div>
+            <!-- CJ -->
+            <div class="group relative bg-white rounded-xl shadow-sm h-24 p-4 flex items-center justify-center border border-slate-200 hover:border-brand-orange/40 overflow-hidden transition-all duration-300">
+              <span class="text-slate-900 font-extrabold text-base tracking-wide text-center">CJ CheilJedang</span>
+            </div>
+            <!-- LG Innotek -->
+            <div class="group relative bg-white rounded-xl shadow-sm h-24 p-4 flex items-center justify-center border border-slate-200 hover:border-brand-orange/40 overflow-hidden transition-all duration-300">
+              <span class="text-slate-900 font-extrabold text-base tracking-wide text-center">LG Innotek</span>
+            </div>
+            <!-- POSCO A&C -->
+            <div class="group relative bg-white rounded-xl shadow-sm h-24 p-4 flex items-center justify-center border border-slate-200 hover:border-brand-orange/40 overflow-hidden transition-all duration-300">
+              <span class="text-slate-900 font-extrabold text-base tracking-wide text-center">POSCO A&C</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-darkBg text-slate-500 py-16 px-6 md:px-12 border-t border-white/5">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        
+        <!-- Footer Col 1 -->
+        <div class="md:col-span-2">
+          <a href="../index.html" class="text-xl font-bold text-white tracking-tight font-outfit mb-4 inline-block">
+            App<span class="text-brand-orange">EZ</span>
+          </a>
+          <p class="text-base text-slate-300 leading-relaxed mb-6 max-w-sm">
+            A trusted partner providing IT infrastructure integration, system design, and consulting based on elite engineering.
+          </p>
+          <div class="flex gap-4">
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="linkedin" class="w-4.5 h-4.5"></i></a>
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="twitter" class="w-4.5 h-4.5"></i></a>
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="github" class="w-4.5 h-4.5"></i></a>
+          </div>
+        </div>
+
+        <!-- Footer Col 2 -->
+        <div>
+          <h4 class="text-base font-bold text-slate-300 uppercase tracking-widest mb-4">Quick Links</h4>
+          <ul class="space-y-3 text-base">
+            <li><a href="../company/index.html" class="hover:text-brand-orange transition-colors">Company Overview</a></li>
+            <li><a href="../business/infra/index.html" class="hover:text-brand-orange transition-colors">IT Infra Solutions</a></li>
+            <li><a href="../business/solution/index.html" class="hover:text-brand-orange transition-colors">IT Solution Services</a></li>
+            <li><a href="./index.html" class="hover:text-brand-orange transition-colors">Case Studies</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Col 3 -->
+        <div>
+          <h4 class="text-base font-bold text-slate-300 uppercase tracking-widest mb-4">Office Info</h4>
+          <address class="not-italic space-y-3 text-base leading-relaxed">
+            <p class="flex items-start gap-2.5">
+              <i data-lucide="map-pin" class="w-4.5 h-4.5 text-brand-orange shrink-0"></i>
+              <span class="text-slate-300">B-907~908, Woolim Blue9, 583 Yangcheon-ro, Gangseo-gu, Seoul, Republic of Korea</span>
+            </p>
+            <p class="flex items-center gap-2.5">
+              <i data-lucide="phone" class="w-4.5 h-4.5 text-brand-orange shrink-0"></i>
+              <span class="text-slate-300">T. +82-2-2135-5030</span>
+            </p>
+            <p class="flex items-center gap-2.5">
+              <i data-lucide="printer" class="w-4.5 h-4.5 text-brand-orange shrink-0"></i>
+              <span class="text-slate-300">F. +82-2-2135-5040</span>
+            </p>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-base gap-4">
+        <p>&copy; 2026 AppEZ Co., Ltd. All Rights Reserved.</p>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-brand-orange transition-colors">Terms of Service</a>
+          <a href="#" class="hover:text-brand-orange transition-colors">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Tab Switch Script -->
+  <script>
+    function switchTab(year) {
+      // Hide all contents
+      document.querySelectorAll('.tab-content').forEach(el => {
+        el.classList.add('hidden');
+      });
+      // Show matching content
+      document.getElementById('content-' + year).classList.remove('hidden');
+
+      // Reset all buttons to inactive styling
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('bg-brand-orange', 'text-white');
+        btn.classList.add('text-slate-400', 'hover:text-white');
+      });
+      // Set active styling to clicked button
+      const activeBtn = document.getElementById('btn-' + year);
+      activeBtn.classList.remove('text-slate-400', 'hover:text-white');
+      activeBtn.classList.add('bg-brand-orange', 'text-white');
+    }
+  </script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- Custom Common JS -->
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

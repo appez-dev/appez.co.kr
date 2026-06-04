@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ko" class="scroll-smooth">
+<html lang="vi" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IT Infra 사업영역 - 주식회사 앱이지</title>
-  <meta name="description" content="앱이지(AppEZ)는 글로벌 벤더사(IBM, Dell, Lenovo, HPE, Nutanix)와의 강력한 파트너십을 바탕으로 고가용성 서버 및 스토리지 인프라를 설계 및 구축하며, 장비 임대 및 안전한 전산실 이전 서비스를 지원합니다.">
-  <!-- Pretendard 폰트 CDN -->
+  <title>Hạ tầng IT - AppEZ</title>
+  <meta name="description" content="AppEZ thiết kế và triển khai máy chủ và thiết bị lưu trữ doanh nghiệp, cùng với giải pháp cho thuê thiết bị và di dời/tiêu hủy an toàn.">
+  <!-- Pretendard Font CDN -->
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -28,36 +28,36 @@
     }
   </script>
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="../../assets/css/custom.css">
+  <link rel="stylesheet" href="../../../assets/css/custom.css">
   <!-- AOS CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
   <!-- SEO Multilingual Link Tags -->
-  <link class="seo-hreflang" rel="alternate" hreflang="ko" href="./index.html" />
-  <link class="seo-hreflang" rel="alternate" hreflang="en" href="../../en/business/infra/index.html" />
-  <link class="seo-hreflang" rel="alternate" hreflang="vi" href="../../vn/business/infra/index.html" />
+  <link class="seo-hreflang" rel="alternate" hreflang="ko" href="../../../business/infra/index.html" />
+  <link class="seo-hreflang" rel="alternate" hreflang="en" href="../../../en/business/infra/index.html" />
+  <link class="seo-hreflang" rel="alternate" hreflang="vi" href="./index.html" />
 </head>
 <body class="bg-brand-darkBg text-slate-300 selection:bg-brand-orange selection:text-white leading-relaxed text-base">
 
-  <!-- 네비게이션 헤더 -->
+  <!-- Navigation Header -->
   <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent py-4 px-6 md:px-12">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
-      <!-- 로고 -->
+      <!-- Logo -->
       <a href="../../index.html" class="flex items-center gap-2 group">
         <span class="text-2xl font-extrabold tracking-tight font-outfit text-white">
           App<span class="text-brand-orange group-hover:text-brand-amber transition-colors">EZ</span>
         </span>
       </a>
 
-      <!-- 데스크톱 메뉴 -->
+      <!-- Desktop Menu -->
       <nav class="hidden md:flex items-center gap-8 text-base font-medium tracking-wide">
-        <a href="../../company/index.html" class="text-slate-300 hover:text-brand-orange transition-colors">회사소개</a>
+        <a href="../../company/index.html" class="text-slate-300 hover:text-brand-orange transition-colors">Giới thiệu</a>
         
-        <!-- Dropdown 메뉴 -->
+        <!-- Dropdown Menu -->
         <div class="relative group">
           <button class="flex items-center gap-1 text-brand-orange font-semibold border-b-2 border-brand-orange pb-1 focus:outline-none">
-            사업영역 <i data-lucide="chevron-down" class="w-4 h-4 text-brand-orange"></i>
+            Business <i data-lucide="chevron-down" class="w-4 h-4 text-brand-orange"></i>
           </button>
           <div class="absolute top-full -left-4 mt-2 w-48 rounded-lg shadow-xl bg-brand-cardBg border border-white/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-2">
             <a href="./index.html" class="block px-4 py-2 text-brand-orange bg-white/5 font-bold transition-colors">IT Infra</a>
@@ -65,37 +65,36 @@
           </div>
         </div>
 
-        <a href="../../references/index.html" class="text-slate-300 hover:text-brand-orange transition-colors">레퍼런스</a>
-        <a href="../../recruit/index.html" class="text-slate-300 hover:text-brand-orange transition-colors">인재채용</a>
+        <a href="../../references/index.html" class="text-slate-300 hover:text-brand-orange transition-colors">Dự án thực tế</a>
       </nav>
 
-      <!-- 우측 상단 문의 버튼 및 언어 선택기 -->
+      <!-- Right Nav Buttons -->
       <div class="hidden md:flex items-center gap-6">
         <!-- Language Switcher -->
         <div class="relative group">
           <button class="flex items-center gap-1.5 text-slate-300 hover:text-brand-orange transition-colors focus:outline-none text-base font-semibold">
-            <i data-lucide="globe" class="w-4.5 h-4.5"></i> <span class="ml-1 uppercase">KR</span> <i data-lucide="chevron-down" class="w-3 h-3"></i>
+            <i data-lucide="globe" class="w-4.5 h-4.5"></i> <span class="ml-1 uppercase">VN</span> <i data-lucide="chevron-down" class="w-3 h-3"></i>
           </button>
           <div class="absolute right-0 top-full mt-2 w-24 rounded-lg shadow-xl bg-brand-cardBg border border-white/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-1 text-sm font-medium z-50">
-            <a href="./index.html" class="block px-4 py-2 text-brand-orange font-bold hover:bg-white/5 transition-colors">KO</a>
-            <a href="../../en/business/infra/index.html" class="block px-4 py-2 text-slate-300 hover:text-brand-orange hover:bg-white/5 transition-colors">EN</a>
-            <a href="../../vn/business/infra/index.html" class="block px-4 py-2 text-slate-300 hover:text-brand-orange hover:bg-white/5 transition-colors">VN</a>
+            <a href="../../../business/infra/index.html" class="block px-4 py-2 text-slate-300 hover:text-brand-orange hover:bg-white/5 transition-colors">KO</a>
+            <a href="../../../en/business/infra/index.html" class="block px-4 py-2 text-slate-300 hover:text-brand-orange hover:bg-white/5 transition-colors">EN</a>
+            <a href="./index.html" class="block px-4 py-2 text-brand-orange font-bold hover:bg-white/5 transition-colors">VN</a>
           </div>
         </div>
 
         <a href="../../contact/index.html" class="px-5 py-2 rounded-full bg-brand-orange hover:bg-brand-amber text-white text-base font-semibold tracking-wider transition-all duration-300 shadow-md shadow-brand-orange/20">
-          문의하기
+          Liên hệ
         </a>
       </div>
 
-      <!-- 모바일 햄버거 버튼 -->
+      <!-- Mobile Menu Button -->
       <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none hover:text-brand-orange transition-colors">
         <i data-lucide="menu" class="w-6 h-6"></i>
       </button>
     </div>
   </header>
 
-  <!-- 모바일 네비게이션 드로어 -->
+  <!-- Mobile Navigation Drawer -->
   <div id="mobile-menu" class="fixed inset-0 z-50 hidden bg-brand-darkBg/95 backdrop-blur-lg flex flex-col justify-between p-6">
     <div>
       <div class="flex items-center justify-between mb-8">
@@ -107,27 +106,26 @@
         </button>
       </div>
       <nav class="flex flex-col gap-6 text-lg font-medium">
-        <a href="../../company/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors">회사소개</a>
-        <a href="./index.html" class="text-brand-orange py-2 border-b border-white/5 transition-colors pl-4 font-bold"><span class="text-brand-orange mr-2">▪</span>IT Infra 사업</a>
-        <a href="../solution/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors pl-4"><span class="text-brand-orange mr-2">▪</span>IT Solution 사업</a>
-        <a href="../../references/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors">레퍼런스</a>
-        <a href="../../recruit/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors">인재채용</a>
+        <a href="../../company/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors">Giới thiệu</a>
+        <a href="./index.html" class="text-brand-orange py-2 border-b border-white/5 transition-colors pl-4 font-bold"><span class="text-brand-orange mr-2">▪</span>IT Infra</a>
+        <a href="../solution/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors pl-4"><span class="text-brand-orange mr-2">▪</span>IT Solution</a>
+        <a href="../../references/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors">Dự án thực tế</a>
       </nav>
-      <!-- 모바일 언어 선택기 -->
+      <!-- Mobile Language Switcher -->
       <div class="mt-8 pt-6 border-t border-white/5">
         <span class="text-xs text-slate-500 font-semibold uppercase tracking-widest block mb-3">Language</span>
         <div class="flex gap-4 text-base font-semibold">
-          <a href="./index.html" class="text-brand-orange">KO</a>
+          <a href="../../../business/infra/index.html" class="text-slate-400 hover:text-brand-orange">KO</a>
           <span class="text-white/20">|</span>
-          <a href="../../en/business/infra/index.html" class="text-slate-400 hover:text-brand-orange">EN</a>
+          <a href="../../../en/business/infra/index.html" class="text-slate-400 hover:text-brand-orange">EN</a>
           <span class="text-white/20">|</span>
-          <a href="../../vn/business/infra/index.html" class="text-slate-400 hover:text-brand-orange">VN</a>
+          <a href="./index.html" class="text-brand-orange">VN</a>
         </div>
       </div>
     </div>
     <div class="mb-8">
       <a href="../../contact/index.html" class="block w-full py-4 text-center rounded-xl bg-brand-orange hover:bg-brand-amber text-white font-semibold transition-all duration-300">
-        프로젝트 문의하기
+        Liên hệ ngay
       </a>
     </div>
   </div>
@@ -141,31 +139,30 @@
 
     <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 text-center w-full">
       <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-base font-semibold tracking-widest uppercase mb-6 animate-pulse" data-aos="fade-down">
-        Hardware Integration
+        Tích hợp phần cứng
       </span>
       <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold font-outfit tracking-tight text-white mb-6" data-aos="fade-up" data-aos-delay="100">
-        IT Infra 구축 및 솔루션
+        Thiết kế & Triển khai Hạ tầng IT
       </h1>
       <p class="max-w-2xl mx-auto text-slate-300 text-base leading-relaxed" data-aos="fade-up" data-aos-delay="200">
-        대형 데이터 센터 수준의 H/W 설계부터 X86 서버 튜닝, 가상화 인프라, 전산실 무중단 이전에 이르는 하드웨어 올인원 포트폴리오를 제안합니다.
+        Cung cấp dịch vụ phần cứng toàn diện từ thiết kế máy chủ tối ưu, tủ đĩa lưu trữ, ảo hóa x86 và giải pháp chuyển đổi trung tâm dữ liệu an toàn.
       </p>
     </div>
   </section>
 
-  <!-- 시스템 구축 벤더 영역 -->
+  <!-- Systems Integration Vendor Partnerships -->
   <section class="py-24 relative bg-brand-darkBg">
     <div class="max-w-7xl mx-auto px-6 md:px-12">
       <div class="text-center max-w-3xl mx-auto mb-20">
-        <span class="text-brand-orange font-bold text-base uppercase tracking-widest mb-3 block">Vendor Partnership</span>
+        <span class="text-brand-orange font-bold text-base uppercase tracking-widest mb-3 block">Đối tác công nghệ</span>
         <h2 class="text-3xl sm:text-4xl font-bold font-outfit text-white tracking-tight mb-6">
-          글로벌 최고 브랜드 기반 <span class="text-brand-orange">시스템 인프라 구축</span>
+          Hạ tầng hệ thống xây dựng trên <span class="text-brand-orange">Các hãng IT hàng đầu</span>
         </h2>
         <p class="text-slate-300 text-base leading-relaxed">
-          글로벌 IT 리더들과의 공식 Reseller 골드 파트너십을 기반으로 검증된 엔지니어링 기술력과 합리적인 서버/스토리지 패키지 공급을 실천합니다.
+          Thông qua quan hệ đối tác đại lý chính thức và Gold Partner với các hãng công nghệ lớn, chúng tôi đem lại thiết kế phần cứng doanh nghiệp tốt nhất.
         </p>
       </div>
 
-      <!-- 벤더 목록 그리드 (브로셔 및 제조사 링크 포함) - 고정 높이 h-[500px] 제거 및 최소높이 지정으로 글자 넘침 방지 -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
         <!-- IBM -->
@@ -183,20 +180,20 @@
               </div>
               <div>
                 <h4 class="text-xs font-semibold text-slate-400 uppercase tracking-widest">High-End Storage</h4>
-                <p class="text-base text-slate-200 font-bold mt-1">FlashSystem, Mainframe Storage, Storage Scale(SSS), Tape Storage</p>
+                <p class="text-base text-slate-200 font-bold mt-1">FlashSystem, Mainframe Storage, Storage Scale (SSS), Tape Storage</p>
               </div>
               <p class="text-base text-slate-300 leading-relaxed mt-2">
-                최고의 트랜잭션 처리 속도와 높은 확장성을 보장하는 고신뢰성 파워 서버 및 엔터프라이즈 하드디스크 스토리지 라인업을 통합 공급합니다.
+                Chúng tôi cung cấp máy chủ Power hiệu năng cao và các tủ đĩa lưu trữ doanh nghiệp FlashSystem đảm bảo xử lý giao dịch mở rộng tốt nhất.
               </p>
             </div>
           </div>
           
           <div class="grid grid-cols-2 gap-3 mt-4 border-t border-white/5 pt-5">
-            <a href="../../assets/brochures/dummy.pdf" download="IBM_Brochure_AppEZ.pdf" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/15 rounded-xl transition-all">
-              <i data-lucide="download" class="w-3.5 h-3.5 text-brand-orange"></i> 브로셔 다운로드
+            <a href="#" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/15 rounded-xl transition-all">
+              <i data-lucide="download" class="w-3.5 h-3.5 text-brand-orange"></i> Tài liệu
             </a>
             <a href="https://www.ibm.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-xl transition-all">
-              제조사 사이트 <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              IBM Site <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
             </a>
           </div>
         </div>
@@ -219,17 +216,17 @@
                 <p class="text-base text-slate-200 font-bold mt-1">Unity XT, PowerStore, PowerMax</p>
               </div>
               <p class="text-base text-slate-300 leading-relaxed mt-2">
-                인텔/AMD 멀티 코어에 최적화된 고가용성 X86 서버 및 고속 NVMe 플래시 어레이 파워스토어 솔루션을 완벽 매칭합니다.
+                Tích hợp hệ thống máy chủ x86 Dell PowerEdge với lưu trữ flash NVMe PowerStore tốc độ cao, tối ưu hóa các ứng dụng doanh nghiệp.
               </p>
             </div>
           </div>
           
           <div class="grid grid-cols-2 gap-3 mt-4 border-t border-white/5 pt-5">
-            <a href="../../assets/brochures/dummy.pdf" download="Dell_Brochure_AppEZ.pdf" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/15 rounded-xl transition-all">
-              <i data-lucide="download" class="w-3.5 h-3.5 text-brand-orange"></i> 브로셔 다운로드
+            <a href="#" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/15 rounded-xl transition-all">
+              <i data-lucide="download" class="w-3.5 h-3.5 text-brand-orange"></i> Tài liệu
             </a>
             <a href="https://www.dell.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-xl transition-all">
-              제조사 사이트 <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              Dell Site <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
             </a>
           </div>
         </div>
@@ -239,7 +236,7 @@
           <div>
             <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
               <span class="text-xl font-black font-outfit text-white tracking-widest">Lenovo</span>
-              <span class="text-xs font-bold text-brand-orange bg-brand-orange/10 px-2.5 py-1 rounded">Certified Reseller</span>
+              <span class="text-xs font-bold text-brand-orange bg-brand-orange/10 px-2.5 py-1 rounded">Reseller</span>
             </div>
             
             <div class="space-y-4 mb-6">
@@ -252,17 +249,17 @@
                 <p class="text-base text-slate-200 font-bold mt-1">ThinkAgile HX Series, ThinkAgile VX Series</p>
               </div>
               <p class="text-base text-slate-300 leading-relaxed mt-2">
-                최고의 가용성과 전력 효율성을 바탕으로 엔터프라이즈 웹 서버 환경 및 소프트웨어 정의 인프라(SDI)를 최적으로 구축합니다.
+                Xây dựng môi trường máy chủ web doanh nghiệp hiệu quả và giải pháp lưu trữ phần mềm định nghĩa (SDI) tối ưu bằng ThinkAgile.
               </p>
             </div>
           </div>
           
           <div class="grid grid-cols-2 gap-3 mt-4 border-t border-white/5 pt-5">
-            <a href="../../assets/brochures/dummy.pdf" download="Lenovo_Brochure_AppEZ.pdf" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/15 rounded-xl transition-all">
-              <i data-lucide="download" class="w-3.5 h-3.5 text-brand-orange"></i> 브로셔 다운로드
+            <a href="#" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/15 rounded-xl transition-all">
+              <i data-lucide="download" class="w-3.5 h-3.5 text-brand-orange"></i> Tài liệu
             </a>
             <a href="https://www.lenovo.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-xl transition-all">
-              제조사 사이트 <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              Lenovo Site <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
             </a>
           </div>
         </div>
@@ -272,7 +269,7 @@
           <div>
             <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
               <span class="text-xl font-black font-outfit text-white tracking-widest">HPE</span>
-              <span class="text-xs font-bold text-brand-orange bg-brand-orange/10 px-2.5 py-1 rounded">Certified Partner</span>
+              <span class="text-xs font-bold text-brand-orange bg-brand-orange/10 px-2.5 py-1 rounded">Partner</span>
             </div>
             
             <div class="space-y-4 mb-6">
@@ -281,17 +278,17 @@
                 <p class="text-base text-slate-200 font-bold mt-1">ProLiant DL Series, ML Series</p>
               </div>
               <p class="text-base text-slate-300 leading-relaxed mt-6">
-                안정적인 호환성과 다중 워크로드에 대한 검증을 완료한 세계적인 베스트셀러 ProLiant 라인업을 통해 대기업·공공 IT 표준 규격을 설계해드립니다.
+                Thiết kế cấu hình tiêu chuẩn doanh nghiệp bằng dòng máy chủ HPE ProLiant nổi tiếng, mang lại tính tương thích và bảo mật cao.
               </p>
             </div>
           </div>
           
           <div class="grid grid-cols-2 gap-3 mt-4 border-t border-white/5 pt-5">
-            <a href="../../assets/brochures/dummy.pdf" download="HPE_Brochure_AppEZ.pdf" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/15 rounded-xl transition-all">
-              <i data-lucide="download" class="w-3.5 h-3.5 text-brand-orange"></i> 브로셔 다운로드
+            <a href="#" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/15 rounded-xl transition-all">
+              <i data-lucide="download" class="w-3.5 h-3.5 text-brand-orange"></i> Tài liệu
             </a>
             <a href="https://www.hpe.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-xl transition-all">
-              제조사 사이트 <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              HPE Site <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
             </a>
           </div>
         </div>
@@ -306,21 +303,21 @@
             
             <div class="space-y-4 mb-6">
               <div>
-                <h4 class="text-xs font-semibold text-slate-400 uppercase tracking-widest">Hyperconverged Infra</h4>
+                <h4 class="text-xs font-semibold text-slate-400 uppercase tracking-widest">Hyperconverged Infr</h4>
                 <p class="text-base text-slate-200 font-bold mt-1">Nutanix Enterprise Cloud System</p>
               </div>
               <p class="text-base text-slate-300 leading-relaxed mt-6">
-                복잡한 물리 인프라 계층을 단일 풀로 묶어 관리하는 초고효율 차세대 하이퍼컨버지드 인프라(HCI) 기술로 클라우드 통합 마이그레이션을 보장합니다.
+                Chuyển đổi các lớp vật lý phức tạp thành môi trường ảo hóa siêu hội tụ giúp dịch chuyển Cloud dễ dàng với Nutanix Enterprise Cloud.
               </p>
             </div>
           </div>
           
           <div class="grid grid-cols-2 gap-3 mt-4 border-t border-white/5 pt-5">
-            <a href="../../assets/brochures/dummy.pdf" download="Nutanix_Brochure_AppEZ.pdf" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/15 rounded-xl transition-all">
-              <i data-lucide="download" class="w-3.5 h-3.5 text-brand-orange"></i> 브로셔 다운로드
+            <a href="#" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/15 rounded-xl transition-all">
+              <i data-lucide="download" class="w-3.5 h-3.5 text-brand-orange"></i> Tài liệu
             </a>
             <a href="https://www.nutanix.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-xl transition-all">
-              제조사 사이트 <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              Nutanix Site <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
             </a>
           </div>
         </div>
@@ -329,19 +326,19 @@
     </div>
   </section>
 
-  <!-- 장비임대 솔루션 -->
+  <!-- Rental Solutions -->
   <section class="py-24 relative bg-brand-cardBg border-y border-white/5">
     <div class="max-w-7xl mx-auto px-6 md:px-12">
       <div class="flex flex-col lg:flex-row gap-16 items-center">
         
-        <!-- 왼쪽: 통계/소개글 -->
+        <!-- Left Column: Intro & Features -->
         <div class="w-full lg:w-1/2" data-aos="fade-right">
-          <span class="text-brand-orange font-bold text-base uppercase tracking-widest mb-3 block">01. Rental Solutions</span>
+          <span class="text-brand-orange font-bold text-base uppercase tracking-widest mb-3 block">01. Giải pháp cho thuê</span>
           <h2 class="text-3xl sm:text-4xl font-bold font-outfit text-white tracking-tight mb-6">
-            합리적인 가격의 <span class="text-brand-orange">임대 장비 서비스</span>
+            Dịch vụ cho thuê <span class="text-brand-orange">Thiết bị IT tối ưu</span>
           </h2>
           <p class="text-slate-300 text-base leading-relaxed mb-8">
-            신규 개발 프로젝트, 대규모 연동 데모 테스트, 혹은 초기 자본 투자 비용 절감이 절실한 스타트업을 위해 고가용성 서버 및 네트워킹 장비의 임대 솔루션을 적극 제공합니다.
+            Chúng tôi cho thuê máy chủ, thiết bị mạng chất lượng cao cho các dự án phát triển, kiểm thử, giúp doanh nghiệp tiết kiệm chi phí đầu tư ban đầu hiệu quả.
           </p>
           
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -350,8 +347,8 @@
                 <i data-lucide="trending-down" class="w-4 h-4"></i>
               </div>
               <div>
-                <h4 class="text-base font-bold text-slate-200 mb-1">비용 절감</h4>
-                <p class="text-base text-slate-400 leading-relaxed">저렴한 초기 구축 비용 및 월 분할 납입 형식으로 예산 부담 최소화</p>
+                <h4 class="text-base font-bold text-slate-200 mb-1">Tiết kiệm chi phí</h4>
+                <p class="text-base text-slate-400 leading-relaxed">Giảm thiểu chi phí đầu tư ban đầu nhờ thanh toán định kỳ hàng tháng.</p>
               </div>
             </div>
 
@@ -360,8 +357,8 @@
                 <i data-lucide="shield" class="w-4 h-4"></i>
               </div>
               <div>
-                <h4 class="text-base font-bold text-slate-200 mb-1">안정성 보장</h4>
-                <p class="text-base text-slate-400 leading-relaxed">인증 기관의 무결성 검증을 거친 정품 고신뢰성 장비만을 선별 공급</p>
+                <h4 class="text-base font-bold text-slate-200 mb-1">Đảm bảo chất lượng</h4>
+                <p class="text-base text-slate-400 leading-relaxed">Cung cấp thiết bị chính hãng đã qua kiểm tra nghiêm ngặt bởi kỹ sư.</p>
               </div>
             </div>
 
@@ -370,8 +367,8 @@
                 <i data-lucide="truck" class="w-4 h-4"></i>
               </div>
               <div>
-                <h4 class="text-base font-bold text-slate-200 mb-1">직접 배송 & 구축</h4>
-                <p class="text-base text-slate-400 leading-relaxed">자사 숙련 기술팀이 직접 랙 설치부터 OS 튜닝까지 무상 풀셋 서포트</p>
+                <h4 class="text-base font-bold text-slate-200 mb-1">Lắp đặt trực tiếp</h4>
+                <p class="text-base text-slate-400 leading-relaxed">Đội ngũ kỹ sư trực tiếp hỗ trợ cấu hình OS và lắp đặt tủ rack.</p>
               </div>
             </div>
 
@@ -380,14 +377,14 @@
                 <i data-lucide="history" class="w-4 h-4"></i>
               </div>
               <div>
-                <h4 class="text-base font-bold text-slate-200 mb-1">장비 유지관리 제공</h4>
-                <p class="text-base text-slate-400 leading-relaxed">임대 기간 내 돌발 불량 발생 시, 즉각적인 하드웨어 1대1 무상 스왑</p>
+                <h4 class="text-base font-bold text-slate-200 mb-1">Bảo trì SLA</h4>
+                <p class="text-base text-slate-400 leading-relaxed">Hỗ trợ đổi mới thiết bị 1-đối-1 nhanh chóng khi xảy ra sự cố phần cứng.</p>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- 오른쪽: Unsplash 이미지 -->
+        <!-- Right Column: Image -->
         <div class="w-full lg:w-1/2 relative" data-aos="fade-left">
           <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-brand-orange to-brand-amber opacity-10 blur-2xl"></div>
           <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80" alt="Server rack cords" class="rounded-2xl relative z-10 w-full border border-white/10 shadow-2xl object-cover h-[450px]">
@@ -397,54 +394,54 @@
     </div>
   </section>
 
-  <!-- 전산실 이전 및 장비 폐기 -->
+  <!-- Migration & Asset Disposal -->
   <section class="py-24 relative bg-brand-darkBg overflow-hidden">
     <div class="max-w-7xl mx-auto px-6 md:px-12">
       <div class="text-center max-w-3xl mx-auto mb-20">
-        <span class="text-brand-orange font-bold text-base uppercase tracking-widest mb-3 block">02. Migration & Disposal</span>
+        <span class="text-brand-orange font-bold text-base uppercase tracking-widest mb-3 block">02. Di dời & Tiêu hủy</span>
         <h2 class="text-3xl sm:text-4xl font-bold font-outfit text-white tracking-tight mb-6">
-          안전하고 체계적인 <span class="text-brand-orange">전산실 이전 및 폐기 솔루션</span>
+          Di dời máy chủ & <span class="text-brand-orange">Tiêu hủy tài sản dữ liệu an toàn</span>
         </h2>
         <p class="text-slate-300 text-base leading-relaxed">
-          고객사의 소중한 데이터 자산과 수억 대 하드웨어를 물리적 파손 및 보안 유출 없이 무중단으로 신속하고 정확하게 안전지대로 이전합니다.
+          Quy trình chuyển đổi thiết bị phần cứng và dữ liệu an toàn, giảm thiểu tối đa thời gian gián đoạn hệ thống.
         </p>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
         
-        <!-- 전산실 이전 프로세스 -->
+        <!-- Migration Process -->
         <div class="glass-panel border border-white/5 rounded-2xl p-8 bg-brand-cardBg" data-aos="fade-right">
           <h3 class="text-xl font-bold font-outfit text-white mb-6 flex items-center gap-2">
             <span class="w-7 h-7 rounded-full bg-brand-orange/10 text-brand-orange text-sm font-bold flex items-center justify-center">01</span>
-            전산실 이전 서비스 (Server Migration)
+            Dịch vụ di dời máy chủ (Server Migration)
           </h3>
           
           <div class="space-y-6 relative border-l border-white/10 pl-6 ml-3">
             <div class="relative">
               <span class="absolute -left-[30px] top-1 w-4.5 h-4.5 rounded-full bg-brand-orange flex items-center justify-center text-xs font-black text-white">1</span>
-              <h4 class="text-base font-bold text-slate-200 mb-1">이전 사전 준비</h4>
-              <p class="text-base text-slate-400">장비 라벨링, 환경 설정 백업, 정밀 전원 오프 및 안전한 언마운트 수행</p>
+              <h4 class="text-base font-bold text-slate-200 mb-1">Chuẩn bị trước di dời</h4>
+              <p class="text-base text-slate-400">Ghi nhãn tài sản, sao lưu cấu hình hệ thống, tắt nguồn an toàn và tháo gỡ thiết bị khỏi rack.</p>
             </div>
             
             <div class="relative">
               <span class="absolute -left-[30px] top-1 w-4.5 h-4.5 rounded-full bg-brand-orange flex items-center justify-center text-xs font-black text-white">2</span>
-              <h4 class="text-base font-bold text-slate-200 mb-1">완충 무진동 운송</h4>
-              <p class="text-base text-slate-400">항온항습 무진동 특수 운송 전문 차량 및 고밀도 특수 에어 완충 패킹 완벽 집행</p>
+              <h4 class="text-base font-bold text-slate-200 mb-1">Vận chuyển chống rung</h4>
+              <p class="text-base text-slate-400">Sử dụng phương tiện chuyên dụng kiểm soát nhiệt độ chống rung lắc và đệm bọt bảo vệ.</p>
             </div>
 
             <div class="relative">
               <span class="absolute -left-[30px] top-1 w-4.5 h-4.5 rounded-full bg-brand-orange flex items-center justify-center text-xs font-black text-white">3</span>
-              <h4 class="text-base font-bold text-slate-200 mb-1">재설치 및 작동 확인</h4>
-              <p class="text-base text-slate-400">네트워크 랙 마운팅 재배치, 케이블 포트 체결 및 부팅 상태 모니터링 최종 완수</p>
+              <h4 class="text-base font-bold text-slate-200 mb-1">Tái lắp đặt & Kiểm tra</h4>
+              <p class="text-base text-slate-400">Lắp đặt lại tủ rack, đấu nối cáp, chẩn đoán khởi động và kiểm tra toàn diện hoạt động hệ thống.</p>
             </div>
           </div>
         </div>
 
-        <!-- 장비 매입 및 폐기 -->
+        <!-- Asset Disposal -->
         <div class="glass-panel border border-white/5 rounded-2xl p-8 bg-brand-cardBg" data-aos="fade-left">
           <h3 class="text-xl font-bold font-outfit text-white mb-6 flex items-center gap-2">
             <span class="w-7 h-7 rounded-full bg-brand-orange/10 text-brand-orange text-sm font-bold flex items-center justify-center">02</span>
-            자산 매입 및 파쇄·폐기 (Disposal & Destruction)
+            Tiêu hủy tài sản & Hủy dữ liệu an toàn
           </h3>
           
           <div class="space-y-6">
@@ -453,9 +450,9 @@
                 <i data-lucide="shield-alert" class="w-5 h-5"></i>
               </div>
               <div>
-                <h4 class="text-base font-bold text-slate-200 mb-1">정보 기술 유출 방지 (Disk 파쇄)</h4>
+                <h4 class="text-base font-bold text-slate-200 mb-1">Ngăn ngừa rò rỉ dữ liệu (Khử từ & Hủy vật lý)</h4>
                 <p class="text-base text-slate-300 leading-relaxed">
-                  하드디스크 디가우저(Degausser) 자기력 영구 소거 및 강력한 디스크 물리 파쇄기를 동반하여 복구가 불가능한 원격 폐기 진행 (증명서 발급)
+                  Khử từ tính đĩa cứng vĩnh viễn bằng Degausser và cắt nhỏ vật lý đĩa cứng, cấp chứng nhận tiêu hủy dữ liệu chính thức.
                 </p>
               </div>
             </div>
@@ -465,9 +462,9 @@
                 <i data-lucide="coins" class="w-5 h-5"></i>
               </div>
               <div>
-                <h4 class="text-base font-bold text-slate-200 mb-1">노후 장비 자산 매입</h4>
+                <h4 class="text-base font-bold text-slate-200 mb-1">Thu hồi giá trị thiết bị cũ</h4>
                 <p class="text-base text-slate-300 leading-relaxed">
-                  불용 자재에 대한 정밀 부품 검수를 거쳐 현금 가치로 환산하여 고가에 매입함으로써 기업 자산 감가상각 방어 서포트
+                  Chúng tôi kiểm tra và đánh giá linh kiện phần cứng cũ để thu hồi giá trị còn lại, giảm thiểu chi phí khấu hao cho doanh nghiệp.
                 </p>
               </div>
             </div>
@@ -478,18 +475,18 @@
     </div>
   </section>
 
-  <!-- 푸터 영역 -->
+  <!-- Footer -->
   <footer class="bg-brand-darkBg text-slate-500 py-16 px-6 md:px-12 border-t border-white/5">
     <div class="max-w-7xl mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
         
-        <!-- 푸터 열 1: 브랜드 -->
+        <!-- Footer Col 1 -->
         <div class="md:col-span-2">
           <a href="../../index.html" class="text-xl font-bold text-white tracking-tight font-outfit mb-4 inline-block">
             App<span class="text-brand-orange">EZ</span>
           </a>
           <p class="text-base text-slate-300 leading-relaxed mb-6 max-w-sm">
-            최고의 기술력과 신뢰를 바탕으로 기업 IT 환경에 필요한 통합 유지보수, 시스템 통합, 컨설팅을 제공하는 동반자입니다.
+            Đối tác tin cậy cung cấp dịch vụ hạ tầng IT tích hợp, thiết kế hệ thống và tư vấn dựa trên kỹ thuật xuất sắc.
           </p>
           <div class="flex gap-4">
             <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="linkedin" class="w-4.5 h-4.5"></i></a>
@@ -498,33 +495,32 @@
           </div>
         </div>
 
-        <!-- 푸터 열 2: 메뉴 맵 -->
+        <!-- Footer Col 2 -->
         <div>
           <h4 class="text-base font-bold text-slate-300 uppercase tracking-widest mb-4">Quick Links</h4>
           <ul class="space-y-3 text-base">
-            <li><a href="../../company/index.html" class="hover:text-brand-orange transition-colors">회사개요 및 연혁</a></li>
-            <li><a href="./index.html" class="hover:text-brand-orange transition-colors">IT Infra 사업</a></li>
-            <li><a href="../solution/index.html" class="hover:text-brand-orange transition-colors">IT Solution 사업</a></li>
-            <li><a href="../../references/index.html" class="hover:text-brand-orange transition-colors">사업 실적 리스트</a></li>
-            <li><a href="../../recruit/index.html" class="hover:text-brand-orange transition-colors">인재 채용 정보</a></li>
+            <li><a href="../../company/index.html" class="hover:text-brand-orange transition-colors">Về chúng tôi</a></li>
+            <li><a href="./index.html" class="hover:text-brand-orange transition-colors">Giải pháp Hạ tầng IT</a></li>
+            <li><a href="../solution/index.html" class="hover:text-brand-orange transition-colors">Giải pháp Công nghệ</a></li>
+            <li><a href="../../references/index.html" class="hover:text-brand-orange transition-colors">Dự án thực tế</a></li>
           </ul>
         </div>
 
-        <!-- 푸터 열 3: 본사 정보 -->
+        <!-- Footer Col 3 -->
         <div>
           <h4 class="text-base font-bold text-slate-300 uppercase tracking-widest mb-4">Office Info</h4>
           <address class="not-italic space-y-3 text-base leading-relaxed">
             <p class="flex items-start gap-2.5">
               <i data-lucide="map-pin" class="w-4.5 h-4.5 text-brand-orange shrink-0"></i>
-              <span class="text-slate-300">서울시 강서구 양천로 583,<br>B동 907~908호 (우림블루나인)</span>
+              <span class="text-slate-300">B-907~908, Woolim Blue9, 583 Yangcheon-ro, Gangseo-gu, Seoul, Hàn Quốc</span>
             </p>
             <p class="flex items-center gap-2.5">
               <i data-lucide="phone" class="w-4.5 h-4.5 text-brand-orange shrink-0"></i>
-              <span class="text-slate-300">T. 02-2135-5030</span>
+              <span class="text-slate-300">T. +82-2-2135-5030</span>
             </p>
             <p class="flex items-center gap-2.5">
               <i data-lucide="printer" class="w-4.5 h-4.5 text-brand-orange shrink-0"></i>
-              <span class="text-slate-300">F. 02-2135-5040</span>
+              <span class="text-slate-300">F. +82-2-2135-5040</span>
             </p>
           </address>
         </div>
@@ -532,10 +528,10 @@
       </div>
 
       <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-base gap-4">
-        <p>&copy; 2026 주식회사 앱이지 (AppEZ Co., Ltd.). All Rights Reserved.</p>
+        <p>&copy; 2026 AppEZ Co., Ltd. All Rights Reserved.</p>
         <div class="flex gap-6">
-          <a href="#" class="hover:text-brand-orange transition-colors">이용약관</a>
-          <a href="#" class="hover:text-brand-orange transition-colors">개인정보처리방침</a>
+          <a href="#" class="hover:text-brand-orange transition-colors">Điều khoản dịch vụ</a>
+          <a href="#" class="hover:text-brand-orange transition-colors">Chính sách bảo mật</a>
         </div>
       </div>
     </div>
@@ -544,6 +540,6 @@
   <!-- AOS JS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <!-- Custom Common JS -->
-  <script src="../../assets/js/main.js"></script>
+  <script src="../../../assets/js/main.js"></script>
 </body>
 </html>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ko" class="scroll-smooth">
+<html lang="vi" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>문의하기 - 주식회사 앱이지</title>
-  <meta name="description" content="주식회사 앱이지(AppEZ)로의 통합유지보수, 시스템구축, 솔루션도입, 장비임대 견적 및 도입 제안 문의를 접수받습니다. 본사 주소 및 오시는 길을 제공합니다.">
-  <!-- Pretendard 폰트 CDN -->
+  <title>Liên hệ - AppEZ</title>
+  <meta name="description" content="Liên hệ với AppEZ để được tư vấn thiết kế hạ tầng IT, sao lưu dữ liệu, bảo trì vận hành SLA và báo giá thuê thiết bị phần cứng.">
+  <!-- Pretendard Font CDN -->
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -28,74 +28,73 @@
     }
   </script>
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="../assets/css/custom.css">
+  <link rel="stylesheet" href="../../assets/css/custom.css">
   <!-- AOS CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
   <!-- SEO Multilingual Link Tags -->
-  <link class="seo-hreflang" rel="alternate" hreflang="ko" href="./index.html" />
-  <link class="seo-hreflang" rel="alternate" hreflang="en" href="../en/contact/index.html" />
-  <link class="seo-hreflang" rel="alternate" hreflang="vi" href="../vn/contact/index.html" />
+  <link class="seo-hreflang" rel="alternate" hreflang="ko" href="../../contact/index.html" />
+  <link class="seo-hreflang" rel="alternate" hreflang="en" href="../../en/contact/index.html" />
+  <link class="seo-hreflang" rel="alternate" hreflang="vi" href="./index.html" />
 </head>
 <body class="bg-brand-darkBg text-slate-300 selection:bg-brand-orange selection:text-white leading-relaxed text-base">
 
-  <!-- 네비게이션 헤더 -->
+  <!-- Navigation Header -->
   <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent py-4 px-6 md:px-12">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
-      <!-- 로고 -->
+      <!-- Logo -->
       <a href="../index.html" class="flex items-center gap-2 group">
         <span class="text-2xl font-extrabold tracking-tight font-outfit text-white">
           App<span class="text-brand-orange group-hover:text-brand-amber transition-colors">EZ</span>
         </span>
       </a>
 
-      <!-- 데스크톱 메뉴 -->
+      <!-- Desktop Menu -->
       <nav class="hidden md:flex items-center gap-8 text-base font-medium tracking-wide">
-        <a href="../company/index.html" class="text-slate-300 hover:text-brand-orange transition-colors">회사소개</a>
+        <a href="../company/index.html" class="text-slate-300 hover:text-brand-orange transition-colors">Giới thiệu</a>
         
-        <!-- Dropdown 메뉴 -->
+        <!-- Dropdown Menu -->
         <div class="relative group">
           <button class="flex items-center gap-1 text-slate-300 hover:text-brand-orange transition-colors focus:outline-none">
-            사업영역 <i data-lucide="chevron-down" class="w-4 h-4"></i>
+            Lĩnh vực <i data-lucide="chevron-down" class="w-4 h-4"></i>
           </button>
           <div class="absolute top-full -left-4 mt-2 w-48 rounded-lg shadow-xl bg-brand-cardBg border border-white/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-2">
-            <a href="../business/infra/index.html" class="block px-4 py-2 text-slate-300 hover:bg-brand-orange hover:text-white transition-colors">IT Infra</a>
-            <a href="../business/solution/index.html" class="block px-4 py-2 text-slate-300 hover:bg-brand-orange hover:text-white transition-colors">IT Solution</a>
+            <a href="../business/infra/index.html" class="block px-4 py-2 text-slate-300 hover:bg-brand-orange hover:text-white transition-colors">Hạ tầng IT</a>
+            <a href="../business/solution/index.html" class="block px-4 py-2 text-slate-300 hover:bg-brand-orange hover:text-white transition-colors">Giải pháp IT</a>
           </div>
         </div>
 
-        <a href="../references/index.html" class="text-slate-300 hover:text-brand-orange transition-colors">레퍼런스</a>
-        <a href="../recruit/index.html" class="text-slate-300 hover:text-brand-orange transition-colors">인재채용</a>
+        <a href="../references/index.html" class="text-slate-300 hover:text-brand-orange transition-colors">Dự án thực tế</a>
       </nav>
 
-      <!-- 우측 상단 문의 버튼 및 언어 선택기 -->
+      <!-- Right Nav Buttons -->
       <div class="hidden md:flex items-center gap-6">
         <!-- Language Switcher -->
         <div class="relative group">
           <button class="flex items-center gap-1.5 text-slate-300 hover:text-brand-orange transition-colors focus:outline-none text-base font-semibold">
-            <i data-lucide="globe" class="w-4.5 h-4.5"></i> <span class="ml-1 uppercase">KR</span> <i data-lucide="chevron-down" class="w-3 h-3"></i>
+            <i data-lucide="globe" class="w-4.5 h-4.5"></i> <span class="ml-1 uppercase">VN</span> <i data-lucide="chevron-down" class="w-3 h-3"></i>
           </button>
           <div class="absolute right-0 top-full mt-2 w-24 rounded-lg shadow-xl bg-brand-cardBg border border-white/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-1 text-sm font-medium z-50">
-            <a href="./index.html" class="block px-4 py-2 text-brand-orange font-bold hover:bg-white/5 transition-colors">KO</a>
-            <a href="../en/contact/index.html" class="block px-4 py-2 text-slate-300 hover:text-brand-orange hover:bg-white/5 transition-colors">EN</a>
-            <a href="../vn/contact/index.html" class="block px-4 py-2 text-slate-300 hover:text-brand-orange hover:bg-white/5 transition-colors">VN</a>
+            <a href="../../contact/index.html" class="block px-4 py-2 text-slate-300 hover:text-brand-orange hover:bg-white/5 transition-colors">KO</a>
+            <a href="../../en/contact/index.html" class="block px-4 py-2 text-slate-300 hover:text-brand-orange hover:bg-white/5 transition-colors">EN</a>
+            <a href="./index.html" class="block px-4 py-2 text-brand-orange font-bold hover:bg-white/5 transition-colors">VN</a>
           </div>
         </div>
 
         <a href="./index.html" class="px-5 py-2 rounded-full bg-brand-orange hover:bg-brand-amber text-white text-base font-semibold tracking-wider transition-all duration-300 shadow-md shadow-brand-orange/20">
-          문의하기
+          Liên hệ
         </a>
       </div>
 
-      <!-- 모바일 햄버거 버튼 -->
+      <!-- Mobile Menu Button -->
       <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none hover:text-brand-orange transition-colors">
         <i data-lucide="menu" class="w-6 h-6"></i>
       </button>
     </div>
   </header>
 
-  <!-- 모바일 네비게이션 드로어 -->
+  <!-- Mobile Navigation Drawer -->
   <div id="mobile-menu" class="fixed inset-0 z-50 hidden bg-brand-darkBg/95 backdrop-blur-lg flex flex-col justify-between p-6">
     <div>
       <div class="flex items-center justify-between mb-8">
@@ -107,27 +106,26 @@
         </button>
       </div>
       <nav class="flex flex-col gap-6 text-lg font-medium">
-        <a href="../company/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors">회사소개</a>
-        <a href="../business/infra/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors pl-4"><span class="text-brand-orange mr-2">▪</span>IT Infra 사업</a>
-        <a href="../business/solution/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors pl-4"><span class="text-brand-orange mr-2">▪</span>IT Solution 사업</a>
-        <a href="../references/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors">레퍼런스</a>
-        <a href="../recruit/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors">인재채용</a>
+        <a href="../company/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors">Giới thiệu</a>
+        <a href="../business/infra/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors pl-4"><span class="text-brand-orange mr-2">▪</span>Hạ tầng IT</a>
+        <a href="../business/solution/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors pl-4"><span class="text-brand-orange mr-2">▪</span>Giải pháp IT</a>
+        <a href="../references/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors">Dự án thực tế</a>
       </nav>
-      <!-- 모바일 언어 선택기 -->
+      <!-- Mobile Language Switcher -->
       <div class="mt-8 pt-6 border-t border-white/5">
         <span class="text-xs text-slate-500 font-semibold uppercase tracking-widest block mb-3">Language</span>
         <div class="flex gap-4 text-base font-semibold">
-          <a href="./index.html" class="text-brand-orange">KO</a>
+          <a href="../../contact/index.html" class="text-slate-400 hover:text-brand-orange">KO</a>
           <span class="text-white/20">|</span>
-          <a href="../en/contact/index.html" class="text-slate-400 hover:text-brand-orange">EN</a>
+          <a href="../../en/contact/index.html" class="text-slate-400 hover:text-brand-orange">EN</a>
           <span class="text-white/20">|</span>
-          <a href="../vn/contact/index.html" class="text-slate-400 hover:text-brand-orange">VN</a>
+          <a href="./index.html" class="text-brand-orange">VN</a>
         </div>
       </div>
     </div>
     <div class="mb-8">
-      <a href="./index.html" class="block w-full py-4 text-center rounded-xl bg-brand-orange hover:bg-brand-amber text-white font-bold transition-all duration-300">
-        프로젝트 문의하기
+      <a href="./index.html" class="block w-full py-4 text-center rounded-xl bg-brand-orange hover:bg-brand-amber text-white font-semibold transition-all duration-300">
+        Liên hệ ngay
       </a>
     </div>
   </div>
@@ -141,35 +139,35 @@
 
     <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 text-center w-full">
       <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-base font-semibold tracking-widest uppercase mb-6 animate-pulse" data-aos="fade-down">
-        Connect With Us
+        Liên hệ với chúng tôi
       </span>
       <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold font-outfit tracking-tight text-white mb-6" data-aos="fade-up" data-aos-delay="100">
-        프로젝트 문의 및 오시는 길
+        Yêu cầu Tư vấn & Vị trí Văn phòng
       </h1>
       <p class="max-w-2xl mx-auto text-slate-300 text-base leading-relaxed" data-aos="fade-up" data-aos-delay="200">
-        하이브리드 인프라 아키텍처 설계, 유지보수 제안 요청, 장비 임대 등 성공 비즈니스를 위한 모든 협업을 신속하고 구체적으로 답변해 드립니다.
+        Chúng tôi phản hồi nhanh chóng và chi tiết mọi yêu cầu về thiết kế hạ tầng lai (hybrid), đề xuất bảo trì SLA và thuê thiết bị phần cứng.
       </p>
     </div>
   </section>
 
-  <!-- 지점 안내 및 지도 / Web3forms 문의 폼 그리드 -->
+  <!-- Info & Form Section -->
   <section class="py-24 relative bg-brand-darkBg">
     <div class="max-w-7xl mx-auto px-6 md:px-12">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
         
-        <!-- 왼쪽: 연락 정보 및 지도 -->
+        <!-- Left: Contact Details & Maps -->
         <div class="lg:col-span-5 space-y-8" data-aos="fade-right">
-          <span class="text-brand-orange font-bold text-base uppercase tracking-widest block">Contact Information</span>
+          <span class="text-brand-orange font-bold text-base uppercase tracking-widest block">Thông tin liên hệ</span>
           
-          <address class="not-italic space-y-6 text-base text-slate-300">
+          <address class="not-italic space-y-6 text-base text-slate-300 font-outfit">
             <div class="flex items-start gap-4">
               <div class="w-10 h-10 rounded-xl bg-brand-orange/10 border border-brand-orange/20 text-brand-orange flex items-center justify-center shrink-0">
                 <i data-lucide="map-pin" class="w-5 h-5"></i>
               </div>
               <div>
-                <h4 class="font-extrabold text-slate-200 text-base mb-1">본사 주소</h4>
-                <p class="text-base text-slate-400 leading-relaxed">
-                  서울시 강서구 양천로 583, B동 907~908호<br>(염창동, 우림블루나인 비즈니스 타워)
+                <h4 class="font-extrabold text-slate-200 text-base mb-1">Trụ sở chính</h4>
+                <p class="text-base text-slate-400 leading-relaxed font-outfit">
+                  B-907~908, Woolim Blue9, 583 Yangcheon-ro,<br>Gangseo-gu, Seoul, Hàn Quốc
                 </p>
               </div>
             </div>
@@ -179,9 +177,9 @@
                 <i data-lucide="phone" class="w-5 h-5"></i>
               </div>
               <div>
-                <h4 class="font-extrabold text-slate-200 text-base mb-1">대표 번호 및 팩스</h4>
-                <p class="text-base text-slate-400 leading-relaxed">
-                  T. 02-2135-5030<br>F. 02-2135-5040 (대표 팩스)
+                <h4 class="font-extrabold text-slate-200 text-base mb-1">Điện thoại & Fax</h4>
+                <p class="text-base text-slate-400 leading-relaxed font-outfit">
+                  T. +82-2-2135-5030<br>F. +82-2-2135-5040
                 </p>
               </div>
             </div>
@@ -191,50 +189,44 @@
                 <i data-lucide="mail" class="w-5 h-5"></i>
               </div>
               <div>
-                <h4 class="font-extrabold text-slate-200 text-base mb-1">비즈니스 메일</h4>
-                <p class="text-base text-slate-400 leading-relaxed">
-                  info@appez.co.kr (상시 견적 수령용)
+                <h4 class="font-extrabold text-slate-200 text-base mb-1">Email</h4>
+                <p class="text-base text-slate-400 leading-relaxed font-outfit">
+                  info@appez.co.kr
                 </p>
               </div>
             </div>
           </address>
 
-          <!-- 구글 지도 실매립 (w-full, 높이 300px) -->
+          <!-- Google Maps Iframe -->
           <div class="glass-panel border border-white/5 rounded-2xl p-2 relative overflow-hidden h-[300px] bg-brand-cardBg">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.7766324838645!2d126.86694801198539!3d37.560309924296684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9c0490b4d45d%3A0xc0ad52f8be0ffbfb!2z7Jqw66a86L2U66qo7K-464KY7J2467mE7KaI64uI7Iqk7YOA7JuM!5e0!3m2!1sko!2skr!4v1717325600000!5m2!1sko!2skr" class="w-full h-full border-0 rounded-xl filter grayscale opacity-80 hover:grayscale-0 transition-all duration-300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
 
-        <!-- 오른쪽: Web3forms 문의하기 폼 -->
+        <!-- Right: Web3forms Form -->
         <div class="lg:col-span-7" data-aos="fade-left">
           <div class="glass-panel border border-white/5 rounded-3xl p-8 sm:p-10 bg-brand-cardBg">
             <h3 class="text-xl font-bold font-outfit text-white mb-6 flex items-center gap-2 border-b border-white/5 pb-4">
-              <i data-lucide="send" class="w-5 h-5 text-brand-orange animate-pulse"></i> 제안 및 문의 접수
+              <i data-lucide="send" class="w-5 h-5 text-brand-orange animate-pulse"></i> Gửi yêu cầu tư vấn
             </h3>
 
             <!-- Web3forms Form -->
             <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
-              
-              <!-- Required Web3forms Hidden Inputs -->
               <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-              
-              <!-- 전송 후 성공 리다이렉션 경로 필드 추가 -->
               <input type="hidden" name="redirect" value="https://appez-dev.github.io/appez.co.kr/success.html">
-              
-              <!-- Spam Botcheck Checkbox (Hidden) -->
               <input type="checkbox" name="botcheck" style="display: none;" class="hidden">
 
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <!-- 문의 유형 -->
+                <!-- Inquiry Type -->
                 <div class="sm:col-span-2">
-                  <label for="inquiry_type" class="block text-base font-bold text-slate-300 uppercase tracking-wider mb-2">문의 유형 <span class="text-brand-orange">*</span></label>
+                  <label for="inquiry_type" class="block text-base font-bold text-slate-300 uppercase tracking-wider mb-2">Loại yêu cầu <span class="text-brand-orange">*</span></label>
                   <div class="relative">
                     <select id="inquiry_type" name="inquiry_type" required class="w-full bg-brand-darkBg border border-white/10 rounded-xl px-4 py-3.5 text-base text-slate-200 focus:outline-none focus:border-brand-orange/60 appearance-none transition-colors">
-                      <option value="" disabled selected>문의 유형을 선택해주세요</option>
-                      <option value="통합유지보수">통합유지보수 (24x7 관제 및 유지관리)</option>
-                      <option value="시스템구축">시스템구축 (서버/스토리지 SI)</option>
-                      <option value="솔루션도입">솔루션도입 (Veeam 백업 / WhaTap 관제)</option>
-                      <option value="장비임대">장비임대 (프로젝트 단기/장기 대여)</option>
+                      <option value="" disabled selected>Vui lòng chọn loại yêu cầu</option>
+                      <option value="Operations Maintenance">Bảo trì vận hành (Hỗ trợ SLA 24/7)</option>
+                      <option value="Systems Integration">Tích hợp hệ thống (SI Máy chủ/Lưu trữ)</option>
+                      <option value="Solutions Deployment">Triển khai giải pháp (Sao lưu Veeam / Giám sát WhaTap)</option>
+                      <option value="Equipment Rental">Thuê thiết bị phần cứng (Ngắn/Dài hạn)</option>
                     </select>
                     <div class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 pointer-events-none">
                       <i data-lucide="chevron-down" class="w-4 h-4"></i>
@@ -242,42 +234,42 @@
                   </div>
                 </div>
 
-                <!-- 기업/기관명 -->
+                <!-- Company Name -->
                 <div>
-                  <label for="company_name" class="block text-base font-bold text-slate-300 uppercase tracking-wider mb-2">기업/기관명 <span class="text-brand-orange">*</span></label>
-                  <input type="text" id="company_name" name="company_name" required placeholder="예: 주식회사 앱이지" class="w-full bg-brand-darkBg border border-white/10 rounded-xl px-4 py-3.5 text-base text-slate-200 focus:outline-none focus:border-brand-orange/60 transition-colors">
+                  <label for="company_name" class="block text-base font-bold text-slate-300 uppercase tracking-wider mb-2">Tên công ty / Tổ chức <span class="text-brand-orange">*</span></label>
+                  <input type="text" id="company_name" name="company_name" required placeholder="Ví dụ: Công ty Cổ phần AppEZ" class="w-full bg-brand-darkBg border border-white/10 rounded-xl px-4 py-3.5 text-base text-slate-200 focus:outline-none focus:border-brand-orange/60 transition-colors">
                 </div>
 
-                <!-- 담당자명 -->
+                <!-- Contact Name -->
                 <div>
-                  <label for="contact_name" class="block text-base font-bold text-slate-300 uppercase tracking-wider mb-2">담당자명 <span class="text-brand-orange">*</span></label>
-                  <input type="text" id="contact_name" name="name" required placeholder="예: 홍길동 팀장" class="w-full bg-brand-darkBg border border-white/10 rounded-xl px-4 py-3.5 text-base text-slate-200 focus:outline-none focus:border-brand-orange/60 transition-colors">
+                  <label for="contact_name" class="block text-base font-bold text-slate-300 uppercase tracking-wider mb-2">Họ và tên người liên hệ <span class="text-brand-orange">*</span></label>
+                  <input type="text" id="contact_name" name="name" required placeholder="Ví dụ: Nguyễn Văn A" class="w-full bg-brand-darkBg border border-white/10 rounded-xl px-4 py-3.5 text-base text-slate-200 focus:outline-none focus:border-brand-orange/60 transition-colors">
                 </div>
 
-                <!-- 이메일 주소 -->
+                <!-- Email Address -->
                 <div class="sm:col-span-2">
-                  <label for="email_address" class="block text-base font-bold text-slate-300 uppercase tracking-wider mb-2">이메일 주소 <span class="text-brand-orange">*</span></label>
-                  <input type="email" id="email_address" name="email" required placeholder="예: contact@domain.com" class="w-full bg-brand-darkBg border border-white/10 rounded-xl px-4 py-3.5 text-base text-slate-200 focus:outline-none focus:border-brand-orange/60 transition-colors">
+                  <label for="email_address" class="block text-base font-bold text-slate-300 uppercase tracking-wider mb-2">Địa chỉ Email <span class="text-brand-orange">*</span></label>
+                  <input type="email" id="email_address" name="email" required placeholder="Ví dụ: contact@domain.com" class="w-full bg-brand-darkBg border border-white/10 rounded-xl px-4 py-3.5 text-base text-slate-200 focus:outline-none focus:border-brand-orange/60 transition-colors">
                 </div>
 
-                <!-- 문의 내용 -->
+                <!-- Message Content -->
                 <div class="sm:col-span-2">
-                  <label for="message_content" class="block text-base font-bold text-slate-300 uppercase tracking-wider mb-2">문의 내용 <span class="text-brand-orange">*</span></label>
-                  <textarea id="message_content" name="message" required rows="5" placeholder="프로젝트 세부 사양, 희망 납기 및 도입 목적 등을 명확히 기재해주시면 기술 부서 검토가 빨라집니다." class="w-full bg-brand-darkBg border border-white/10 rounded-xl px-4 py-3.5 text-base text-slate-200 focus:outline-none focus:border-brand-orange/60 transition-colors resize-none"></textarea>
+                  <label for="message_content" class="block text-base font-bold text-slate-300 uppercase tracking-wider mb-2">Nội dung yêu cầu <span class="text-brand-orange">*</span></label>
+                  <textarea id="message_content" name="message" required rows="5" placeholder="Vui lòng mô tả chi tiết thông số kỹ thuật dự án, thời gian dự kiến triển khai và các yêu cầu cốt lõi để chúng tôi có thể đánh giá kỹ thuật nhanh chóng nhất." class="w-full bg-brand-darkBg border border-white/10 rounded-xl px-4 py-3.5 text-base text-slate-200 focus:outline-none focus:border-brand-orange/60 transition-colors resize-none"></textarea>
                 </div>
               </div>
 
-              <!-- 동의 약관 체크박스 -->
+              <!-- Terms checkbox -->
               <div class="flex items-start gap-3 text-base text-slate-400 leading-normal">
                 <input type="checkbox" id="privacy_agree" required class="mt-1 accent-brand-orange shrink-0">
                 <label for="privacy_agree">
-                  개인정보 수집 및 이용에 동의합니다. 주식회사 앱이지는 문의 사항의 성실한 답변 및 피드백 제안 전달 목적 외에 수집된 정보를 무단 노출하거나 마케팅에 유출하지 않습니다.
+                  Tôi đồng ý với việc thu thập và sử dụng thông tin cá nhân. AppEZ chỉ sử dụng thông tin được thu thập để phản hồi các yêu cầu tư vấn và cam kết không sử dụng cho các hoạt động tiếp thị không được phép.
                 </label>
               </div>
 
-              <!-- 전송 버튼 -->
+              <!-- Submit Button -->
               <button type="submit" class="w-full py-4 text-center rounded-xl bg-brand-orange hover:bg-brand-amber text-white font-bold text-base uppercase tracking-wider shadow-lg shadow-brand-orange/10 hover:shadow-brand-orange/20 transition-all">
-                보내기 <i data-lucide="send" class="w-3.5 h-3.5 inline-block ml-1"></i>
+                Gửi tin nhắn <i data-lucide="send" class="w-3.5 h-3.5 inline-block ml-1"></i>
               </button>
 
             </form>
@@ -288,18 +280,18 @@
     </div>
   </section>
 
-  <!-- 푸터 영역 -->
+  <!-- Footer -->
   <footer class="bg-brand-darkBg text-slate-500 py-16 px-6 md:px-12 border-t border-white/5">
     <div class="max-w-7xl mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
         
-        <!-- 푸터 열 1: 브랜드 -->
+        <!-- Footer Col 1 -->
         <div class="md:col-span-2">
           <a href="../index.html" class="text-xl font-bold text-white tracking-tight font-outfit mb-4 inline-block">
             App<span class="text-brand-orange">EZ</span>
           </a>
           <p class="text-base text-slate-300 leading-relaxed mb-6 max-w-sm">
-            최고의 기술력과 신뢰를 바탕으로 기업 IT 환경에 필요한 통합 유지보수, 시스템 통합, 컨설팅을 제공하는 동반자입니다.
+            Đối tác tin cậy cung cấp dịch vụ hạ tầng IT tích hợp, thiết kế hệ thống và tư vấn dựa trên kỹ thuật xuất sắc.
           </p>
           <div class="flex gap-4">
             <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="linkedin" class="w-4.5 h-4.5"></i></a>
@@ -308,33 +300,32 @@
           </div>
         </div>
 
-        <!-- 푸터 열 2: 메뉴 맵 -->
+        <!-- Footer Col 2 -->
         <div>
-          <h4 class="text-base font-bold text-slate-300 uppercase tracking-widest mb-4">Quick Links</h4>
+          <h4 class="text-base font-bold text-slate-300 uppercase tracking-widest mb-4">Liên kết nhanh</h4>
           <ul class="space-y-3 text-base">
-            <li><a href="../company/index.html" class="hover:text-brand-orange transition-colors">회사개요 및 연혁</a></li>
-            <li><a href="../business/infra/index.html" class="hover:text-brand-orange transition-colors">IT Infra 사업</a></li>
-            <li><a href="../business/solution/index.html" class="hover:text-brand-orange transition-colors">IT Solution 사업</a></li>
-            <li><a href="../references/index.html" class="hover:text-brand-orange transition-colors">사업 실적 리스트</a></li>
-            <li><a href="../recruit/index.html" class="hover:text-brand-orange transition-colors">인재 채용 정보</a></li>
+            <li><a href="../company/index.html" class="hover:text-brand-orange transition-colors">Về chúng tôi</a></li>
+            <li><a href="../business/infra/index.html" class="hover:text-brand-orange transition-colors">Giải pháp Hạ tầng IT</a></li>
+            <li><a href="../business/solution/index.html" class="hover:text-brand-orange transition-colors">Giải pháp Công nghệ</a></li>
+            <li><a href="../references/index.html" class="hover:text-brand-orange transition-colors">Dự án thực tế</a></li>
           </ul>
         </div>
 
-        <!-- 푸터 열 3: 본사 정보 -->
+        <!-- Footer Col 3 -->
         <div>
-          <h4 class="text-base font-bold text-slate-300 uppercase tracking-widest mb-4">Office Info</h4>
+          <h4 class="text-base font-bold text-slate-300 uppercase tracking-widest mb-4">Thông tin văn phòng</h4>
           <address class="not-italic space-y-3 text-base leading-relaxed">
             <p class="flex items-start gap-2.5">
               <i data-lucide="map-pin" class="w-4.5 h-4.5 text-brand-orange shrink-0"></i>
-              <span class="text-slate-300">서울시 강서구 양천로 583,<br>B동 907~908호 (우림블루나인)</span>
+              <span class="text-slate-300">B-907~908, Woolim Blue9, 583 Yangcheon-ro, Gangseo-gu, Seoul, Hàn Quốc</span>
             </p>
             <p class="flex items-center gap-2.5">
               <i data-lucide="phone" class="w-4.5 h-4.5 text-brand-orange shrink-0"></i>
-              <span class="text-slate-300">T. 02-2135-5030</span>
+              <span class="text-slate-300">T. +82-2-2135-5030</span>
             </p>
             <p class="flex items-center gap-2.5">
               <i data-lucide="printer" class="w-4.5 h-4.5 text-brand-orange shrink-0"></i>
-              <span class="text-slate-300">F. 02-2135-5040</span>
+              <span class="text-slate-300">F. +82-2-2135-5040</span>
             </p>
           </address>
         </div>
@@ -342,10 +333,10 @@
       </div>
 
       <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-base gap-4">
-        <p>&copy; 2026 주식회사 앱이지 (AppEZ Co., Ltd.). All Rights Reserved.</p>
+        <p>&copy; 2026 AppEZ Co., Ltd. All Rights Reserved.</p>
         <div class="flex gap-6">
-          <a href="#" class="hover:text-brand-orange transition-colors">이용약관</a>
-          <a href="#" class="hover:text-brand-orange transition-colors">개인정보처리방침</a>
+          <a href="#" class="hover:text-brand-orange transition-colors">Điều khoản dịch vụ</a>
+          <a href="#" class="hover:text-brand-orange transition-colors">Chính sách bảo mật</a>
         </div>
       </div>
     </div>
@@ -354,6 +345,6 @@
   <!-- AOS JS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <!-- Custom Common JS -->
-  <script src="../assets/js/main.js"></script>
+  <script src="../../assets/js/main.js"></script>
 </body>
 </html>

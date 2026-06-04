@@ -33,6 +33,10 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- SEO Multilingual Link Tags -->
+  <link class="seo-hreflang" rel="alternate" hreflang="ko" href="../company/index.html" />
+  <link class="seo-hreflang" rel="alternate" hreflang="en" href="../en/company/index.html" />
+  <link class="seo-hreflang" rel="alternate" hreflang="vi" href="../vn/company/index.html" />
 </head>
 <body class="bg-brand-darkBg text-slate-300 selection:bg-brand-orange selection:text-white leading-relaxed text-base">
 
@@ -65,8 +69,20 @@
         <a href="../recruit/index.html" class="text-slate-300 hover:text-brand-orange transition-colors">인재채용</a>
       </nav>
 
-      <!-- 우측 상단 문의 버튼 -->
-      <div class="hidden md:flex items-center">
+      <!-- 우측 상단 문의 버튼 및 언어 선택기 -->
+      <div class="hidden md:flex items-center gap-6">
+        <!-- Language Switcher -->
+        <div class="relative group">
+          <button class="flex items-center gap-1.5 text-slate-300 hover:text-brand-orange transition-colors focus:outline-none text-base font-semibold">
+            <i data-lucide="globe" class="w-4.5 h-4.5"></i> <span class="ml-1 uppercase">KR</span> <i data-lucide="chevron-down" class="w-3 h-3"></i>
+          </button>
+          <div class="absolute right-0 top-full mt-2 w-24 rounded-lg shadow-xl bg-brand-cardBg border border-white/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-1 text-sm font-medium z-50">
+            <a href="./index.html" class="block px-4 py-2 text-brand-orange font-bold hover:bg-white/5 transition-colors">KO</a>
+            <a href="../en/company/index.html" class="block px-4 py-2 text-slate-300 hover:text-brand-orange hover:bg-white/5 transition-colors">EN</a>
+            <a href="../vn/company/index.html" class="block px-4 py-2 text-slate-300 hover:text-brand-orange hover:bg-white/5 transition-colors">VN</a>
+          </div>
+        </div>
+
         <a href="../contact/index.html" class="px-5 py-2 rounded-full bg-brand-orange hover:bg-brand-amber text-white text-base font-semibold tracking-wider transition-all duration-300 shadow-md shadow-brand-orange/20">
           문의하기
         </a>
@@ -97,6 +113,17 @@
         <a href="../references/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors">레퍼런스</a>
         <a href="../recruit/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors">인재채용</a>
       </nav>
+      <!-- 모바일 언어 선택기 -->
+      <div class="mt-8 pt-6 border-t border-white/5">
+        <span class="text-xs text-slate-500 font-semibold uppercase tracking-widest block mb-3">Language</span>
+        <div class="flex gap-4 text-base font-semibold">
+          <a href="./index.html" class="text-brand-orange">KO</a>
+          <span class="text-white/20">|</span>
+          <a href="../en/company/index.html" class="text-slate-400 hover:text-brand-orange">EN</a>
+          <span class="text-white/20">|</span>
+          <a href="../vn/company/index.html" class="text-slate-400 hover:text-brand-orange">VN</a>
+        </div>
+      </div>
     </div>
     <div class="mb-8">
       <a href="../contact/index.html" class="block w-full py-4 text-center rounded-xl bg-brand-orange hover:bg-brand-amber text-white font-semibold transition-all duration-300">

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company - AppEZ</title>
+  <meta name="description" content="Discover AppEZ's mission, core values, technical strength, and global IT partnerships. We provide optimal hybrid infrastructure and backup solutions based on senior engineering excellence.">
+  <!-- Pretendard Font CDN -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              orange: '#f97316', /* orange-500 */
+              amber: '#ea580c',  /* orange-600 */
+              darkBg: '#0f172a', /* slate-900 */
+              cardBg: '#1e293b', /* slate-800 */
+              border: '#334155'  /* slate-700 */
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../../assets/css/custom.css">
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- SEO Multilingual Link Tags -->
+  <link class="seo-hreflang" rel="alternate" hreflang="ko" href="../../company/index.html" />
+  <link class="seo-hreflang" rel="alternate" hreflang="en" href="./index.html" />
+  <link class="seo-hreflang" rel="alternate" hreflang="vi" href="../../vn/company/index.html" />
+</head>
+<body class="bg-brand-darkBg text-slate-300 selection:bg-brand-orange selection:text-white leading-relaxed text-base">
+
+  <!-- Navigation Header -->
+  <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent py-4 px-6 md:px-12">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <a href="../index.html" class="flex items-center gap-2 group">
+        <span class="text-2xl font-extrabold tracking-tight font-outfit text-white">
+          App<span class="text-brand-orange group-hover:text-brand-amber transition-colors">EZ</span>
+        </span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex items-center gap-8 text-base font-medium tracking-wide">
+        <a href="./index.html" class="text-brand-orange font-bold border-b-2 border-brand-orange pb-1">Company</a>
+        
+        <!-- Dropdown Menu -->
+        <div class="relative group">
+          <button class="flex items-center gap-1 text-slate-300 hover:text-brand-orange transition-colors focus:outline-none">
+            Business <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="absolute top-full -left-4 mt-2 w-48 rounded-lg shadow-xl bg-brand-cardBg border border-white/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-2">
+            <a href="../business/infra/index.html" class="block px-4 py-2 text-slate-300 hover:bg-brand-orange hover:text-white transition-colors">IT Infra</a>
+            <a href="../business/solution/index.html" class="block px-4 py-2 text-slate-300 hover:bg-brand-orange hover:text-white transition-colors">IT Solution</a>
+          </div>
+        </div>
+
+        <a href="../references/index.html" class="text-slate-300 hover:text-brand-orange transition-colors">References</a>
+      </nav>
+
+      <!-- Right Nav Buttons -->
+      <div class="hidden md:flex items-center gap-6">
+        <!-- Language Switcher -->
+        <div class="relative group">
+          <button class="flex items-center gap-1.5 text-slate-300 hover:text-brand-orange transition-colors focus:outline-none text-base font-semibold">
+            <i data-lucide="globe" class="w-4.5 h-4.5"></i> <span class="ml-1 uppercase">EN</span> <i data-lucide="chevron-down" class="w-3 h-3"></i>
+          </button>
+          <div class="absolute right-0 top-full mt-2 w-24 rounded-lg shadow-xl bg-brand-cardBg border border-white/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-1 text-sm font-medium z-50">
+            <a href="../../company/index.html" class="block px-4 py-2 text-slate-300 hover:text-brand-orange hover:bg-white/5 transition-colors">KO</a>
+            <a href="./index.html" class="block px-4 py-2 text-brand-orange font-bold hover:bg-white/5 transition-colors">EN</a>
+            <a href="../../vn/company/index.html" class="block px-4 py-2 text-slate-300 hover:text-brand-orange hover:bg-white/5 transition-colors">VN</a>
+          </div>
+        </div>
+
+        <a href="../contact/index.html" class="px-5 py-2 rounded-full bg-brand-orange hover:bg-brand-amber text-white text-base font-semibold tracking-wider transition-all duration-300 shadow-md shadow-brand-orange/20">
+          Contact Us
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none hover:text-brand-orange transition-colors">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-menu" class="fixed inset-0 z-50 hidden bg-brand-darkBg/95 backdrop-blur-lg flex flex-col justify-between p-6">
+    <div>
+      <div class="flex items-center justify-between mb-8">
+        <a href="../index.html" class="text-2xl font-extrabold tracking-tight font-outfit text-white">
+          App<span class="text-brand-orange">EZ</span>
+        </a>
+        <button id="mobile-menu-close-btn" class="text-white hover:text-brand-orange transition-colors">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-6 text-lg font-medium">
+        <a href="./index.html" class="text-brand-orange py-2 border-b border-white/5 transition-colors font-bold">Company</a>
+        <a href="../business/infra/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors pl-4"><span class="text-brand-orange mr-2">▪</span>IT Infra</a>
+        <a href="../business/solution/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors pl-4"><span class="text-brand-orange mr-2">▪</span>IT Solution</a>
+        <a href="../references/index.html" class="text-slate-300 hover:text-brand-orange py-2 border-b border-white/5 transition-colors">References</a>
+      </nav>
+      <!-- Mobile Language Switcher -->
+      <div class="mt-8 pt-6 border-t border-white/5">
+        <span class="text-xs text-slate-500 font-semibold uppercase tracking-widest block mb-3">Language</span>
+        <div class="flex gap-4 text-base font-semibold">
+          <a href="../../company/index.html" class="text-slate-400 hover:text-brand-orange">KO</a>
+          <span class="text-white/20">|</span>
+          <a href="./index.html" class="text-brand-orange">EN</a>
+          <span class="text-white/20">|</span>
+          <a href="../../vn/company/index.html" class="text-slate-400 hover:text-brand-orange">VN</a>
+        </div>
+      </div>
+    </div>
+    <div class="mb-8">
+      <a href="../contact/index.html" class="block w-full py-4 text-center rounded-xl bg-brand-orange hover:bg-brand-amber text-white font-semibold transition-all duration-300">
+        Inquire Now
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="relative pt-48 pb-24 overflow-hidden bg-brand-darkBg flex items-center">
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1920&q=80" alt="Team collaborating" class="w-full h-full object-cover opacity-15 filter grayscale hover:scale-105 transition-transform duration-[10000ms]">
+      <div class="absolute inset-0 bg-gradient-to-t from-brand-darkBg via-brand-darkBg/60 to-transparent"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 text-center w-full">
+      <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-base font-semibold tracking-widest uppercase mb-6 animate-pulse" data-aos="fade-down">
+        Who We Are
+      </span>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold font-outfit tracking-tight text-white mb-6" data-aos="fade-up" data-aos-delay="100">
+        Introducing AppEZ
+      </h1>
+      <p class="max-w-2xl mx-auto text-slate-300 text-base leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+        AppEZ is a highly-skilled IT infrastructure and solution provider, delivering senior engineering expertise and robust enterprise solutions.
+      </p>
+    </div>
+  </section>
+
+  <!-- Corporate Profile -->
+  <section class="py-24 relative bg-brand-darkBg">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+        
+        <!-- Left Column: Intro -->
+        <div class="lg:col-span-5" data-aos="fade-right">
+          <span class="text-brand-orange font-bold text-base uppercase tracking-widest mb-3 block">Corporate Profile</span>
+          <h2 class="text-3xl sm:text-4xl font-bold font-outfit text-white tracking-tight mb-8">
+            Laying the Foundation of<br>
+            <span class="text-gradient-orange">Business Success with Trust</span>
+          </h2>
+          <p class="text-slate-300 text-base leading-relaxed mb-6">
+            Since our establishment in 2012, AppEZ has operated with a strong focus on technical expertise, utilizing a highly skilled engineering team to build and maintain robust IT environments for corporate, financial, and public clients.
+          </p>
+          <p class="text-slate-300 text-base leading-relaxed">
+            We provide an all-in-one lifecycle service—from IT consulting and system integration to high-availability data backups, proactive 24/7 monitoring, and server migration/disposal.
+          </p>
+        </div>
+
+        <!-- Right Column: Info Table -->
+        <div class="lg:col-span-7 space-y-6" data-aos="fade-left">
+          <div class="glass-panel rounded-2xl p-8 border border-white/5 space-y-6 bg-brand-cardBg">
+            <h3 class="text-xl font-bold font-outfit border-b border-white/10 pb-4 flex items-center gap-2 text-white">
+              <i data-lucide="info" class="w-5 h-5 text-brand-orange"></i> Overview
+            </h3>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-8 text-base">
+              <div class="border-b border-white/5 pb-3">
+                <span class="text-slate-400 font-semibold uppercase tracking-wider block mb-1">Company Name</span>
+                <span class="text-slate-200 font-medium">AppEZ Co., Ltd.</span>
+              </div>
+              <div class="border-b border-white/5 pb-3">
+                <span class="text-slate-400 font-semibold uppercase tracking-wider block mb-1">CEO</span>
+                <span class="text-slate-200 font-medium">Jae-Kyu Hwang</span>
+              </div>
+              <div class="border-b border-white/5 pb-3">
+                <span class="text-slate-400 font-semibold uppercase tracking-wider block mb-1">Established</span>
+                <span class="text-slate-200 font-medium">February 1, 2012</span>
+              </div>
+              <div class="border-b border-white/5 pb-3">
+                <span class="text-slate-400 font-semibold uppercase tracking-wider block mb-1">Annual Revenue</span>
+                <span class="text-slate-200 font-medium">$8 Million USD (2025)</span>
+              </div>
+              <div class="border-b border-white/5 pb-3 sm:col-span-2">
+                <span class="text-slate-400 font-semibold uppercase tracking-wider block mb-1">Head Office</span>
+                <span class="text-slate-200 font-medium">B-907~908, Woolim Blue9, 583 Yangcheon-ro, Gangseo-gu, Seoul, Republic of Korea</span>
+              </div>
+              <div class="sm:col-span-2">
+                <span class="text-slate-400 font-semibold uppercase tracking-wider block mb-1">Key Business Areas</span>
+                <span class="text-slate-200 font-medium leading-relaxed block mt-1">
+                  IT Infrastructure Integration (SI), 24/7 Operations Maintenance, Hybrid HCI Cloud, Advanced Solutions (Data Backup/DR, full-stack monitoring), IT Consulting, Server Migration & Secure Asset Disposal.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission, Vision, Core Values -->
+  <section class="py-24 relative bg-brand-cardBg border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="text-center max-w-3xl mx-auto mb-20">
+        <span class="text-brand-orange font-bold text-base uppercase tracking-widest mb-3 block">Corporate Values</span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-outfit text-white tracking-tight mb-6">
+          AppEZ <span class="text-brand-orange">Mission & Core Values</span>
+        </h2>
+        <p class="text-slate-300 text-base leading-relaxed">
+          Our values shape our decisions and drive us to deliver optimal success to our clients while ensuring employee satisfaction.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <!-- MISSION -->
+        <div class="glass-panel rounded-2xl p-8 border border-white/5 flex flex-col justify-between bg-brand-darkBg" data-aos="zoom-in">
+          <div>
+            <span class="px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-xs font-bold tracking-widest uppercase mb-4 inline-block">Mission</span>
+            <h3 class="text-2xl font-bold font-outfit text-white mb-4">Empowering Lives through Premium IT Services</h3>
+          </div>
+          <p class="text-base text-slate-300 leading-relaxed mt-4">
+            We deliver highly optimized IT environments that protect data assets and ensure seamless digital workflows, enabling organizations to focus entirely on their growth.
+          </p>
+        </div>
+
+        <!-- VISION -->
+        <div class="glass-panel rounded-2xl p-8 border border-white/5 flex flex-col justify-between bg-brand-darkBg" data-aos="zoom-in" data-aos-delay="100">
+          <div>
+            <span class="px-3 py-1 rounded-full bg-brand-amber/10 border border-brand-amber/20 text-brand-amber text-xs font-bold tracking-widest uppercase mb-4 inline-block">Vision</span>
+            <h3 class="text-2xl font-bold font-outfit text-white mb-4">Double Our Clients' Value, Double Our Team's Happiness</h3>
+          </div>
+          <p class="text-base text-slate-300 leading-relaxed mt-4">
+            By maximizing system efficiency, we help clients double their productivity, while continuously investing in our team's growth, welfare, and workplace satisfaction.
+          </p>
+        </div>
+      </div>
+
+      <!-- 5 Core Values -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div class="glass-panel rounded-xl p-6 border border-white/5 neon-glow-hover flex flex-col items-center text-center bg-brand-darkBg animate-hover-scale" data-aos="fade-up">
+          <div class="w-12 h-12 rounded-full bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-4 shadow-md">
+            <i data-lucide="scale" class="w-5 h-5"></i>
+          </div>
+          <h4 class="text-lg font-bold text-slate-200 mb-3">Integrity</h4>
+          <p class="text-base text-slate-300 leading-relaxed">We strictly adhere to principles, cherish business ethics, and act transparently.</p>
+        </div>
+
+        <div class="glass-panel rounded-xl p-6 border border-white/5 neon-glow-hover flex flex-col items-center text-center bg-brand-darkBg animate-hover-scale" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-12 h-12 rounded-full bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-4 shadow-md">
+            <i data-lucide="link" class="w-5 h-5"></i>
+          </div>
+          <h4 class="text-lg font-bold text-slate-200 mb-3">Mutual Trust</h4>
+          <p class="text-base text-slate-300 leading-relaxed">We prioritize long-term client success and strong partnership relations.</p>
+        </div>
+
+        <div class="glass-panel rounded-xl p-6 border border-white/5 neon-glow-hover flex flex-col items-center text-center bg-brand-darkBg animate-hover-scale" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-12 h-12 rounded-full bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-4 shadow-md">
+            <i data-lucide="heart" class="w-5 h-5"></i>
+          </div>
+          <h4 class="text-lg font-bold text-slate-200 mb-3">Talent Growth</h4>
+          <p class="text-base text-slate-300 leading-relaxed">We invest in our people and foster a supportive, open workplace culture.</p>
+        </div>
+
+        <div class="glass-panel rounded-xl p-6 border border-white/5 neon-glow-hover flex flex-col items-center text-center bg-brand-darkBg animate-hover-scale" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-12 h-12 rounded-full bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-4 shadow-md">
+            <i data-lucide="zap" class="w-5 h-5"></i>
+          </div>
+          <h4 class="text-lg font-bold text-slate-200 mb-3">Innovation</h4>
+          <p class="text-base text-slate-300 leading-relaxed">We welcome new technical challenges and drive them to implementation.</p>
+        </div>
+
+        <div class="glass-panel rounded-xl p-6 border border-white/5 neon-glow-hover flex flex-col items-center text-center bg-brand-darkBg animate-hover-scale" data-aos="fade-up" data-aos-delay="400">
+          <div class="w-12 h-12 rounded-full bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-4 shadow-md">
+            <i data-lucide="smile" class="w-5 h-5"></i>
+          </div>
+          <h4 class="text-lg font-bold text-slate-200 mb-3">Ownership</h4>
+          <p class="text-base text-slate-300 leading-relaxed">We operate with autonomy, taking personal responsibility for results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Summary (Timeline Replacer) -->
+  <section class="py-24 relative bg-brand-darkBg">
+    <div class="max-w-5xl mx-auto px-6 md:px-12">
+      <div class="glass-panel rounded-3xl p-10 md:p-12 border border-brand-orange/20 bg-brand-orange/5 relative overflow-hidden bg-brand-cardBg" data-aos="fade-up">
+        <!-- Glow Effect -->
+        <div class="absolute -right-16 -top-16 w-48 h-48 rounded-full bg-brand-orange/10 blur-3xl"></div>
+        
+        <span class="text-brand-orange font-bold text-base uppercase tracking-widest mb-3 block">Corporate Heritage</span>
+        <h2 class="text-2xl sm:text-3xl font-bold font-outfit text-white tracking-tight mb-6">Our Journey Since 2012</h2>
+        
+        <div class="space-y-6 text-base text-slate-300 leading-relaxed">
+          <p>
+            <strong>Since 2012,</strong> AppEZ has paved the way as a trusted IT infrastructure specialist. Over the past decade, we have established robust partnerships with global IT leaders like <strong>IBM, Dell Technologies, Lenovo, HPE, Nutanix, and Veeam</strong>.
+          </p>
+          <p>
+            Equipped with highly certified engineering talent, we have completed over <strong>150 enterprise projects</strong>, supporting clients in building secure, high-availability data architectures. We hold official partner levels including <strong>IBM Business Partner Gold Level</strong> and <strong>Dell Gold Partner</strong>, reflecting our technical capabilities and market trust.
+          </p>
+          <p>
+            As a licensed telecommunications contractor, we continue to expand our cloud capabilities, hyperconverged infrastructure (HCI) services, and smart IT observability, adapting to the modern hybrid cloud landscape.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical strength & Elite engineers (Org Chart Replacer) -->
+  <section class="py-24 relative bg-brand-cardBg border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="text-center max-w-3xl mx-auto mb-20">
+        <span class="text-brand-orange font-bold text-base uppercase tracking-widest mb-3 block">Technical Strength</span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-outfit text-white tracking-tight mb-6">
+          Elite Engineering Capabilities
+        </h2>
+        <p class="text-slate-300 text-base leading-relaxed">
+          AppEZ is a technology-centric company, with the vast majority of our employees being field-experienced engineers.
+        </p>
+      </div>
+
+      <!-- Infographic Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- 62% Professional Engineers -->
+        <div class="glass-panel border border-brand-orange/20 rounded-2xl p-8 bg-brand-darkBg/60 text-center flex flex-col justify-between" data-aos="fade-right">
+          <div>
+            <div class="text-5xl md:text-6xl font-black font-outfit text-brand-orange mb-4">62%</div>
+            <h3 class="text-xl font-bold text-white mb-3">Professional Engineers</h3>
+            <p class="text-base text-slate-300 leading-relaxed">
+              More than half of our workforce consists of systems and data engineers, focusing on hardware custom design, storage scale, HCI, and hybrid cloud integration.
+            </p>
+          </div>
+          <div class="w-full bg-slate-900 rounded-full h-2 mt-6">
+            <div class="bg-gradient-to-r from-brand-orange to-brand-amber h-2 rounded-full" style="width: 62%"></div>
+          </div>
+        </div>
+
+        <!-- 48% Top-tier Experts -->
+        <div class="glass-panel border border-brand-orange/20 rounded-2xl p-8 bg-brand-darkBg/60 text-center flex flex-col justify-between" data-aos="fade-left">
+          <div>
+            <div class="text-5xl md:text-6xl font-black font-outfit text-brand-orange mb-4">48%</div>
+            <h3 class="text-xl font-bold text-white mb-3">Top-tier Experts</h3>
+            <p class="text-base text-slate-300 leading-relaxed">
+              Nearly half of our engineers are certified as Principal-level specialists, possessing advanced vendor qualifications (such as IBM Storage Expert, Dell Certified Specialist, and VMCE).
+            </p>
+          </div>
+          <div class="w-full bg-slate-900 rounded-full h-2 mt-6">
+            <div class="bg-gradient-to-r from-brand-orange to-brand-amber h-2 rounded-full" style="width: 48%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global IT Partnerships (Badges Replacer) -->
+  <section class="py-24 relative bg-brand-darkBg">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="text-center max-w-3xl mx-auto mb-20">
+        <span class="text-brand-orange font-bold text-base uppercase tracking-widest mb-3 block">Collaborations</span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-outfit text-white tracking-tight mb-6">
+          Global IT Partnerships
+        </h2>
+        <p class="text-slate-300 text-base leading-relaxed">
+          Through strategic partnerships with global IT leaders, we deliver state-of-the-art infrastructure and software solutions.
+        </p>
+      </div>
+
+      <!-- Partner Logo Grid (White rounded cards for maximum visibility) -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
+        <!-- IBM -->
+        <div class="bg-white rounded-xl shadow-sm p-6 flex flex-col items-center justify-center h-28 border border-white/10 hover:shadow-md transition-all duration-300">
+          <span class="text-slate-900 font-black font-outfit text-lg tracking-widest">IBM</span>
+          <span class="text-[9px] font-bold text-brand-orange mt-1 uppercase tracking-wider">Gold Partner</span>
+        </div>
+        <!-- DELL -->
+        <div class="bg-white rounded-xl shadow-sm p-6 flex flex-col items-center justify-center h-28 border border-white/10 hover:shadow-md transition-all duration-300">
+          <span class="text-slate-900 font-black font-outfit text-lg tracking-widest">DELL Tech</span>
+          <span class="text-[9px] font-bold text-brand-orange mt-1 uppercase tracking-wider">Gold Partner</span>
+        </div>
+        <!-- LENOVO -->
+        <div class="bg-white rounded-xl shadow-sm p-6 flex flex-col items-center justify-center h-28 border border-white/10 hover:shadow-md transition-all duration-300">
+          <span class="text-slate-900 font-black font-outfit text-lg tracking-widest">LENOVO</span>
+          <span class="text-[9px] font-bold text-slate-500 mt-1 uppercase tracking-wider">Partner</span>
+        </div>
+        <!-- NUTANIX -->
+        <div class="bg-white rounded-xl shadow-sm p-6 flex flex-col items-center justify-center h-28 border border-white/10 hover:shadow-md transition-all duration-300">
+          <span class="text-slate-900 font-black font-outfit text-lg tracking-widest font-outfit">NUTANIX</span>
+          <span class="text-[9px] font-bold text-brand-orange mt-1 uppercase tracking-wider">HCI Partner</span>
+        </div>
+        <!-- VEEAM -->
+        <div class="bg-white rounded-xl shadow-sm p-6 flex flex-col items-center justify-center h-28 border border-white/10 hover:shadow-md transition-all duration-300">
+          <span class="text-slate-900 font-black font-outfit text-lg tracking-widest">VEEAM</span>
+          <span class="text-[9px] font-bold text-brand-orange mt-1 uppercase tracking-wider">Backup Partner</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-darkBg text-slate-500 py-16 px-6 md:px-12 border-t border-white/5">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        
+        <!-- Footer Col 1 -->
+        <div class="md:col-span-2">
+          <a href="../index.html" class="text-xl font-bold text-white tracking-tight font-outfit mb-4 inline-block">
+            App<span class="text-brand-orange">EZ</span>
+          </a>
+          <p class="text-base text-slate-300 leading-relaxed mb-6 max-w-sm">
+            A trusted partner providing IT infrastructure integration, system design, and consulting based on elite engineering.
+          </p>
+          <div class="flex gap-4">
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="linkedin" class="w-4.5 h-4.5"></i></a>
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="twitter" class="w-4.5 h-4.5"></i></a>
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="github" class="w-4.5 h-4.5"></i></a>
+          </div>
+        </div>
+
+        <!-- Footer Col 2 -->
+        <div>
+          <h4 class="text-base font-bold text-slate-300 uppercase tracking-widest mb-4">Quick Links</h4>
+          <ul class="space-y-3 text-base">
+            <li><a href="./index.html" class="hover:text-brand-orange transition-colors">Company Overview</a></li>
+            <li><a href="../business/infra/index.html" class="hover:text-brand-orange transition-colors">IT Infra Solutions</a></li>
+            <li><a href="../business/solution/index.html" class="hover:text-brand-orange transition-colors">IT Solution Services</a></li>
+            <li><a href="../references/index.html" class="hover:text-brand-orange transition-colors">Case Studies</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Col 3 -->
+        <div>
+          <h4 class="text-base font-bold text-slate-300 uppercase tracking-widest mb-4">Office Info</h4>
+          <address class="not-italic space-y-3 text-base leading-relaxed">
+            <p class="flex items-start gap-2.5">
+              <i data-lucide="map-pin" class="w-4.5 h-4.5 text-brand-orange shrink-0"></i>
+              <span class="text-slate-300">B-907~908, Woolim Blue9, 583 Yangcheon-ro, Gangseo-gu, Seoul, Republic of Korea</span>
+            </p>
+            <p class="flex items-center gap-2.5">
+              <i data-lucide="phone" class="w-4.5 h-4.5 text-brand-orange shrink-0"></i>
+              <span class="text-slate-300">T. +82-2-2135-5030</span>
+            </p>
+            <p class="flex items-center gap-2.5">
+              <i data-lucide="printer" class="w-4.5 h-4.5 text-brand-orange shrink-0"></i>
+              <span class="text-slate-300">F. +82-2-2135-5040</span>
+            </p>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-base gap-4">
+        <p>&copy; 2026 AppEZ Co., Ltd. All Rights Reserved.</p>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-brand-orange transition-colors">Terms of Service</a>
+          <a href="#" class="hover:text-brand-orange transition-colors">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- Custom Common JS -->
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
