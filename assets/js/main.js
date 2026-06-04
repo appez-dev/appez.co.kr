@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (header) {
     window.addEventListener('scroll', () => {
       if (window.scrollY > 20) {
-        header.classList.add('backdrop-blur-md', 'bg-[#0B0F17]/80', 'border-b', 'border-white/10', 'shadow-lg');
+        header.classList.add('backdrop-blur-md', 'bg-[#0f172a]/80', 'border-b', 'border-white/10', 'shadow-lg');
         header.classList.remove('bg-transparent');
       } else {
-        header.classList.remove('backdrop-blur-md', 'bg-[#0B0F17]/80', 'border-b', 'border-white/10', 'shadow-lg');
+        header.classList.remove('backdrop-blur-md', 'bg-[#0f172a]/80', 'border-b', 'border-white/10', 'shadow-lg');
         header.classList.add('bg-transparent');
       }
     });

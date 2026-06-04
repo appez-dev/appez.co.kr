@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>주식회사 앱이지 - IT 인프라 & 솔루션 전문 기업</title>
   <meta name="description" content="앱이지(AppEZ)는 최고의 기술력과 전문 인력을 바탕으로 공공, 금융, 민간기업의 IT 인프라 구축, 시스템 컨설팅, 통합유지보수, 솔루션을 제공하는 IT 전문 기업입니다.">
+  <!-- Pretendard 폰트 CDN -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Tailwind Config -->
@@ -14,11 +16,11 @@
         extend: {
           colors: {
             brand: {
-              orange: '#FF6A00',
-              amber: '#FF9900',
-              darkBg: '#0B0F17',
-              cardBg: '#131924',
-              border: '#1A2332'
+              orange: '#f97316', /* orange-500 */
+              amber: '#ea580c',  /* orange-600 */
+              darkBg: '#0f172a', /* slate-900 */
+              cardBg: '#1e293b', /* slate-800 */
+              border: '#334155'  /* slate-700 */
             }
           }
         }
@@ -32,7 +34,7 @@
   <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-brand-darkBg text-slate-100 selection:bg-brand-orange selection:text-white">
+<body class="bg-brand-darkBg text-slate-300 selection:bg-brand-orange selection:text-white leading-relaxed text-base">
 
   <!-- 네비게이션 헤더 -->
   <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent py-4 px-6 md:px-12">
@@ -45,7 +47,7 @@
       </a>
 
       <!-- 데스크톱 메뉴 -->
-      <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
+      <nav class="hidden md:flex items-center gap-8 text-base font-medium tracking-wide">
         <a href="./company/index.html" class="text-slate-300 hover:text-brand-orange transition-colors">회사소개</a>
         
         <!-- Dropdown 메뉴 -->
@@ -65,7 +67,7 @@
 
       <!-- 우측 상단 문의 버튼 -->
       <div class="hidden md:flex items-center">
-        <a href="./contact/index.html" class="px-5 py-2 rounded-full bg-brand-orange hover:bg-brand-amber text-white text-xs font-semibold tracking-wider transition-all duration-300 shadow-md shadow-brand-orange/20">
+        <a href="./contact/index.html" class="px-5 py-2 rounded-full bg-brand-orange hover:bg-brand-amber text-white text-base font-semibold tracking-wider transition-all duration-300 shadow-md shadow-brand-orange/20">
           문의하기
         </a>
       </div>
@@ -105,7 +107,7 @@
 
   <!-- Hero Section -->
   <section class="relative min-h-screen flex items-center justify-center pt-24 pb-12 overflow-hidden bg-brand-darkBg">
-    <!-- Unsplash 고해상도 백그라운드 이미지 레이어 (투명도 조절로 다크 분위기 유지) -->
+    <!-- Unsplash 고해상도 백그라운드 이미지 고정 URL 지정 -->
     <div class="absolute inset-0 z-0">
       <img src="https://images.unsplash.com/photo-1597852074816-d933c7d2b988?auto=format&fit=crop&w=1920&q=80" alt="Datacenter background" class="w-full h-full object-cover opacity-15 filter grayscale hover:scale-105 transition-transform duration-[10000ms]">
       <div class="absolute inset-0 bg-gradient-to-t from-brand-darkBg via-brand-darkBg/60 to-transparent"></div>
@@ -117,16 +119,16 @@
     <div class="absolute bottom-1/4 right-1/4 translate-x-1/2 translate-y-1/2 w-96 h-96 rounded-full bg-brand-amber/5 blur-[120px] pointer-events-none"></div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 text-center">
-      <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-xs font-semibold tracking-widest uppercase mb-6 animate-pulse" data-aos="fade-down">
+      <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-base font-semibold tracking-widest uppercase mb-6 animate-pulse" data-aos="fade-down">
         <span class="w-2 h-2 rounded-full bg-brand-orange"></span> IT INFRASTRUCTURE EXPERT
       </span>
       
-      <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold leading-tight tracking-tight font-outfit mb-8" data-aos="fade-up" data-aos-delay="100">
+      <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold leading-tight tracking-tight font-outfit mb-8 text-white" data-aos="fade-up" data-aos-delay="100">
         상호 신뢰와 협력으로<br>
         <span class="text-gradient-fire">고객과 함께 성장하는 동반자</span>
       </h1>
       
-      <p class="max-w-2xl mx-auto text-slate-400 text-base sm:text-lg md:text-xl font-normal leading-relaxed mb-12" data-aos="fade-up" data-aos-delay="200">
+      <p class="max-w-2xl mx-auto text-slate-300 text-base sm:text-lg md:text-xl font-normal leading-relaxed mb-12" data-aos="fade-up" data-aos-delay="200">
         주식회사 앱이지는 최상의 하드웨어 인프라 설계부터 솔루션 연동 및 365일 무중단 통합유지보수까지 최고의 기술력을 지닌 전문 엔지니어와 함께 구현합니다.
       </p>
 
@@ -142,7 +144,7 @@
 
     <!-- 하단 마우스 스크롤 다운 가이드 -->
     <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-500 hover:text-brand-orange transition-colors duration-300">
-      <span class="text-xs font-semibold tracking-widest uppercase">Scroll Down</span>
+      <span class="text-base font-semibold tracking-widest uppercase">Scroll Down</span>
       <div class="w-6 h-10 rounded-full border-2 border-slate-700 flex justify-center p-1">
         <div class="w-1.5 h-3 rounded-full bg-slate-500 animate-bounce"></div>
       </div>
@@ -150,48 +152,49 @@
   </section>
 
   <!-- 핵심 인포그래픽 수치 요약 -->
-  <section class="py-24 border-y border-white/5 bg-brand-darkBg/50 relative overflow-hidden">
+  <section class="py-24 border-y border-white/5 bg-slate-800/30 relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-6 md:px-12">
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+      <!-- 모바일 단열 및 태블릿 2열, PC 4열 그리드 보정 -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
         
         <!-- 실적 1 -->
         <div class="text-center" data-aos="fade-up">
-          <div class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2">2025년 기준 매출액</div>
+          <div class="text-base font-semibold text-slate-400 uppercase tracking-widest mb-2">2025년 기준 매출액</div>
           <div class="text-4xl sm:text-5xl font-extrabold font-outfit text-white mb-2">
             <span class="text-brand-orange">108</span>억
           </div>
           <div class="w-8 h-1 bg-brand-orange/40 mx-auto rounded-full mb-3"></div>
-          <p class="text-xs text-slate-400">전년대비 비약적 성장을 거듭한 재무 안정성</p>
+          <p class="text-base text-slate-300 leading-relaxed">전년대비 비약적 성장을 거듭한 재무 안정성</p>
         </div>
 
         <!-- 실적 2 -->
         <div class="text-center" data-aos="fade-up" data-aos-delay="100">
-          <div class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2">누적 파트너 고객사</div>
+          <div class="text-base font-semibold text-slate-400 uppercase tracking-widest mb-2">누적 파트너 고객사</div>
           <div class="text-4xl sm:text-5xl font-extrabold font-outfit text-white mb-2">
             <span class="text-brand-orange">150</span>+
           </div>
           <div class="w-8 h-1 bg-brand-orange/40 mx-auto rounded-full mb-3"></div>
-          <p class="text-xs text-slate-400">공공, 금융, 제조 등 전 산업 영역 고객사 확보</p>
+          <p class="text-base text-slate-300 leading-relaxed">공공, 금융, 제조 등 전 산업 영역 고객사 확보</p>
         </div>
 
         <!-- 실적 3 -->
         <div class="text-center" data-aos="fade-up" data-aos-delay="200">
-          <div class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2">전문 기술 인력 비중</div>
+          <div class="text-base font-semibold text-slate-400 uppercase tracking-widest mb-2">전문 기술 인력 비중</div>
           <div class="text-4xl sm:text-5xl font-extrabold font-outfit text-white mb-2">
             <span class="text-brand-orange">62</span>%
           </div>
           <div class="w-8 h-1 bg-brand-orange/40 mx-auto rounded-full mb-3"></div>
-          <p class="text-xs text-slate-400">전체 임직원 중 IT 시스템 엔지니어의 핵심 구성</p>
+          <p class="text-base text-slate-300 leading-relaxed">전체 임직원 중 IT 시스템 엔지니어의 핵심 구성</p>
         </div>
 
         <!-- 실적 4 -->
         <div class="text-center" data-aos="fade-up" data-aos-delay="300">
-          <div class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2">고급 및 특급 기술자 비중</div>
+          <div class="text-base font-semibold text-slate-400 uppercase tracking-widest mb-2">고급 및 특급 기술자 비중</div>
           <div class="text-4xl sm:text-5xl font-extrabold font-outfit text-white mb-2">
             <span class="text-brand-orange">63</span>%
           </div>
           <div class="w-8 h-1 bg-brand-orange/40 mx-auto rounded-full mb-3"></div>
-          <p class="text-xs text-slate-400">특급 엔지니어 48%를 포함한 초고숙련 기술 조직</p>
+          <p class="text-base text-slate-300 leading-relaxed">특급 엔지니어 48%를 포함한 초고숙련 기술 조직</p>
         </div>
 
       </div>
@@ -202,61 +205,62 @@
   <section class="py-24 relative">
     <div class="max-w-7xl mx-auto px-6 md:px-12">
       <div class="text-center max-w-3xl mx-auto mb-20">
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold font-outfit tracking-tight mb-6">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold font-outfit tracking-tight mb-6 text-white">
           AppEZ가 제공하는 <span class="text-brand-orange">IT 인프라 핵심 역량</span>
         </h2>
-        <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+        <p class="text-slate-300 text-base leading-relaxed">
           하드웨어 도입부터 무중단 솔루션 구축, 24시간 철저한 예방 정비와 이전 폐기까지, 고객의 IT 자산을 가장 안전하게 최적화합니다.
         </p>
       </div>
 
+      <!-- 모바일 1열 반응형 완벽 대응 -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
         <!-- 서비스 1 -->
         <div class="glass-panel rounded-2xl p-8 neon-glow-hover flex flex-col justify-between h-96 border border-white/5" data-aos="fade-up">
           <div>
-            <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-6 shadow-md shadow-brand-orange/5">
+            <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-6 shadow-md">
               <i data-lucide="server" class="w-6 h-6"></i>
             </div>
-            <h3 class="text-xl font-bold mb-4 font-outfit">H/W IT Infra 구축</h3>
-            <p class="text-slate-400 text-sm leading-relaxed">
+            <h3 class="text-xl font-bold mb-4 font-outfit text-white">H/W IT Infra 구축</h3>
+            <p class="text-slate-300 text-base leading-relaxed">
               IBM, Dell Technologies, Lenovo, HPE, Nutanix 등 글로벌 유수 벤더사의 엔터프라이즈 서버 및 스토리지 맞춤 설계 및 신속 구축 서비스를 제공합니다.
             </p>
           </div>
-          <a href="./business/infra/index.html" class="flex items-center gap-1.5 text-xs font-bold text-brand-orange hover:text-brand-amber transition-colors mt-6 uppercase tracking-wider">
-            상세 보기 <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          <a href="./business/infra/index.html" class="flex items-center gap-1.5 text-base font-bold text-brand-orange hover:text-brand-amber transition-colors mt-6 uppercase tracking-wider">
+            상세 보기 <i data-lucide="chevron-right" class="w-4.5 h-4.5"></i>
           </a>
         </div>
 
         <!-- 서비스 2 -->
         <div class="glass-panel rounded-2xl p-8 neon-glow-hover flex flex-col justify-between h-96 border border-white/5" data-aos="fade-up" data-aos-delay="100">
           <div>
-            <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-6 shadow-md shadow-brand-orange/5">
+            <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-6 shadow-md">
               <i data-lucide="shield-check" class="w-6 h-6"></i>
             </div>
-            <h3 class="text-xl font-bold mb-4 font-outfit">IT Solution 도입</h3>
-            <p class="text-slate-400 text-sm leading-relaxed">
+            <h3 class="text-xl font-bold mb-4 font-outfit text-white">IT Solution 도입</h3>
+            <p class="text-slate-300 text-base leading-relaxed">
               세계 최고 수준의 백업 및 재해복구 솔루션 Veeam과 지능형 IT 풀스택 실시간 모니터링 와탭(WhaTap) 파트너십을 통해 안정적인 데이터 자산을 보장합니다.
             </p>
           </div>
-          <a href="./business/solution/index.html" class="flex items-center gap-1.5 text-xs font-bold text-brand-orange hover:text-brand-amber transition-colors mt-6 uppercase tracking-wider">
-            상세 보기 <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          <a href="./business/solution/index.html" class="flex items-center gap-1.5 text-base font-bold text-brand-orange hover:text-brand-amber transition-colors mt-6 uppercase tracking-wider">
+            상세 보기 <i data-lucide="chevron-right" class="w-4.5 h-4.5"></i>
           </a>
         </div>
 
-        <!-- ... 서비스 3 (통합 유지보수) ... -->
+        <!-- 서비스 3 (통합 유지보수) -->
         <div class="glass-panel rounded-2xl p-8 neon-glow-hover flex flex-col justify-between h-96 border border-white/5" data-aos="fade-up" data-aos-delay="200">
           <div>
-            <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-6 shadow-md shadow-brand-orange/5">
+            <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-6 shadow-md">
               <i data-lucide="activity" class="w-6 h-6"></i>
             </div>
-            <h3 class="text-xl font-bold mb-4 font-outfit">24x7x365 통합유지보수</h3>
-            <p class="text-slate-400 text-sm leading-relaxed">
+            <h3 class="text-xl font-bold mb-4 font-outfit text-white">24x7x365 통합유지보수</h3>
+            <p class="text-slate-300 text-base leading-relaxed">
               경험이 풍부한 최고 기술력 기반의 엔지니어가 365일 상시 대기하여 이기종 장비의 개별 유지보수 대비 압도적 비용 절감과 완벽한 모니터링을 책임집니다.
             </p>
           </div>
-          <a href="./company/index.html" class="flex items-center gap-1.5 text-xs font-bold text-brand-orange hover:text-brand-amber transition-colors mt-6 uppercase tracking-wider">
-            상세 보기 <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          <a href="./company/index.html" class="flex items-center gap-1.5 text-base font-bold text-brand-orange hover:text-brand-amber transition-colors mt-6 uppercase tracking-wider">
+            상세 보기 <i data-lucide="chevron-right" class="w-4.5 h-4.5"></i>
           </a>
         </div>
 
@@ -264,39 +268,40 @@
     </div>
   </section>
 
-  <!-- 파트너십 브랜드 띠 (가로 스크롤 레이아웃) -->
-  <section class="py-16 bg-[#131924]/30 border-y border-white/5 relative overflow-hidden">
+  <!-- 파트너십 브랜드 띠 (가로 스크롤/그리드 반응형 레이아웃) -->
+  <section class="py-16 bg-slate-800/30 border-y border-white/5 relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col items-center">
-      <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-8">Official Brand Partners</p>
-      <div class="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-8 items-center justify-items-center opacity-60 hover:opacity-90 transition-opacity duration-300 w-full">
+      <p class="text-base font-bold text-slate-400 uppercase tracking-widest mb-8">Official Brand Partners</p>
+      <div class="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-8 items-center justify-items-center opacity-60 hover:opacity-90 transition-opacity duration-300 w-full">
         <!-- 1. IBM -->
-        <div class="text-sm font-black text-slate-400 hover:text-white transition-colors cursor-default tracking-widest font-outfit">IBM</div>
+        <div class="text-base font-black text-slate-400 hover:text-white transition-colors cursor-default tracking-widest font-outfit">IBM</div>
         <!-- 2. DELL -->
-        <div class="text-sm font-black text-slate-400 hover:text-white transition-colors cursor-default tracking-widest font-outfit">DELL Tech</div>
+        <div class="text-base font-black text-slate-400 hover:text-white transition-colors cursor-default tracking-widest font-outfit">DELL Tech</div>
         <!-- 3. LENOVO -->
-        <div class="text-sm font-black text-slate-400 hover:text-white transition-colors cursor-default tracking-widest font-outfit">LENOVO</div>
+        <div class="text-base font-black text-slate-400 hover:text-white transition-colors cursor-default tracking-widest font-outfit">LENOVO</div>
         <!-- 4. HPE -->
-        <div class="text-sm font-black text-slate-400 hover:text-white transition-colors cursor-default tracking-widest font-outfit">HPE</div>
+        <div class="text-base font-black text-slate-400 hover:text-white transition-colors cursor-default tracking-widest font-outfit">HPE</div>
         <!-- 5. NUTANIX -->
-        <div class="text-sm font-black text-slate-400 hover:text-white transition-colors cursor-default tracking-widest font-outfit">NUTANIX</div>
+        <div class="text-base font-black text-slate-400 hover:text-white transition-colors cursor-default tracking-widest font-outfit">NUTANIX</div>
         <!-- 6. VEEAM -->
-        <div class="text-sm font-black text-slate-400 hover:text-white transition-colors cursor-default tracking-widest font-outfit">VEEAM</div>
+        <div class="text-base font-black text-slate-400 hover:text-white transition-colors cursor-default tracking-widest font-outfit">VEEAM</div>
         <!-- 7. WHATAP -->
-        <div class="text-sm font-black text-slate-400 hover:text-white transition-colors cursor-default tracking-widest font-outfit">WHATAP</div>
+        <div class="text-base font-black text-slate-400 hover:text-white transition-colors cursor-default tracking-widest font-outfit">WHATAP</div>
         <!-- 8. PNPSECURE -->
-        <div class="text-sm font-black text-slate-400 hover:text-white transition-colors cursor-default tracking-widest font-outfit">PNPSECURE</div>
+        <div class="text-base font-black text-slate-400 hover:text-white transition-colors cursor-default tracking-widest font-outfit">PNPSECURE</div>
         <!-- 9. PIOLINK -->
-        <div class="text-sm font-black text-slate-400 hover:text-white transition-colors cursor-default tracking-widest font-outfit">PIOLINK</div>
+        <div class="text-base font-black text-slate-400 hover:text-white transition-colors cursor-default tracking-widest font-outfit">PIOLINK</div>
       </div>
     </div>
   </section>
 
-  <!-- 가치 및 비전 요약 (Unsplash 포인트 이미지 포함) -->
+  <!-- 가치 및 비전 요약 (고정된 Unsplash 이미지 활용) -->
   <section class="py-24 relative bg-brand-darkBg overflow-hidden">
     <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <!-- 모바일 1열 정렬 -->
       <div class="flex flex-col lg:flex-row items-center gap-16">
         
-        <!-- 이미지 영역 -->
+        <!-- 이미지 영역 (고정 URL) -->
         <div class="w-full lg:w-1/2 relative" data-aos="fade-right">
           <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-brand-orange to-brand-amber opacity-20 blur-xl"></div>
           <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Teamwork and business" class="rounded-2xl relative z-10 w-full border border-white/10 shadow-2xl object-cover h-[450px]">
@@ -305,16 +310,16 @@
               <i data-lucide="users" class="w-5 h-5"></i>
             </div>
             <div>
-              <div class="text-xs font-semibold text-slate-500 uppercase">전문가 조직</div>
-              <div class="text-sm font-bold text-white">특급 기술 엔지니어 위주 구성</div>
+              <div class="text-base font-semibold text-slate-400 uppercase">전문가 조직</div>
+              <div class="text-base font-bold text-white">특급 기술 엔지니어 위주 구성</div>
             </div>
           </div>
         </div>
 
         <!-- 텍스트 영역 -->
         <div class="w-full lg:w-1/2 flex flex-col justify-center" data-aos="fade-left">
-          <span class="text-brand-orange font-bold text-xs uppercase tracking-widest mb-4">Core Philosophy</span>
-          <h2 class="text-3xl sm:text-4xl font-bold font-outfit tracking-tight mb-8">
+          <span class="text-brand-orange font-bold text-base uppercase tracking-widest mb-4">Core Philosophy</span>
+          <h2 class="text-3xl sm:text-4xl font-bold font-outfit tracking-tight mb-8 text-white">
             IT 서비스를 통한<br>
             <span class="text-gradient-orange">고객의 행복한 삶을 제공</span>하는 것이 사명입니다.
           </h2>
@@ -325,8 +330,8 @@
                 <i data-lucide="check" class="w-4 h-4"></i>
               </div>
               <div>
-                <h4 class="text-base font-bold text-slate-200 mb-1">고객 중심 윤리경영</h4>
-                <p class="text-sm text-slate-400 leading-relaxed">기본과 원칙을 철저히 지키며 신의를 소중히 하고, 고객과의 약속은 반드시 지키는 정직하고 투명한 기업입니다.</p>
+                <h4 class="text-lg font-bold text-slate-200 mb-1">고객 중심 윤리경영</h4>
+                <p class="text-base text-slate-300 leading-relaxed">기본과 원칙을 철저히 지키며 신의를 소중히 하고, 고객과의 약속은 반드시 지키는 정직하고 투명한 기업입니다.</p>
               </div>
             </div>
 
@@ -335,8 +340,8 @@
                 <i data-lucide="check" class="w-4 h-4"></i>
               </div>
               <div>
-                <h4 class="text-base font-bold text-slate-200 mb-1">인재 존중과 행복 극대화</h4>
-                <p class="text-sm text-slate-400 leading-relaxed">기업 성장의 열쇠는 뛰어난 구성원들에게 있음을 믿고 자율과 배려의 열린 소통 및 복지 제도를 지속해서 실현합니다.</p>
+                <h4 class="text-lg font-bold text-slate-200 mb-1">인재 존중과 행복 극대화</h4>
+                <p class="text-base text-slate-300 leading-relaxed">기업 성장의 열쇠는 뛰어난 구성원들에게 있음을 믿고 자율과 배려의 열린 소통 및 복지 제도를 지속해서 실현합니다.</p>
               </div>
             </div>
 
@@ -345,15 +350,15 @@
                 <i data-lucide="check" class="w-4 h-4"></i>
               </div>
               <div>
-                <h4 class="text-base font-bold text-slate-200 mb-1">지속 가능한 도전과 실천</h4>
-                <p class="text-sm text-slate-400 leading-relaxed">HCI, 하이브리드 클라우드 등 쉴 새 없이 변하는 하이테크 인프라 시장에서 한발 앞선 역량을 배양하고 실증합니다.</p>
+                <h4 class="text-lg font-bold text-slate-200 mb-1">지속 가능한 도전과 실천</h4>
+                <p class="text-base text-slate-300 leading-relaxed">HCI, 하이브리드 클라우드 등 쉴 새 없이 변하는 하이테크 인프라 시장에서 한발 앞선 역량을 배양하고 실증합니다.</p>
               </div>
             </div>
           </div>
 
           <div class="mt-10">
-            <a href="./company/index.html" class="inline-flex items-center gap-2 text-sm font-semibold text-brand-orange hover:text-brand-amber transition-colors border-b border-brand-orange/40 hover:border-brand-amber pb-1 font-outfit">
-              경영이념 & 5대 핵심 가치 확인하기 <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            <a href="./company/index.html" class="inline-flex items-center gap-2 text-base font-semibold text-brand-orange hover:text-brand-amber transition-colors border-b border-brand-orange/40 hover:border-brand-amber pb-1 font-outfit">
+              경영이념 & 5대 핵심 가치 확인하기 <i data-lucide="chevron-right" class="w-4.5 h-4.5"></i>
             </a>
           </div>
         </div>
@@ -362,7 +367,7 @@
     </div>
   </section>
 
-  <!-- CTA Section -->
+  <!-- CTA Section (고정된 Unsplash 이미지 활용) -->
   <section class="py-20 relative bg-brand-cardBg border-t border-white/5 overflow-hidden">
     <div class="absolute inset-0 z-0">
       <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80" alt="Tech background" class="w-full h-full object-cover opacity-5">
@@ -371,14 +376,14 @@
       <h2 class="text-3xl sm:text-4xl font-bold font-outfit text-white mb-6" data-aos="fade-up">
         주식회사 앱이지와 함께 성공적인 비즈니스를 개척하세요
       </h2>
-      <p class="text-slate-400 text-sm sm:text-base leading-relaxed mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+      <p class="text-slate-300 text-base leading-relaxed mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
         최상의 서버·스토리지 설계, 장애 대비 백업 솔루션, 24시간 기술 관제 등 인프라의 모든 영역을 최적으로 케어합니다.
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
-        <a href="./contact/index.html" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-orange hover:bg-brand-amber text-white font-semibold shadow-md shadow-brand-orange/20 transition-all duration-300">
+        <a href="./contact/index.html" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-orange hover:bg-brand-amber text-white font-semibold shadow-md shadow-brand-orange/20 transition-all duration-300 text-base">
           견적 및 구축 문의하기
         </a>
-        <a href="./references/index.html" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 text-white font-semibold transition-all duration-300">
+        <a href="./references/index.html" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 text-white font-semibold transition-all duration-300 text-base">
           사업 실적 둘러보기
         </a>
       </div>
@@ -395,21 +400,21 @@
           <a href="./index.html" class="text-xl font-bold text-white tracking-tight font-outfit mb-4 inline-block">
             App<span class="text-brand-orange">EZ</span>
           </a>
-          <p class="text-xs text-slate-400 leading-relaxed mb-6 max-w-sm">
+          <p class="text-base text-slate-300 leading-relaxed mb-6 max-w-sm">
             최고의 기술력과 신뢰를 바탕으로 기업 IT 환경에 필요한 통합 유지보수, 시스템 통합, 컨설팅을 제공하는 동반자입니다.
           </p>
           <div class="flex gap-4">
             <!-- 소셜 플레이스홀더 아이콘 -->
-            <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
-            <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="twitter" class="w-4 h-4"></i></a>
-            <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="github" class="w-4 h-4"></i></a>
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="linkedin" class="w-4.5 h-4.5"></i></a>
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="twitter" class="w-4.5 h-4.5"></i></a>
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="github" class="w-4.5 h-4.5"></i></a>
           </div>
         </div>
 
         <!-- 푸터 열 2: 메뉴 맵 -->
         <div>
-          <h4 class="text-xs font-bold text-slate-300 uppercase tracking-widest mb-4">Quick Links</h4>
-          <ul class="space-y-3 text-xs">
+          <h4 class="text-base font-bold text-slate-300 uppercase tracking-widest mb-4">Quick Links</h4>
+          <ul class="space-y-3 text-base">
             <li><a href="./company/index.html" class="hover:text-brand-orange transition-colors">회사개요 및 연혁</a></li>
             <li><a href="./business/infra/index.html" class="hover:text-brand-orange transition-colors">IT Infra 사업</a></li>
             <li><a href="./business/solution/index.html" class="hover:text-brand-orange transition-colors">IT Solution 사업</a></li>
@@ -420,26 +425,26 @@
 
         <!-- 푸터 열 3: 본사 정보 -->
         <div>
-          <h4 class="text-xs font-bold text-slate-300 uppercase tracking-widest mb-4">Office Info</h4>
-          <address class="not-italic space-y-3 text-xs leading-relaxed">
+          <h4 class="text-base font-bold text-slate-300 uppercase tracking-widest mb-4">Office Info</h4>
+          <address class="not-italic space-y-3 text-base leading-relaxed">
             <p class="flex items-start gap-2.5">
-              <i data-lucide="map-pin" class="w-4 h-4 text-brand-orange shrink-0"></i>
-              <span>서울시 강서구 양천로 583,<br>B동 907~908호 (우림블루나인)</span>
+              <i data-lucide="map-pin" class="w-4.5 h-4.5 text-brand-orange shrink-0"></i>
+              <span class="text-slate-300">서울시 강서구 양천로 583,<br>B동 907~908호 (우림블루나인)</span>
             </p>
             <p class="flex items-center gap-2.5">
-              <i data-lucide="phone" class="w-4 h-4 text-brand-orange shrink-0"></i>
-              <span>T. 02-2135-5030</span>
+              <i data-lucide="phone" class="w-4.5 h-4.5 text-brand-orange shrink-0"></i>
+              <span class="text-slate-300">T. 02-2135-5030</span>
             </p>
             <p class="flex items-center gap-2.5">
-              <i data-lucide="printer" class="w-4 h-4 text-brand-orange shrink-0"></i>
-              <span>F. 02-2135-5040</span>
+              <i data-lucide="printer" class="w-4.5 h-4.5 text-brand-orange shrink-0"></i>
+              <span class="text-slate-300">F. 02-2135-5040</span>
             </p>
           </address>
         </div>
 
       </div>
 
-      <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-2xs gap-4">
+      <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-base gap-4">
         <p>&copy; 2026 주식회사 앱이지 (AppEZ Co., Ltd.). All Rights Reserved.</p>
         <div class="flex gap-6">
           <a href="#" class="hover:text-brand-orange transition-colors">이용약관</a>
