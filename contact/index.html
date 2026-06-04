@@ -267,12 +267,20 @@
                 </div>
               </div>
 
-              <!-- 동의 약관 체크박스 -->
-              <div class="flex items-start gap-3 text-base text-slate-400 leading-normal">
-                <input type="checkbox" id="privacy_agree" required class="mt-1 accent-brand-orange shrink-0">
-                <label for="privacy_agree">
-                  개인정보 수집 및 이용에 동의합니다. 주식회사 앱이지는 문의 사항의 성실한 답변 및 피드백 제안 전달 목적 외에 수집된 정보를 무단 노출하거나 마케팅에 유출하지 않습니다.
-                </label>
+              <!-- Terms checkbox & Info Box -->
+              <div class="space-y-3">
+                <div class="bg-brand-darkBg border border-white/10 rounded-xl p-3 text-xs text-slate-400 h-24 overflow-y-auto space-y-1">
+                  <p class="font-bold text-slate-300">개인정보 수집 및 이용 안내</p>
+                  <p>• 수집 목적: 문의 사항 상담 및 답변 제공, IT 서비스 제안</p>
+                  <p>• 수집 항목: 회사명/기관명, 이름, 이메일 주소, 문의 내용</p>
+                  <p>• 보유 및 이용 기간: 문의 답변 완료 후 즉시 파기 또는 관계법령에 따른 보존</p>
+                </div>
+                <div class="flex items-start gap-3 text-base text-slate-400 leading-normal">
+                  <input type="checkbox" id="privacy_agree" required class="mt-1 accent-brand-orange shrink-0">
+                  <label for="privacy_agree" class="text-sm">
+                    <span class="text-brand-orange font-bold">[필수]</span> 개인정보 수집 및 이용에 동의합니다.
+                  </label>
+                </div>
               </div>
 
               <!-- 전송 버튼 -->
@@ -345,7 +353,7 @@
         <p>&copy; 2026 주식회사 앱이지 (AppEZ Co., Ltd.). All Rights Reserved.</p>
         <div class="flex gap-6">
           <a href="#" class="hover:text-brand-orange transition-colors">이용약관</a>
-          <a href="#" class="hover:text-brand-orange transition-colors">개인정보처리방침</a>
+          <a href="../privacy/index.html" class="hover:text-brand-orange transition-colors font-bold text-slate-300">개인정보처리방침</a>
         </div>
       </div>
     </div>

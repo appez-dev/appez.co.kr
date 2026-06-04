@@ -259,12 +259,20 @@
                 </div>
               </div>
 
-              <!-- Terms checkbox -->
-              <div class="flex items-start gap-3 text-base text-slate-400 leading-normal">
-                <input type="checkbox" id="privacy_agree" required class="mt-1 accent-brand-orange shrink-0">
-                <label for="privacy_agree">
-                  I agree to the collection and use of personal information. AppEZ uses the collected details solely to answer inquiry requests and does not use information for unauthorized marketing activities.
-                </label>
+              <!-- Terms checkbox & Info Box -->
+              <div class="space-y-3">
+                <div class="bg-brand-darkBg border border-white/10 rounded-xl p-3 text-xs text-slate-400 h-24 overflow-y-auto space-y-1">
+                  <p class="font-bold text-slate-300">Consent to Collection and Use of Personal Information</p>
+                  <p>• Purpose: Responding to inquiry and consultation, providing service estimates.</p>
+                  <p>• Collected Items: Company/Organization, Name, Email Address, Message Content.</p>
+                  <p>• Retention Period: Destroyed immediately after the purpose is achieved, or preserved in accordance with relevant laws.</p>
+                </div>
+                <div class="flex items-start gap-3 text-base text-slate-400 leading-normal">
+                  <input type="checkbox" id="privacy_agree" required class="mt-1 accent-brand-orange shrink-0">
+                  <label for="privacy_agree" class="text-sm">
+                    <span class="text-brand-orange font-bold">[Required]</span> I agree to the collection and use of personal information.
+                  </label>
+                </div>
               </div>
 
               <!-- Submit Button -->
@@ -336,7 +344,7 @@
         <p>&copy; 2026 AppEZ Co., Ltd. All Rights Reserved.</p>
         <div class="flex gap-6">
           <a href="#" class="hover:text-brand-orange transition-colors">Terms of Service</a>
-          <a href="#" class="hover:text-brand-orange transition-colors">Privacy Policy</a>
+          <a href="../privacy/index.html" class="hover:text-brand-orange transition-colors font-bold text-slate-300">Privacy Policy</a>
         </div>
       </div>
     </div>
