@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
@@ -155,62 +155,75 @@
   <!-- 1. Veeam Backup Section -->
   <section class="py-24 relative bg-brand-darkBg">
     <div class="max-w-7xl mx-auto px-6 md:px-12">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-stretch">
         
         <!-- 왼쪽 상세 및 그리드 -->
-        <div class="lg:col-span-7 space-y-8" data-aos="fade-right">
-          <div class="flex items-center gap-4">
-            <span class="text-3xl font-black font-outfit text-white tracking-widest">VEEAM</span>
-            <span class="px-3 py-1 rounded-full bg-[#00B159]/10 border border-[#00B159]/20 text-[#00B159] text-xs font-extrabold uppercase tracking-widest">Backup & Replication</span>
-          </div>
-          
-          <h3 class="text-2xl sm:text-3xl font-bold font-outfit text-slate-200">
-            가상화 및 랜섬웨어로부터<br>
-            <span class="text-gradient-orange">100% 데이터를 보호</span>합니다.
-          </h3>
-          
-          <p class="text-slate-300 text-base leading-relaxed">
-            비즈니스 연속성의 핵심은 완벽한 복구력입니다. 앱이지가 공급하는 Veeam 솔루션은 가상 환경(VM)과 파일 서버를 무중단 상태에서 실시간 복제하고 검증합니다.
-          </p>
-
-          <!-- 4대 핵심 기능 (글씨 크기 16px 상향 조정) -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-base">
-            <div class="bg-brand-cardBg border border-white/5 rounded-2xl p-5">
-              <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
-                <i data-lucide="layers" class="w-4 h-4 text-brand-orange"></i> 가상환경 백업/복제
-              </h4>
-              <p class="text-base text-slate-400 leading-relaxed">VMware, Hyper-V 에이전트리스 방식의 초고속 실시간 백업 및 이중화 마이그레이션</p>
+        <div class="lg:col-span-7 h-full flex flex-col justify-between" data-aos="fade-right">
+          <div class="space-y-6">
+            <div class="flex items-center gap-4">
+              <span class="text-3xl font-black font-outfit text-white tracking-widest">VEEAM</span>
+              <span class="px-3 py-1 rounded-full bg-[#00B159]/10 border border-[#00B159]/20 text-[#00B159] text-xs font-extrabold uppercase tracking-widest">Backup & Replication</span>
             </div>
             
-            <div class="bg-brand-cardBg border border-white/5 rounded-2xl p-5">
-              <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
-                <i data-lucide="hard-drive" class="w-4 h-4 text-brand-orange"></i> 서버 OS 이미지 백업
-              </h4>
-              <p class="text-base text-slate-400 leading-relaxed">윈도우, 리눅스 시스템 OS+DB 통합 이미지 백업으로 장애 시 1클릭 복구 가동</p>
-            </div>
+            <h3 class="text-2xl sm:text-3xl font-bold font-outfit text-slate-200">
+              가상화 및 랜섬웨어로부터<br>
+              <span class="text-gradient-orange">100% 데이터를 보호</span>합니다.
+            </h3>
+            
+            <p class="text-slate-300 text-base leading-relaxed">
+              비즈니스 연속성의 핵심은 완벽한 복구력입니다. 앱이지가 공급하는 Veeam 솔루션은 가상 환경(VM)과 파일 서버를 무중단 상태에서 실시간 복제하고 검증합니다.
+            </p>
 
-            <div class="bg-brand-cardBg border border-white/5 rounded-2xl p-5">
-              <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
-                <i data-lucide="server-crash" class="w-4 h-4 text-brand-orange"></i> NAS 초고속 백업
-              </h4>
-              <p class="text-base text-slate-400 leading-relaxed">스캔 타임을 혁신적으로 줄인 고속 CIFS/NFS 파일 백업 및 중복 제거 압축</p>
-            </div>
+            <!-- 4대 핵심 기능 -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-base">
+              <div class="bg-brand-cardBg border border-white/5 rounded-2xl p-5">
+                <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
+                  <i data-lucide="layers" class="w-4 h-4 text-brand-orange"></i> 가상환경 백업/복제
+                </h4>
+                <p class="text-base text-slate-400 leading-relaxed">VMware, Hyper-V 에이전트리스 방식의 초고속 실시간 백업 및 이중화 마이그레이션</p>
+              </div>
+              
+              <div class="bg-brand-cardBg border border-white/5 rounded-2xl p-5">
+                <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
+                  <i data-lucide="hard-drive" class="w-4 h-4 text-brand-orange"></i> 서버 OS 이미지 백업
+                </h4>
+                <p class="text-base text-slate-400 leading-relaxed">윈도우, 리눅스 시스템 OS+DB 통합 이미지 백업으로 장애 시 1클릭 복구 가동</p>
+              </div>
 
-            <div class="bg-brand-cardBg border border-white/5 rounded-2xl p-5">
-              <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
-                <i data-lucide="shield-check" class="w-4 h-4 text-brand-orange"></i> 검증 & 재해복구 (DR)
-              </h4>
-              <p class="text-base text-slate-400 leading-relaxed">랜섬웨어 감염 탐지용 자동 샌드박스 백업본 정밀 검증 및 100% 무결성 복구 보장</p>
+              <div class="bg-brand-cardBg border border-white/5 rounded-2xl p-5">
+                <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
+                  <i data-lucide="server-crash" class="w-4 h-4 text-brand-orange"></i> NAS 초고속 백업
+                </h4>
+                <p class="text-base text-slate-400 leading-relaxed">스캔 타임을 혁신적으로 줄인 고속 CIFS/NFS 파일 백업 및 중복 제거 압축</p>
+              </div>
+
+              <div class="bg-brand-cardBg border border-white/5 rounded-2xl p-5">
+                <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
+                  <i data-lucide="shield-check" class="w-4 h-4 text-brand-orange"></i> 검증 & 재해복구 (DR)
+                </h4>
+                <p class="text-base text-slate-400 leading-relaxed">랜섬웨어 감염 탐지용 자동 샌드박스 백업본 정밀 검증 및 100% 무결성 복구 보장</p>
+              </div>
             </div>
           </div>
 
-          <div class="flex gap-4 pt-4">
-            <a href="../../assets/brochures/dummy.pdf" download="Veeam_Brochure_AppEZ.pdf" class="flex items-center gap-2 px-5 py-3 text-xs font-bold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/15 rounded-xl transition-all shadow-lg">
-              <i data-lucide="download" class="w-4 h-4 text-brand-orange"></i> 솔루션 브로셔 다운로드
+          <!-- 버튼 영역: mt-auto 적용으로 카드 하단에 항상 고정 정렬 -->
+          <div class="mt-auto pt-6">
+            <!-- [기존 브로셔 다운로드 주석 처리]
+            <a href="../../assets/brochures/dummy.pdf" download="Veeam_Brochure_AppEZ.pdf" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-sm font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-xl transition-all w-full shadow-lg mb-3">
+              <i data-lucide="download" class="w-4 h-4"></i> 솔루션 브로셔 다운로드
             </a>
-            <a href="https://www.veeam.com/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-5 py-3 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-xl transition-all shadow-lg">
-              Veeam 공식 사이트 <i data-lucide="external-link" class="w-4 h-4"></i>
-            </a>
+            -->
+
+            <div class="grid grid-cols-2 gap-3">
+              <!-- [상세 문의하기] 버튼 일괄 적용 -->
+              <a href="../../contact/index.html?type=solution" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold border border-slate-500 text-slate-300 hover:text-white hover:border-slate-300 rounded-xl transition-colors w-full shadow-lg">
+                <i data-lucide="message-square" class="w-4 h-4"></i> 상세 문의하기
+              </a>
+
+              <a href="https://www.veeam.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-xl transition-all w-full shadow-lg">
+                Veeam 공식 사이트 <i data-lucide="external-link" class="w-4 h-4"></i>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -227,7 +240,7 @@
   <!-- 2. WhaTap Monitoring Section -->
   <section class="py-24 relative bg-brand-cardBg border-y border-white/5">
     <div class="max-w-7xl mx-auto px-6 md:px-12">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-stretch">
         
         <!-- 왼쪽: Unsplash 대시보드 이미지 -->
         <div class="lg:col-span-5 relative" data-aos="fade-right">
@@ -236,59 +249,72 @@
         </div>
 
         <!-- 오른쪽 상세 및 그리드 -->
-        <div class="lg:col-span-7 space-y-8" data-aos="fade-left">
-          <div class="flex items-center gap-4">
-            <span class="text-3xl font-black font-outfit text-white tracking-widest">WhaTap</span>
-            <span class="px-3 py-1 rounded-full bg-[#1F71FF]/10 border border-[#1F71FF]/20 text-[#1F71FF] text-xs font-extrabold uppercase tracking-widest">IT Full-Stack Monitoring</span>
-          </div>
-          
-          <h3 class="text-2xl sm:text-3xl font-bold font-outfit text-slate-200">
-            애플리케이션부터 인프라까지<br>
-            <span class="text-gradient-orange">지능형 365 관제 시스템</span>
-          </h3>
-          
-          <p class="text-slate-300 text-base leading-relaxed">
-            장애 징후를 실시간 탐지하는 인공지능 기반의 SaaS형 풀스택 모니터링입니다. 서버, 데이터베이스, 네트워크 패킷, 쿠버네티스 컨테이너 성능을 단 하나의 통합 대시보드로 관제합니다.
-          </p>
-
-          <!-- 4대 핵심 기능 (글씨 크기 16px 상향 조정) -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-base">
-            <div class="bg-brand-darkBg/60 border border-white/5 rounded-2xl p-5">
-              <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
-                <i data-lucide="bar-chart-2" class="w-4 h-4 text-brand-orange"></i> 통합 모니터링
-              </h4>
-              <p class="text-base text-slate-400 leading-relaxed">애플리케이션(APM), 서버 자원(CPU/MEM), DB 쿼리 부하 및 네트워크 패킷 통합 트래킹</p>
+        <div class="lg:col-span-7 h-full flex flex-col justify-between" data-aos="fade-left">
+          <div class="space-y-6">
+            <div class="flex items-center gap-4">
+              <span class="text-3xl font-black font-outfit text-white tracking-widest">WhaTap</span>
+              <span class="px-3 py-1 rounded-full bg-[#1F71FF]/10 border border-[#1F71FF]/20 text-[#1F71FF] text-xs font-extrabold uppercase tracking-widest">IT Full-Stack Monitoring</span>
             </div>
             
-            <div class="bg-brand-darkBg/60 border border-white/5 rounded-2xl p-5">
-              <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
-                <i data-lucide="cloud-lightning" class="w-4 h-4 text-brand-orange"></i> One-Stop SaaS 서비스
-              </h4>
-              <p class="text-base text-slate-400 leading-relaxed">에이전트 단 5분 설치로 복잡한 인프라 관리자 서버 구축 비용 없이 클라우드 관제 시작</p>
-            </div>
+            <h3 class="text-2xl sm:text-3xl font-bold font-outfit text-slate-200">
+              애플리케이션부터 인프라까지<br>
+              <span class="text-gradient-orange">지능형 365 관제 시스템</span>
+            </h3>
+            
+            <p class="text-slate-300 text-base leading-relaxed">
+              장애 징후를 실시간 탐지하는 인공지능 기반의 SaaS형 풀스택 모니터링입니다. 서버, 데이터베이스, 네트워크 패킷, 쿠버네티스 컨테이너 성능을 단 하나의 통합 대시보드로 관제합니다.
+            </p>
 
-            <div class="bg-brand-darkBg/60 border border-white/5 rounded-2xl p-5">
-              <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
-                <i data-lucide="cpu" class="w-4 h-4 text-brand-orange"></i> 실시간 조회 (AI/ML)
-              </h4>
-              <p class="text-base text-slate-400 leading-relaxed">과거 특정 시점 이력 추적 및 기계학습 모형을 통한 병목/과부하 위험 징후 선제적 알림</p>
-            </div>
+            <!-- 4대 핵심 기능 -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-base">
+              <div class="bg-brand-darkBg/60 border border-white/5 rounded-2xl p-5">
+                <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
+                  <i data-lucide="bar-chart-2" class="w-4 h-4 text-brand-orange"></i> 통합 모니터링
+                </h4>
+                <p class="text-base text-slate-400 leading-relaxed">애플리케이션(APM), 서버 자원(CPU/MEM), DB 쿼리 부하 및 네트워크 패킷 통합 트래킹</p>
+              </div>
+              
+              <div class="bg-brand-darkBg/60 border border-white/5 rounded-2xl p-5">
+                <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
+                  <i data-lucide="cloud-lightning" class="w-4 h-4 text-brand-orange"></i> One-Stop SaaS 서비스
+                </h4>
+                <p class="text-base text-slate-400 leading-relaxed">에이전트 단 5분 설치로 복잡한 인프라 관리자 서버 구축 비용 없이 클라우드 관제 시작</p>
+              </div>
 
-            <div class="bg-brand-darkBg/60 border border-white/5 rounded-2xl p-5">
-              <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
-                <i data-lucide="lock" class="w-4 h-4 text-brand-orange"></i> 안전성 및 보안 보장
-              </h4>
-              <p class="text-base text-slate-400 leading-relaxed">수집 데이터 유출 우려를 불식하는 종단간 암호화 전송 및 유연한 자원 임계치 세부 세팅 지원</p>
+              <div class="bg-brand-darkBg/60 border border-white/5 rounded-2xl p-5">
+                <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
+                  <i data-lucide="cpu" class="w-4 h-4 text-brand-orange"></i> 실시간 조회 (AI/ML)
+                </h4>
+                <p class="text-base text-slate-400 leading-relaxed">과거 특정 시점 이력 추적 및 기계학습 모형을 통한 병목/과부하 위험 징후 선제적 알림</p>
+              </div>
+
+              <div class="bg-brand-darkBg/60 border border-white/5 rounded-2xl p-5">
+                <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
+                  <i data-lucide="lock" class="w-4 h-4 text-brand-orange"></i> 안전성 및 보안 보장
+                </h4>
+                <p class="text-base text-slate-400 leading-relaxed">수집 데이터 유출 우려를 불식하는 종단간 암호화 전송 및 유연한 자원 임계치 세부 세팅 지원</p>
+              </div>
             </div>
           </div>
 
-          <div class="flex gap-4 pt-4">
-            <a href="../../assets/brochures/dummy.pdf" download="WhaTap_Brochure_AppEZ.pdf" class="flex items-center gap-2 px-5 py-3 text-xs font-bold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/15 rounded-xl transition-all shadow-lg">
-              <i data-lucide="download" class="w-4 h-4 text-brand-orange"></i> 솔루션 브로셔 다운로드
+          <!-- 버튼 영역: mt-auto 적용으로 카드 하단에 항상 고정 정렬 -->
+          <div class="mt-auto pt-6">
+            <!-- [기존 브로셔 다운로드 주석 처리]
+            <a href="../../assets/brochures/dummy.pdf" download="WhaTap_Brochure_AppEZ.pdf" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-sm font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-xl transition-all w-full shadow-lg mb-3">
+              <i data-lucide="download" class="w-4 h-4"></i> 솔루션 브로셔 다운로드
             </a>
-            <a href="https://www.whatap.io/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-5 py-3 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-xl transition-all shadow-lg">
-              WhaTap 공식 사이트 <i data-lucide="external-link" class="w-4 h-4"></i>
-            </a>
+            -->
+
+            <div class="grid grid-cols-2 gap-3">
+              <!-- [상세 문의하기] 버튼 일괄 적용 -->
+              <a href="../../contact/index.html?type=solution" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold border border-slate-500 text-slate-300 hover:text-white hover:border-slate-300 rounded-xl transition-colors w-full shadow-lg">
+                <i data-lucide="message-square" class="w-4 h-4"></i> 상세 문의하기
+              </a>
+
+              <a href="https://www.whatap.io/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-xl transition-all w-full shadow-lg">
+                WhaTap 공식 사이트 <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
           </div>
         </div>
 

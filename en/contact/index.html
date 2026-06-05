@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
@@ -225,7 +225,7 @@
                       <option value="" disabled selected>Please select inquiry type</option>
                       <option value="Operations Maintenance">Operations Maintenance (24/7 SLA Support)</option>
                       <option value="Systems Integration">Systems Integration (Server/Storage SI)</option>
-                      <option value="Solutions Deployment">Solutions Deployment (Veeam Backup / WhaTap Monitoring)</option>
+                      <option value="Solutions Deployment">Solutions Deployment (Veeam / WhaTap)</option>
                       <option value="Equipment Rental">Equipment Rental (Short/Long-term hardware lease)</option>
                     </select>
                     <div class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 pointer-events-none">
@@ -348,5 +348,22 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <!-- Custom Common JS -->
   <script src="../../assets/js/main.js"></script>
+  <script>
+    // Parse URL query parameters to auto-select inquiry type
+    window.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const type = urlParams.get('type');
+      if (type) {
+        const selectEl = document.getElementById('inquiry_type');
+        if (selectEl) {
+          if (type === 'solution') {
+            selectEl.value = 'Solutions Deployment';
+          } else if (type === 'infra') {
+            selectEl.value = 'Systems Integration';
+          }
+        }
+      }
+    });
+  </script>
 </body>
 </html>

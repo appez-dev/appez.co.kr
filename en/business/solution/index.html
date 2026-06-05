@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
@@ -153,61 +153,74 @@
   <!-- 1. Veeam Backup Section -->
   <section class="py-24 relative bg-brand-darkBg">
     <div class="max-w-7xl mx-auto px-6 md:px-12">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-stretch">
         
         <!-- Left Column: Details -->
-        <div class="lg:col-span-7 space-y-8" data-aos="fade-right">
-          <div class="flex items-center gap-4">
-            <span class="text-3xl font-black font-outfit text-white tracking-widest">VEEAM</span>
-            <span class="px-3 py-1 rounded-full bg-[#00B159]/10 border border-[#00B159]/20 text-[#00B159] text-xs font-extrabold uppercase tracking-widest">Backup & Replication</span>
-          </div>
-          
-          <h3 class="text-2xl sm:text-3xl font-bold font-outfit text-slate-200">
-            Guaranteeing 100% Data Protection<br>
-            <span class="text-gradient-orange">from Virtualization to Ransomware</span>
-          </h3>
-          
-          <p class="text-slate-300 text-base leading-relaxed">
-            Business continuity relies on robust recovery capabilities. AppEZ deploys Veeam solutions to replicate, backup, and verify virtual machines (VMs) and file systems in real-time.
-          </p>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-base">
-            <div class="bg-brand-cardBg border border-white/5 rounded-2xl p-5">
-              <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
-                <i data-lucide="layers" class="w-4 h-4 text-brand-orange"></i> Virtual Machine Backup
-              </h4>
-              <p class="text-base text-slate-400 leading-relaxed">Agentless, high-speed backup and replication configurations for VMware and Hyper-V.</p>
+        <div class="lg:col-span-7 h-full flex flex-col justify-between" data-aos="fade-right">
+          <div class="space-y-6">
+            <div class="flex items-center gap-4">
+              <span class="text-3xl font-black font-outfit text-white tracking-widest">VEEAM</span>
+              <span class="px-3 py-1 rounded-full bg-[#00B159]/10 border border-[#00B159]/20 text-[#00B159] text-xs font-extrabold uppercase tracking-widest">Backup & Replication</span>
             </div>
             
-            <div class="bg-brand-cardBg border border-white/5 rounded-2xl p-5">
-              <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
-                <i data-lucide="hard-drive" class="w-4 h-4 text-brand-orange"></i> Bare Metal & OS Backup
-              </h4>
-              <p class="text-base text-slate-400 leading-relaxed">Integrated image backups for Windows and Linux OS + databases for 1-click recovery.</p>
-            </div>
+            <h3 class="text-2xl sm:text-3xl font-bold font-outfit text-slate-200">
+              Guaranteeing 100% Data Protection<br>
+              <span class="text-gradient-orange">from Virtualization to Ransomware</span>
+            </h3>
+            
+            <p class="text-slate-300 text-base leading-relaxed">
+              Business continuity relies on robust recovery capabilities. AppEZ deploys Veeam solutions to replicate, backup, and verify virtual machines (VMs) and file systems in real-time.
+            </p>
 
-            <div class="bg-brand-cardBg border border-white/5 rounded-2xl p-5">
-              <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
-                <i data-lucide="server-crash" class="w-4 h-4 text-brand-orange"></i> Fast NAS Backups
-              </h4>
-              <p class="text-base text-slate-400 leading-relaxed">High-performance CIFS/NFS file-level backups with block-level deduplication.</p>
-            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-base">
+              <div class="bg-brand-cardBg border border-white/5 rounded-2xl p-5">
+                <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
+                  <i data-lucide="layers" class="w-4 h-4 text-brand-orange"></i> Virtual Machine Backup
+                </h4>
+                <p class="text-base text-slate-400 leading-relaxed">Agentless, high-speed backup and replication configurations for VMware and Hyper-V.</p>
+              </div>
+              
+              <div class="bg-brand-cardBg border border-white/5 rounded-2xl p-5">
+                <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
+                  <i data-lucide="hard-drive" class="w-4 h-4 text-brand-orange"></i> Bare Metal & OS Backup
+                </h4>
+                <p class="text-base text-slate-400 leading-relaxed">Integrated image backups for Windows and Linux OS + databases for 1-click recovery.</p>
+              </div>
 
-            <div class="bg-brand-cardBg border border-white/5 rounded-2xl p-5">
-              <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
-                <i data-lucide="shield-check" class="w-4 h-4 text-brand-orange"></i> Sandbox Verification & DR
-              </h4>
-              <p class="text-base text-slate-400 leading-relaxed">Automated backup testing in isolated sandboxes to detect ransomware and guarantee data integrity.</p>
+              <div class="bg-brand-cardBg border border-white/5 rounded-2xl p-5">
+                <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
+                  <i data-lucide="server-crash" class="w-4 h-4 text-brand-orange"></i> Fast NAS Backups
+                </h4>
+                <p class="text-base text-slate-400 leading-relaxed">High-performance CIFS/NFS file-level backups with block-level deduplication.</p>
+              </div>
+
+              <div class="bg-brand-cardBg border border-white/5 rounded-2xl p-5">
+                <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
+                  <i data-lucide="shield-check" class="w-4 h-4 text-brand-orange"></i> Sandbox Verification & DR
+                </h4>
+                <p class="text-base text-slate-400 leading-relaxed">Automated backup testing in isolated sandboxes to detect ransomware and guarantee data integrity.</p>
+              </div>
             </div>
           </div>
 
-          <div class="flex gap-4 pt-4">
-            <a href="#" class="flex items-center gap-2 px-5 py-3 text-xs font-bold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/15 rounded-xl transition-all shadow-lg">
-              <i data-lucide="download" class="w-4 h-4 text-brand-orange"></i> Download Brochure
+          <!-- Button Area: mt-auto to align at the bottom -->
+          <div class="mt-auto pt-6">
+            <!-- [Original Download Brochure Commented Out]
+            <a href="#" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-sm font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-xl transition-all w-full shadow-lg mb-3">
+              <i data-lucide="download" class="w-4 h-4"></i> Download Brochure
             </a>
-            <a href="https://www.veeam.com/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-5 py-3 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-xl transition-all shadow-lg">
-              Veeam Site <i data-lucide="external-link" class="w-4 h-4"></i>
-            </a>
+            -->
+
+            <div class="grid grid-cols-2 gap-3">
+              <!-- [Request Info] Button -->
+              <a href="../../contact/index.html?type=solution" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold border border-slate-500 text-slate-300 hover:text-white hover:border-slate-300 rounded-xl transition-colors w-full shadow-lg">
+                <i data-lucide="message-square" class="w-4 h-4"></i> Request Info
+              </a>
+
+              <a href="https://www.veeam.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-xl transition-all w-full shadow-lg">
+                Veeam Site <i data-lucide="external-link" class="w-4 h-4"></i>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -224,7 +237,7 @@
   <!-- 2. WhaTap Monitoring Section -->
   <section class="py-24 relative bg-brand-cardBg border-y border-white/5">
     <div class="max-w-7xl mx-auto px-6 md:px-12">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-stretch">
         
         <!-- Left Column: Image -->
         <div class="lg:col-span-5 relative" data-aos="fade-right">
@@ -233,58 +246,71 @@
         </div>
 
         <!-- Right Column: Details -->
-        <div class="lg:col-span-7 space-y-8" data-aos="fade-left">
-          <div class="flex items-center gap-4">
-            <span class="text-3xl font-black font-outfit text-white tracking-widest">WhaTap</span>
-            <span class="px-3 py-1 rounded-full bg-[#1F71FF]/10 border border-[#1F71FF]/20 text-[#1F71FF] text-xs font-extrabold uppercase tracking-widest">IT Full-Stack Monitoring</span>
-          </div>
-          
-          <h3 class="text-2xl sm:text-3xl font-bold font-outfit text-slate-200">
-            Intelligent 365 Operations System<br>
-            <span class="text-gradient-orange">from Applications to Infrastructures</span>
-          </h3>
-          
-          <p class="text-slate-300 text-base leading-relaxed">
-            AI-driven SaaS monitoring detects performance anomalies in real-time. Manage server, database, network packets, and Kubernetes container health from a single unified dashboard.
-          </p>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-base">
-            <div class="bg-brand-darkBg/60 border border-white/5 rounded-2xl p-5">
-              <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
-                <i data-lucide="bar-chart-2" class="w-4 h-4 text-brand-orange"></i> Full-Stack Tracking
-              </h4>
-              <p class="text-base text-slate-400 leading-relaxed">Monitor application performance (APM), database queries, and network latencies in one view.</p>
+        <div class="lg:col-span-7 h-full flex flex-col justify-between" data-aos="fade-left">
+          <div class="space-y-6">
+            <div class="flex items-center gap-4">
+              <span class="text-3xl font-black font-outfit text-white tracking-widest">WhaTap</span>
+              <span class="px-3 py-1 rounded-full bg-[#1F71FF]/10 border border-[#1F71FF]/20 text-[#1F71FF] text-xs font-extrabold uppercase tracking-widest">IT Full-Stack Monitoring</span>
             </div>
             
-            <div class="bg-brand-darkBg/60 border border-white/5 rounded-2xl p-5">
-              <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
-                <i data-lucide="cloud-lightning" class="w-4 h-4 text-brand-orange"></i> 5-Minute SaaS Setup
-              </h4>
-              <p class="text-base text-slate-400 leading-relaxed">Install lightweight agents and begin monitoring instantly without installing complex manager servers.</p>
-            </div>
+            <h3 class="text-2xl sm:text-3xl font-bold font-outfit text-slate-200">
+              Intelligent 365 Operations System<br>
+              <span class="text-gradient-orange">from Applications to Infrastructures</span>
+            </h3>
+            
+            <p class="text-slate-300 text-base leading-relaxed">
+              AI-driven SaaS monitoring detects performance anomalies in real-time. Manage server, database, network packets, and Kubernetes container health from a single unified dashboard.
+            </p>
 
-            <div class="bg-brand-darkBg/60 border border-white/5 rounded-2xl p-5">
-              <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
-                <i data-lucide="cpu" class="w-4 h-4 text-brand-orange"></i> Real-time AI Analytics
-              </h4>
-              <p class="text-base text-slate-400 leading-relaxed">Analyze performance histories and leverage machine learning model alerts to forecast bottlenecks.</p>
-            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-base">
+              <div class="bg-brand-darkBg/60 border border-white/5 rounded-2xl p-5">
+                <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
+                  <i data-lucide="bar-chart-2" class="w-4 h-4 text-brand-orange"></i> Full-Stack Tracking
+                </h4>
+                <p class="text-base text-slate-400 leading-relaxed">Monitor application performance (APM), database queries, and network latencies in one view.</p>
+              </div>
+              
+              <div class="bg-brand-darkBg/60 border border-white/5 rounded-2xl p-5">
+                <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
+                  <i data-lucide="cloud-lightning" class="w-4 h-4 text-brand-orange"></i> 5-Minute SaaS Setup
+                </h4>
+                <p class="text-base text-slate-400 leading-relaxed">Install lightweight agents and begin monitoring instantly without installing complex manager servers.</p>
+              </div>
 
-            <div class="bg-brand-darkBg/60 border border-white/5 rounded-2xl p-5">
-              <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
-                <i data-lucide="lock" class="w-4 h-4 text-brand-orange"></i> High Security & Encryption
-              </h4>
-              <p class="text-base text-slate-400 leading-relaxed">Secure data transmission using end-to-end encryption and custom data collection controls.</p>
+              <div class="bg-brand-darkBg/60 border border-white/5 rounded-2xl p-5">
+                <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
+                  <i data-lucide="cpu" class="w-4 h-4 text-brand-orange"></i> Real-time AI Analytics
+                </h4>
+                <p class="text-base text-slate-400 leading-relaxed">Analyze performance histories and leverage machine learning model alerts to forecast bottlenecks.</p>
+              </div>
+
+              <div class="bg-brand-darkBg/60 border border-white/5 rounded-2xl p-5">
+                <h4 class="font-bold text-slate-200 mb-2 flex items-center gap-2">
+                  <i data-lucide="lock" class="w-4 h-4 text-brand-orange"></i> High Security & Encryption
+                </h4>
+                <p class="text-base text-slate-400 leading-relaxed">Secure data transmission using end-to-end encryption and custom data collection controls.</p>
+              </div>
             </div>
           </div>
 
-          <div class="flex gap-4 pt-4">
-            <a href="#" class="flex items-center gap-2 px-5 py-3 text-xs font-bold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/15 rounded-xl transition-all shadow-lg">
-              <i data-lucide="download" class="w-4 h-4 text-brand-orange"></i> Download Brochure
+          <!-- Button Area: mt-auto to align at the bottom -->
+          <div class="mt-auto pt-6">
+            <!-- [Original Download Brochure Commented Out]
+            <a href="#" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-sm font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-xl transition-all w-full shadow-lg mb-3">
+              <i data-lucide="download" class="w-4 h-4"></i> Download Brochure
             </a>
-            <a href="https://www.whatap.io/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-5 py-3 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-xl transition-all shadow-lg">
-              WhaTap Site <i data-lucide="external-link" class="w-4 h-4"></i>
-            </a>
+            -->
+
+            <div class="grid grid-cols-2 gap-3">
+              <!-- [Request Info] Button -->
+              <a href="../../contact/index.html?type=solution" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold border border-slate-500 text-slate-300 hover:text-white hover:border-slate-300 rounded-xl transition-colors w-full shadow-lg">
+                <i data-lucide="message-square" class="w-4 h-4"></i> Request Info
+              </a>
+
+              <a href="https://www.whatap.io/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-xl transition-all w-full shadow-lg">
+                WhaTap Site <i data-lucide="external-link" class="w-4 h-4"></i>
+              </a>
+            </div>
           </div>
         </div>
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
@@ -127,7 +127,7 @@
     </div>
     <div class="mb-8">
       <a href="./index.html" class="block w-full py-4 text-center rounded-xl bg-brand-orange hover:bg-brand-amber text-white font-bold transition-all duration-300">
-        프로젝트 문의하기
+        문의하기
       </a>
     </div>
   </div>
@@ -144,7 +144,7 @@
         Connect With Us
       </span>
       <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold font-outfit tracking-tight text-white mb-6" data-aos="fade-up" data-aos-delay="100">
-        프로젝트 문의 및 오시는 길
+        문의 및 오시는 길
       </h1>
       <p class="max-w-2xl mx-auto text-slate-300 text-base leading-relaxed" data-aos="fade-up" data-aos-delay="200">
         하이브리드 인프라 아키텍처 설계, 유지보수 제안 요청, 장비 임대 등 성공 비즈니스를 위한 모든 협업을 신속하고 구체적으로 답변해 드립니다.
@@ -233,7 +233,7 @@
                       <option value="" disabled selected>문의 유형을 선택해주세요</option>
                       <option value="통합유지보수">통합유지보수 (24x7 관제 및 유지관리)</option>
                       <option value="시스템구축">시스템구축 (서버/스토리지 SI)</option>
-                      <option value="솔루션도입">솔루션도입 (Veeam 백업 / WhaTap 관제)</option>
+                      <option value="솔루션도입">솔루션도입 (Veeam / WhaTap)</option>
                       <option value="장비임대">장비임대 (프로젝트 단기/장기 대여)</option>
                     </select>
                     <div class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 pointer-events-none">
@@ -357,5 +357,22 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <!-- Custom Common JS -->
   <script src="../assets/js/main.js"></script>
+  <script>
+    // URL 쿼리 파라미터 분석하여 문의 유형 자동 선택
+    window.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const type = urlParams.get('type');
+      if (type) {
+        const selectEl = document.getElementById('inquiry_type');
+        if (selectEl) {
+          if (type === 'solution') {
+            selectEl.value = '솔루션도입';
+          } else if (type === 'infra') {
+            selectEl.value = '시스템구축';
+          }
+        }
+      }
+    });
+  </script>
 </body>
 </html>
