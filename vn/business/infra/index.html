@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="vi" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
@@ -166,7 +166,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
         <!-- IBM -->
-        <div class="glass-panel border border-white/5 rounded-2xl p-8 flex flex-col justify-between neon-glow-hover min-h-[500px] bg-brand-cardBg" data-aos="fade-up">
+        <div class="glass-panel border border-white/5 rounded-2xl p-8 h-full flex flex-col neon-glow-hover bg-brand-cardBg" data-aos="fade-up">
           <div>
             <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
               <span class="text-xl font-black font-outfit text-white tracking-widest">IBM</span>
@@ -188,18 +188,38 @@
             </div>
           </div>
           
-          <div class="grid grid-cols-2 gap-3 mt-4 border-t border-white/5 pt-5">
-            <a href="#" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/15 rounded-xl transition-all">
-              <i data-lucide="download" class="w-3.5 h-3.5 text-brand-orange"></i> Tài liệu
+          <!-- Khu vực nút: áp dụng mt-auto để luôn căn lề dưới cùng (Cấu trúc 2 tầng để đồng bộ chiều cao) -->
+          <div class="mt-auto border-t border-white/5 pt-5 space-y-3">
+            <!-- [Template 1] Multi-Brochures UI
+            <div class="grid grid-cols-2 gap-2">
+              <a href="#" download="IBM_Server_Brochure.pdf" target="_blank" class="flex items-center justify-center gap-1 px-2 py-2 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-md transition-all">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i> Máy chủ
+              </a>
+              <a href="#" download="IBM_Storage_Brochure.pdf" target="_blank" class="flex items-center justify-center gap-1 px-2 py-2 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-md transition-all">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i> Lưu trữ
+              </a>
+            </div>
+            -->
+
+            <!-- [Template 2] Single Brochure UI - IBM Ví dụ: Active
+            <a href="#" download="IBM_Brochure_AppEZ.pdf" target="_blank" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-md transition-all w-full">
+              <i data-lucide="download" class="w-4 h-4"></i> Tải Brochure
             </a>
-            <a href="https://www.ibm.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-xl transition-all">
+			-->
+
+            <!-- [Template 3] No Brochure (Lead Gen) UI -->
+            <a href="#contact" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold border border-slate-500 text-slate-300 hover:text-white hover:border-slate-300 rounded-md transition-all w-full">
+              <i data-lucide="message-square" class="w-4 h-4"></i> Yêu cầu thông tin
+            </a>
+            
+            <a href="https://www.ibm.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-md transition-all w-full">
               IBM Site <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
             </a>
           </div>
         </div>
 
         <!-- Dell Technologies -->
-        <div class="glass-panel border border-white/5 rounded-2xl p-8 flex flex-col justify-between neon-glow-hover min-h-[500px] bg-brand-cardBg" data-aos="fade-up" data-aos-delay="100">
+        <div class="glass-panel border border-white/5 rounded-2xl p-8 h-full flex flex-col neon-glow-hover bg-brand-cardBg" data-aos="fade-up" data-aos-delay="100">
           <div>
             <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
               <span class="text-xl font-black font-outfit text-white tracking-widest">DELL Tech</span>
@@ -221,18 +241,38 @@
             </div>
           </div>
           
-          <div class="grid grid-cols-2 gap-3 mt-4 border-t border-white/5 pt-5">
-            <a href="#" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/15 rounded-xl transition-all">
-              <i data-lucide="download" class="w-3.5 h-3.5 text-brand-orange"></i> Tài liệu
+          <!-- Khu vực nút: áp dụng mt-auto để luôn căn lề dưới cùng (Cấu trúc 2 tầng để đồng bộ chiều cao) -->
+          <div class="mt-auto border-t border-white/5 pt-5 space-y-3">
+            <!-- [Template 1] Multi-Brochures UI - DELL Tech Ví dụ: Active 
+            <div class="grid grid-cols-2 gap-2">
+              <a href="#" download="Dell_Server_Brochure.pdf" target="_blank" class="flex items-center justify-center gap-1 px-2 py-2 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-md transition-all">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i> Máy chủ
+              </a>
+              <a href="#" download="Dell_Storage_Brochure.pdf" target="_blank" class="flex items-center justify-center gap-1 px-2 py-2 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-md transition-all">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i> Lưu trữ
+              </a>
+            </div>
+			-->
+
+            <!-- [Template 2] Single Brochure UI 
+            <a href="#" download="Dell_Brochure_AppEZ.pdf" target="_blank" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-md transition-all w-full">
+              <i data-lucide="download" class="w-4 h-4"></i> Tải Brochure
             </a>
-            <a href="https://www.dell.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-xl transition-all">
+			-->
+
+            <!-- [Template 3] No Brochure (Lead Gen) UI -->
+            <a href="#contact" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold border border-slate-500 text-slate-300 hover:text-white hover:border-slate-300 rounded-md transition-all w-full">
+              <i data-lucide="message-square" class="w-4 h-4"></i> Yêu cầu thông tin
+            </a>
+            
+            <a href="https://www.dell.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-md transition-all w-full">
               Dell Site <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
             </a>
           </div>
         </div>
 
         <!-- Lenovo -->
-        <div class="glass-panel border border-white/5 rounded-2xl p-8 flex flex-col justify-between neon-glow-hover min-h-[500px] bg-brand-cardBg" data-aos="fade-up" data-aos-delay="200">
+        <div class="glass-panel border border-white/5 rounded-2xl p-8 h-full flex flex-col neon-glow-hover bg-brand-cardBg" data-aos="fade-up" data-aos-delay="200">
           <div>
             <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
               <span class="text-xl font-black font-outfit text-white tracking-widest">Lenovo</span>
@@ -254,18 +294,38 @@
             </div>
           </div>
           
-          <div class="grid grid-cols-2 gap-3 mt-4 border-t border-white/5 pt-5">
-            <a href="#" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/15 rounded-xl transition-all">
-              <i data-lucide="download" class="w-3.5 h-3.5 text-brand-orange"></i> Tài liệu
+          <!-- Khu vực nút: áp dụng mt-auto để luôn căn lề dưới cùng (Cấu trúc 2 tầng để đồng bộ chiều cao) -->
+          <div class="mt-auto border-t border-white/5 pt-5 space-y-3">
+            <!-- [Template 1] Multi-Brochures UI
+            <div class="grid grid-cols-2 gap-2">
+              <a href="#" download="Lenovo_Server_Brochure.pdf" target="_blank" class="flex items-center justify-center gap-1 px-2 py-2 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-md transition-all">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i> Máy chủ
+              </a>
+              <a href="#" download="Lenovo_Storage_Brochure.pdf" target="_blank" class="flex items-center justify-center gap-1 px-2 py-2 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-md transition-all">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i> Lưu trữ
+              </a>
+            </div>
+            -->
+
+            <!-- [Template 2] Single Brochure UI - Lenovo Ví dụ: Active 
+            <a href="#" download="Lenovo_Brochure_AppEZ.pdf" target="_blank" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-md transition-all w-full">
+              <i data-lucide="download" class="w-4 h-4"></i> Tải Brochure
             </a>
-            <a href="https://www.lenovo.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-xl transition-all">
+			-->
+
+            <!-- [Template 3] No Brochure (Lead Gen) UI -->
+            <a href="#contact" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold border border-slate-500 text-slate-300 hover:text-white hover:border-slate-300 rounded-md transition-all w-full">
+              <i data-lucide="message-square" class="w-4 h-4"></i> Yêu cầu thông tin
+            </a>
+            
+            <a href="https://www.lenovo.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-md transition-all w-full">
               Lenovo Site <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
             </a>
           </div>
         </div>
 
         <!-- HPE -->
-        <div class="glass-panel border border-white/5 rounded-2xl p-8 flex flex-col justify-between neon-glow-hover min-h-[500px] bg-brand-cardBg" data-aos="fade-up">
+        <div class="glass-panel border border-white/5 rounded-2xl p-8 h-full flex flex-col neon-glow-hover bg-brand-cardBg" data-aos="fade-up">
           <div>
             <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
               <span class="text-xl font-black font-outfit text-white tracking-widest">HPE</span>
@@ -283,18 +343,38 @@
             </div>
           </div>
           
-          <div class="grid grid-cols-2 gap-3 mt-4 border-t border-white/5 pt-5">
-            <a href="#" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/15 rounded-xl transition-all">
-              <i data-lucide="download" class="w-3.5 h-3.5 text-brand-orange"></i> Tài liệu
+          <!-- Khu vực nút: áp dụng mt-auto để luôn căn lề dưới cùng (Cấu trúc 2 tầng để đồng bộ chiều cao) -->
+          <div class="mt-auto border-t border-white/5 pt-5 space-y-3">
+            <!-- [Template 1] Multi-Brochures UI
+            <div class="grid grid-cols-2 gap-2">
+              <a href="#" download="HPE_Server_Brochure.pdf" target="_blank" class="flex items-center justify-center gap-1 px-2 py-2 text-sm font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-md transition-all">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i> Máy chủ
+              </a>
+              <a href="#" download="HPE_Storage_Brochure.pdf" target="_blank" class="flex items-center justify-center gap-1 px-2 py-2 text-sm font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-md transition-all">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i> Lưu trữ
+              </a>
+            </div>
+            -->
+
+            <!-- [Template 2] Single Brochure UI
+            <a href="#" download="HPE_Brochure_AppEZ.pdf" target="_blank" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-sm font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-xl transition-all w-full">
+              <i data-lucide="download" class="w-4 h-4"></i> Tải Brochure
             </a>
-            <a href="https://www.hpe.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-xl transition-all">
+            -->
+
+            <!-- [Template 3] No Brochure (Lead Gen) UI -->
+            <a href="#contact" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold border border-slate-500 text-slate-300 hover:text-white hover:border-slate-300 rounded-md transition-all w-full">
+              <i data-lucide="message-square" class="w-4 h-4"></i> Yêu cầu thông tin
+            </a>
+            
+            <a href="https://www.hpe.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-md transition-all w-full">
               HPE Site <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
             </a>
           </div>
         </div>
 
         <!-- Nutanix -->
-        <div class="glass-panel border border-white/5 rounded-2xl p-8 flex flex-col justify-between neon-glow-hover min-h-[500px] bg-brand-cardBg" data-aos="fade-up" data-aos-delay="100">
+        <div class="glass-panel border border-white/5 rounded-2xl p-8 h-full flex flex-col neon-glow-hover bg-brand-cardBg" data-aos="fade-up" data-aos-delay="100">
           <div>
             <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
               <span class="text-xl font-black font-outfit text-white tracking-widest">Nutanix</span>
@@ -312,11 +392,31 @@
             </div>
           </div>
           
-          <div class="grid grid-cols-2 gap-3 mt-4 border-t border-white/5 pt-5">
-            <a href="#" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/15 rounded-xl transition-all">
-              <i data-lucide="download" class="w-3.5 h-3.5 text-brand-orange"></i> Tài liệu
+          <!-- Khu vực nút: áp dụng mt-auto để luôn căn lề dưới cùng (Cấu trúc 2 tầng để đồng bộ chiều cao) -->
+          <div class="mt-auto border-t border-white/5 pt-5 space-y-3">
+            <!-- [Template 1] Multi-Brochures UI
+            <div class="grid grid-cols-2 gap-2">
+              <a href="#" download="Nutanix_Server_Brochure.pdf" target="_blank" class="flex items-center justify-center gap-1 px-2 py-2 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-md transition-all">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i> Máy chủ
+              </a>
+              <a href="#" download="Nutanix_Storage_Brochure.pdf" target="_blank" class="flex items-center justify-center gap-1 px-2 py-2 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-md transition-all">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i> Lưu trữ
+              </a>
+            </div>
+            -->
+
+            <!-- [Template 2] Single Brochure UI
+            <a href="#" download="Nutanix_Brochure_AppEZ.pdf" target="_blank" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-md transition-all w-full">
+              <i data-lucide="download" class="w-4 h-4"></i> Tải Brochure
             </a>
-            <a href="https://www.nutanix.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-xl transition-all">
+            -->
+
+            <!-- [Template 3] No Brochure (Lead Gen) UI -->
+            <a href="#contact" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold border border-slate-500 text-slate-300 hover:text-white hover:border-slate-300 rounded-md transition-all w-full">
+              <i data-lucide="message-square" class="w-4 h-4"></i> Yêu cầu thông tin
+            </a>
+            
+            <a href="https://www.nutanix.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-md transition-all w-full">
               Nutanix Site <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
             </a>
           </div>
@@ -488,11 +588,6 @@
           <p class="text-base text-slate-300 leading-relaxed mb-6 max-w-sm">
             Đối tác tin cậy cung cấp dịch vụ hạ tầng IT tích hợp, thiết kế hệ thống và tư vấn dựa trên kỹ thuật xuất sắc.
           </p>
-          <div class="flex gap-4">
-            <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="linkedin" class="w-4.5 h-4.5"></i></a>
-            <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="twitter" class="w-4.5 h-4.5"></i></a>
-            <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="github" class="w-4.5 h-4.5"></i></a>
-          </div>
         </div>
 
         <!-- Footer Col 2 -->
@@ -528,9 +623,8 @@
       </div>
 
       <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-base gap-4">
-        <p>&copy; 2026 AppEZ Co., Ltd. All Rights Reserved.</p>
+        <p>&copy; 2026 AppEZ Inc.</p>
         <div class="flex gap-6">
-          <a href="#" class="hover:text-brand-orange transition-colors">Điều khoản dịch vụ</a>
           <a href="../../privacy/index.html" class="hover:text-brand-orange transition-colors font-bold text-slate-300">Chính sách bảo mật</a>
         </div>
       </div>

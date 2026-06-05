@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
@@ -165,11 +165,11 @@
         </p>
       </div>
 
-      <!-- 벤더 목록 그리드 (브로셔 및 제조사 링크 포함) - 고정 높이 h-[500px] 제거 및 최소높이 지정으로 글자 넘침 방지 -->
+      <!-- 벤더 목록 그리드 -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
         <!-- IBM -->
-        <div class="glass-panel border border-white/5 rounded-2xl p-8 flex flex-col justify-between neon-glow-hover min-h-[500px] bg-brand-cardBg" data-aos="fade-up">
+        <div class="glass-panel border border-white/5 rounded-2xl p-8 h-full flex flex-col neon-glow-hover bg-brand-cardBg" data-aos="fade-up">
           <div>
             <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
               <span class="text-xl font-black font-outfit text-white tracking-widest">IBM</span>
@@ -191,18 +191,38 @@
             </div>
           </div>
           
-          <div class="grid grid-cols-2 gap-3 mt-4 border-t border-white/5 pt-5">
-            <a href="../../assets/brochures/dummy.pdf" download="IBM_Brochure_AppEZ.pdf" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/15 rounded-xl transition-all">
-              <i data-lucide="download" class="w-3.5 h-3.5 text-brand-orange"></i> 브로셔 다운로드
+          <!-- 버튼 영역: mt-auto 적용으로 카드 하단에 항상 고정 정렬 (2개 층 구조로 높이 일치) -->
+          <div class="mt-auto border-t border-white/5 pt-5 space-y-3">
+            <!-- [템플릿 1] 다중 브로셔 (Multi-Brochures) UI -->
+            <div class="grid grid-cols-2 gap-2">
+              <a href="../../assets/brochures/dummy.pdf" download="IBM_Server_Brochure.pdf" target="_blank" class="flex items-center justify-center gap-1 px-2 py-2 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-md transition-all">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i> 서버
+              </a>
+              <a href="../../assets/brochures/dummy.pdf" download="IBM_Storage_Brochure.pdf" target="_blank" class="flex items-center justify-center gap-1 px-2 py-2 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-md transition-all">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i> 스토리지
+              </a>
+            </div>
+
+            <!-- [템플릿 2] 단일 브로셔 (Single Brochure) UI - IBM 예시: Active 
+            <a href="../../assets/brochures/dummy.pdf" download="IBM_Brochure_AppEZ.pdf" target="_blank" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-xl transition-all w-full">
+              <i data-lucide="download" class="w-4 h-4"></i> 브로셔 다운로드
             </a>
-            <a href="https://www.ibm.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-xl transition-all">
+			-->
+
+            <!-- [템플릿 3] 브로셔 없음 (No Brochure / Lead Gen) UI
+            <a href="#contact" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold border border-slate-500 text-slate-300 hover:text-white hover:border-slate-300 rounded-xl transition-all w-full">
+              <i data-lucide="message-square" class="w-4 h-4"></i> 상세 문의하기
+            </a>
+            -->
+            
+            <a href="https://www.ibm.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-md transition-all w-full">
               제조사 사이트 <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
             </a>
           </div>
         </div>
 
         <!-- Dell Technologies -->
-        <div class="glass-panel border border-white/5 rounded-2xl p-8 flex flex-col justify-between neon-glow-hover min-h-[500px] bg-brand-cardBg" data-aos="fade-up" data-aos-delay="100">
+        <div class="glass-panel border border-white/5 rounded-2xl p-8 h-full flex flex-col neon-glow-hover bg-brand-cardBg" data-aos="fade-up" data-aos-delay="100">
           <div>
             <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
               <span class="text-xl font-black font-outfit text-white tracking-widest">DELL Tech</span>
@@ -224,18 +244,38 @@
             </div>
           </div>
           
-          <div class="grid grid-cols-2 gap-3 mt-4 border-t border-white/5 pt-5">
-            <a href="../../assets/brochures/dummy.pdf" download="Dell_Brochure_AppEZ.pdf" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/15 rounded-xl transition-all">
-              <i data-lucide="download" class="w-3.5 h-3.5 text-brand-orange"></i> 브로셔 다운로드
+          <!-- 버튼 영역: mt-auto 적용으로 카드 하단에 항상 고정 정렬 (2개 층 구조로 높이 일치) -->
+          <div class="mt-auto border-t border-white/5 pt-5 space-y-3">
+            <!-- [템플릿 1] 다중 브로셔 (Multi-Brochures) UI - DELL Tech 예시: Active -->
+            <div class="grid grid-cols-2 gap-2">
+              <a href="../../assets/brochures/dummy.pdf" download="Dell_Server_Brochure.pdf" target="_blank" class="flex items-center justify-center gap-1 px-2 py-2 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-md transition-all">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i> 서버
+              </a>
+              <a href="../../assets/brochures/dummy.pdf" download="Dell_Storage_Brochure.pdf" target="_blank" class="flex items-center justify-center gap-1 px-2 py-2 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-md transition-all">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i> 스토리지
+              </a>
+            </div>
+
+            <!-- [템플릿 2] 단일 브로셔 (Single Brochure) UI
+            <a href="../../assets/brochures/dummy.pdf" download="Dell_Brochure_AppEZ.pdf" target="_blank" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-xl transition-all w-full">
+              <i data-lucide="download" class="w-4 h-4"></i> 브로셔 다운로드
             </a>
-            <a href="https://www.dell.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-xl transition-all">
+            -->
+
+            <!-- [템플릿 3] 브로셔 없음 (No Brochure / Lead Gen) UI
+            <a href="#contact" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold border border-slate-500 text-slate-300 hover:text-white hover:border-slate-300 rounded-md transition-all w-full">
+              <i data-lucide="message-square" class="w-4 h-4"></i> 상세 문의하기
+            </a>
+            -->
+            
+            <a href="https://www.dell.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-md transition-all w-full">
               제조사 사이트 <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
             </a>
           </div>
         </div>
 
         <!-- Lenovo -->
-        <div class="glass-panel border border-white/5 rounded-2xl p-8 flex flex-col justify-between neon-glow-hover min-h-[500px] bg-brand-cardBg" data-aos="fade-up" data-aos-delay="200">
+        <div class="glass-panel border border-white/5 rounded-2xl p-8 h-full flex flex-col neon-glow-hover bg-brand-cardBg" data-aos="fade-up" data-aos-delay="200">
           <div>
             <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
               <span class="text-xl font-black font-outfit text-white tracking-widest">Lenovo</span>
@@ -257,18 +297,38 @@
             </div>
           </div>
           
-          <div class="grid grid-cols-2 gap-3 mt-4 border-t border-white/5 pt-5">
-            <a href="../../assets/brochures/dummy.pdf" download="Lenovo_Brochure_AppEZ.pdf" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/15 rounded-xl transition-all">
-              <i data-lucide="download" class="w-3.5 h-3.5 text-brand-orange"></i> 브로셔 다운로드
+          <!-- 버튼 영역: mt-auto 적용으로 카드 하단에 항상 고정 정렬 (2개 층 구조로 높이 일치) -->
+          <div class="mt-auto border-t border-white/5 pt-5 space-y-3">
+            <!-- [템플릿 1] 다중 브로셔 (Multi-Brochures) UI
+            <div class="grid grid-cols-2 gap-2">
+              <a href="../../assets/brochures/dummy.pdf" download="Lenovo_Server_Brochure.pdf" target="_blank" class="flex items-center justify-center gap-1 px-2 py-2 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-md transition-all">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i> 서버
+              </a>
+              <a href="../../assets/brochures/dummy.pdf" download="Lenovo_Storage_Brochure.pdf" target="_blank" class="flex items-center justify-center gap-1 px-2 py-2 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-md transition-all">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i> 스토리지
+              </a>
+            </div>
+            -->
+
+            <!-- [템플릿 2] 단일 브로셔 (Single Brochure) UI - Lenovo 예시: Active 
+            <a href="../../assets/brochures/dummy.pdf" download="Lenovo_Brochure_AppEZ.pdf" target="_blank" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-xl transition-all w-full">
+              <i data-lucide="download" class="w-4 h-4"></i> 브로셔 다운로드
             </a>
-            <a href="https://www.lenovo.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-xl transition-all">
+			-->
+
+            <!-- [템플릿 3] 브로셔 없음 (No Brochure / Lead Gen) UI -->
+            <a href="#contact" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold border border-slate-500 text-slate-300 hover:text-white hover:border-slate-300 rounded-md transition-all w-full">
+              <i data-lucide="message-square" class="w-4 h-4"></i> 상세 문의하기
+            </a>
+            
+            <a href="https://www.lenovo.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-md transition-all w-full">
               제조사 사이트 <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
             </a>
           </div>
         </div>
 
         <!-- HPE -->
-        <div class="glass-panel border border-white/5 rounded-2xl p-8 flex flex-col justify-between neon-glow-hover min-h-[500px] bg-brand-cardBg" data-aos="fade-up">
+        <div class="glass-panel border border-white/5 rounded-2xl p-8 h-full flex flex-col neon-glow-hover bg-brand-cardBg" data-aos="fade-up">
           <div>
             <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
               <span class="text-xl font-black font-outfit text-white tracking-widest">HPE</span>
@@ -286,18 +346,38 @@
             </div>
           </div>
           
-          <div class="grid grid-cols-2 gap-3 mt-4 border-t border-white/5 pt-5">
-            <a href="../../assets/brochures/dummy.pdf" download="HPE_Brochure_AppEZ.pdf" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/15 rounded-xl transition-all">
-              <i data-lucide="download" class="w-3.5 h-3.5 text-brand-orange"></i> 브로셔 다운로드
+          <!-- 버튼 영역: mt-auto 적용으로 카드 하단에 항상 고정 정렬 (2개 층 구조로 높이 일치) -->
+          <div class="mt-auto border-t border-white/5 pt-5 space-y-3">
+            <!-- [템플릿 1] 다중 브로셔 (Multi-Brochures) UI
+            <div class="grid grid-cols-2 gap-2">
+              <a href="../../assets/brochures/dummy.pdf" download="HPE_Server_Brochure.pdf" target="_blank" class="flex items-center justify-center gap-1 px-2 py-2 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-md transition-all">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i> 서버
+              </a>
+              <a href="../../assets/brochures/dummy.pdf" download="HPE_Storage_Brochure.pdf" target="_blank" class="flex items-center justify-center gap-1 px-2 py-2 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-md transition-all">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i> 스토리지
+              </a>
+            </div>
+            -->
+
+            <!-- [템플릿 2] 단일 브로셔 (Single Brochure) UI
+            <a href="../../assets/brochures/dummy.pdf" download="HPE_Brochure_AppEZ.pdf" target="_blank" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-md transition-all w-full">
+              <i data-lucide="download" class="w-4 h-4"></i> 브로셔 다운로드
             </a>
-            <a href="https://www.hpe.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-xl transition-all">
+            -->
+
+            <!-- [템플릿 3] 브로셔 없음 (No Brochure / Lead Gen) UI - HPE 예시: Active -->
+            <a href="#contact" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold border border-slate-500 text-slate-300 hover:text-white hover:border-slate-300 rounded-md transition-all w-full">
+              <i data-lucide="message-square" class="w-4 h-4"></i> 상세 문의하기
+            </a>
+            
+            <a href="https://www.hpe.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-md transition-all w-full">
               제조사 사이트 <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
             </a>
           </div>
         </div>
 
         <!-- Nutanix -->
-        <div class="glass-panel border border-white/5 rounded-2xl p-8 flex flex-col justify-between neon-glow-hover min-h-[500px] bg-brand-cardBg" data-aos="fade-up" data-aos-delay="100">
+        <div class="glass-panel border border-white/5 rounded-2xl p-8 h-full flex flex-col neon-glow-hover bg-brand-cardBg" data-aos="fade-up" data-aos-delay="100">
           <div>
             <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
               <span class="text-xl font-black font-outfit text-white tracking-widest">Nutanix</span>
@@ -315,11 +395,31 @@
             </div>
           </div>
           
-          <div class="grid grid-cols-2 gap-3 mt-4 border-t border-white/5 pt-5">
-            <a href="../../assets/brochures/dummy.pdf" download="Nutanix_Brochure_AppEZ.pdf" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/15 rounded-xl transition-all">
-              <i data-lucide="download" class="w-3.5 h-3.5 text-brand-orange"></i> 브로셔 다운로드
+          <!-- 버튼 영역: mt-auto 적용으로 카드 하단에 항상 고정 정렬 (2개 층 구조로 높이 일치) -->
+          <div class="mt-auto border-t border-white/5 pt-5 space-y-3">
+            <!-- [템플릿 1] 다중 브로셔 (Multi-Brochures) UI
+            <div class="grid grid-cols-2 gap-2">
+              <a href="../../assets/brochures/dummy.pdf" download="Nutanix_Server_Brochure.pdf" target="_blank" class="flex items-center justify-center gap-1 px-2 py-2 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-md transition-all">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i> 서버
+              </a>
+              <a href="../../assets/brochures/dummy.pdf" download="Nutanix_Storage_Brochure.pdf" target="_blank" class="flex items-center justify-center gap-1 px-2 py-2 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-md transition-all">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i> 스토리지
+              </a>
+            </div>
+            -->
+
+            <!-- [템플릿 2] 단일 브로셔 (Single Brochure) UI
+            <a href="../../assets/brochures/dummy.pdf" download="Nutanix_Brochure_AppEZ.pdf" target="_blank" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-md transition-all w-full">
+              <i data-lucide="download" class="w-4 h-4"></i> 브로셔 다운로드
             </a>
-            <a href="https://www.nutanix.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2.5 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-xl transition-all">
+            -->
+
+            <!-- [템플릿 3] 브로셔 없음 (No Brochure / Lead Gen) UI - Nutanix 예시: Active -->
+            <a href="#contact" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold border border-slate-500 text-slate-300 hover:text-white hover:border-slate-300 rounded-md transition-all w-full">
+              <i data-lucide="message-square" class="w-4 h-4"></i> 상세 문의하기
+            </a>
+            
+            <a href="https://www.nutanix.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold text-white bg-brand-orange hover:bg-brand-amber rounded-md transition-all w-full">
               제조사 사이트 <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
             </a>
           </div>
@@ -491,11 +591,6 @@
           <p class="text-base text-slate-300 leading-relaxed mb-6 max-w-sm">
             최고의 기술력과 신뢰를 바탕으로 기업 IT 환경에 필요한 통합 유지보수, 시스템 통합, 컨설팅을 제공하는 동반자입니다.
           </p>
-          <div class="flex gap-4">
-            <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="linkedin" class="w-4.5 h-4.5"></i></a>
-            <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="twitter" class="w-4.5 h-4.5"></i></a>
-            <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-brand-orange/10 hover:text-brand-orange transition-colors flex items-center justify-center text-slate-400"><i data-lucide="github" class="w-4.5 h-4.5"></i></a>
-          </div>
         </div>
 
         <!-- 푸터 열 2: 메뉴 맵 -->
@@ -532,9 +627,8 @@
       </div>
 
       <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-base gap-4">
-        <p>&copy; 2026 주식회사 앱이지 (AppEZ Co., Ltd.). All Rights Reserved.</p>
+        <p>&copy; 2026 AppEZ Inc.</p>
         <div class="flex gap-6">
-          <a href="#" class="hover:text-brand-orange transition-colors">이용약관</a>
           <a href="../../privacy/index.html" class="hover:text-brand-orange transition-colors font-bold text-slate-300">개인정보처리방침</a>
         </div>
       </div>
