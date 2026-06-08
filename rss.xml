@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>주식회사 앱이지 (AppEZ)</title>
+    <link>https://appez.co.kr</link>
+    <description>주식회사 앱이지(AppEZ)는 글로벌 최고 수준의 시스템 인프라 구축, 가상화 인프라 튜닝, 데이터 백업 및 모니터링 솔루션 컨설팅 서비스를 제공합니다.</description>
+    <language>ko</language>
+    <lastBuildDate>Sat, 06 Jun 2026 15:25:33 +0900</lastBuildDate>
+    <atom:link href="https://appez.co.kr/rss.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>주식회사 앱이지 공식 웹사이트 신규 오픈</title>
+      <link>https://appez.co.kr/</link>
+      <description>주식회사 앱이지(AppEZ)의 공식 홈페이지가 새롭게 오픈하였습니다. IT Infra 구축, 솔루션 도입, 전산실 이전 및 장비 임대 등 성공 비즈니스를 위한 최적의 기술을 만나보세요.</description>
+      <pubDate>Sat, 06 Jun 2026 15:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://appez.co.kr/</guid>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- 1. Main Page -->
+  <url>
+    <loc>https://appez.co.kr/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://appez.co.kr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appez.co.kr/en/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://appez.co.kr/vn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appez.co.kr/"/>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://appez.co.kr/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://appez.co.kr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appez.co.kr/en/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://appez.co.kr/vn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appez.co.kr/"/>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://appez.co.kr/vn/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://appez.co.kr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appez.co.kr/en/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://appez.co.kr/vn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appez.co.kr/"/>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- 2. Company Overview -->
+  <url>
+    <loc>https://appez.co.kr/company/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://appez.co.kr/company/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appez.co.kr/en/company/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://appez.co.kr/vn/company/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appez.co.kr/company/"/>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://appez.co.kr/en/company/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://appez.co.kr/company/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appez.co.kr/en/company/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://appez.co.kr/vn/company/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appez.co.kr/company/"/>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://appez.co.kr/vn/company/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://appez.co.kr/company/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appez.co.kr/en/company/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://appez.co.kr/vn/company/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appez.co.kr/company/"/>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 3. IT Infra Business -->
+  <url>
+    <loc>https://appez.co.kr/business/infra/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://appez.co.kr/business/infra/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appez.co.kr/en/business/infra/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://appez.co.kr/vn/business/infra/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appez.co.kr/business/infra/"/>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://appez.co.kr/en/business/infra/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://appez.co.kr/business/infra/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appez.co.kr/en/business/infra/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://appez.co.kr/vn/business/infra/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appez.co.kr/business/infra/"/>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://appez.co.kr/vn/business/infra/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://appez.co.kr/business/infra/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appez.co.kr/en/business/infra/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://appez.co.kr/vn/business/infra/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appez.co.kr/business/infra/"/>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 4. IT Solution Business -->
+  <url>
+    <loc>https://appez.co.kr/business/solution/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://appez.co.kr/business/solution/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appez.co.kr/en/business/solution/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://appez.co.kr/vn/business/solution/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appez.co.kr/business/solution/"/>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://appez.co.kr/en/business/solution/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://appez.co.kr/business/solution/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appez.co.kr/en/business/solution/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://appez.co.kr/vn/business/solution/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appez.co.kr/business/solution/"/>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://appez.co.kr/vn/business/solution/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://appez.co.kr/business/solution/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appez.co.kr/en/business/solution/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://appez.co.kr/vn/business/solution/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appez.co.kr/business/solution/"/>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 5. References -->
+  <url>
+    <loc>https://appez.co.kr/references/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://appez.co.kr/references/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appez.co.kr/en/references/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://appez.co.kr/vn/references/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appez.co.kr/references/"/>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://appez.co.kr/en/references/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://appez.co.kr/references/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appez.co.kr/en/references/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://appez.co.kr/vn/references/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appez.co.kr/references/"/>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://appez.co.kr/vn/references/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://appez.co.kr/references/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appez.co.kr/en/references/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://appez.co.kr/vn/references/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appez.co.kr/references/"/>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 6. Recruit (KO Only) -->
+  <url>
+    <loc>https://appez.co.kr/recruit/</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- 7. Contact Us -->
+  <url>
+    <loc>https://appez.co.kr/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://appez.co.kr/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appez.co.kr/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://appez.co.kr/vn/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appez.co.kr/contact/"/>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://appez.co.kr/en/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://appez.co.kr/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appez.co.kr/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://appez.co.kr/vn/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appez.co.kr/contact/"/>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://appez.co.kr/vn/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://appez.co.kr/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appez.co.kr/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://appez.co.kr/vn/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appez.co.kr/contact/"/>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
