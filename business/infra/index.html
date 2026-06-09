@@ -147,7 +147,7 @@
         Hardware Integration
       </span>
       <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold font-outfit tracking-tight text-white mb-6" data-aos="fade-up" data-aos-delay="100">
-        IT Infra 구축 및 솔루션
+        IT Infra 구축 및 유지보수
       </h1>
       <p class="max-w-2xl mx-auto text-slate-300 text-base leading-relaxed" data-aos="fade-up" data-aos-delay="200">
         대형 데이터 센터 수준의 H/W 설계부터 X86 서버 튜닝, 가상화 인프라, 전산실 무중단 이전에 이르는 하드웨어 올인원 포트폴리오를 제안합니다.
@@ -435,20 +435,24 @@
   <!-- 장비임대 솔루션 -->
   <section class="py-24 relative bg-brand-cardBg border-y border-white/5">
     <div class="max-w-7xl mx-auto px-6 md:px-12">
-      <div class="flex flex-col lg:flex-row gap-16 items-center">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-16 items-center" data-aos="fade-up">
         
-        <!-- 왼쪽: 통계/소개글 -->
-        <div class="w-full lg:w-1/2" data-aos="fade-right">
+        <!-- Left Area (Text) -->
+        <div class="md:col-span-5" data-aos="fade-right">
           <span class="text-brand-orange font-bold text-base uppercase tracking-widest mb-3 block">01. Rental Solutions</span>
           <h2 class="text-3xl sm:text-4xl font-bold font-outfit text-white tracking-tight mb-6">
             합리적인 가격의 <span class="text-brand-orange">임대 장비 서비스</span>
           </h2>
-          <p class="text-slate-300 text-base leading-relaxed mb-8">
+          <p class="text-slate-300 text-base leading-relaxed">
             신규 개발 프로젝트, 대규모 연동 데모 테스트, 혹은 초기 자본 투자 비용 절감이 절실한 스타트업을 위해 고가용성 서버 및 네트워킹 장비의 임대 솔루션을 적극 제공합니다.
           </p>
+        </div>
+        
+        <!-- Right Area (4 Cards) -->
+        <div class="md:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4" data-aos="fade-left">
           
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div class="bg-brand-darkBg/50 border border-white/5 rounded-2xl p-6 flex items-start gap-4">
+          
+            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex items-start gap-4">
               <div class="w-8 h-8 rounded-full bg-brand-orange/10 text-brand-orange flex items-center justify-center shrink-0">
                 <i data-lucide="trending-down" class="w-4 h-4"></i>
               </div>
@@ -458,7 +462,7 @@
               </div>
             </div>
 
-            <div class="bg-brand-darkBg/50 border border-white/5 rounded-2xl p-6 flex items-start gap-4">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex items-start gap-4">
               <div class="w-8 h-8 rounded-full bg-brand-orange/10 text-brand-orange flex items-center justify-center shrink-0">
                 <i data-lucide="shield" class="w-4 h-4"></i>
               </div>
@@ -468,7 +472,7 @@
               </div>
             </div>
 
-            <div class="bg-brand-darkBg/50 border border-white/5 rounded-2xl p-6 flex items-start gap-4">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex items-start gap-4">
               <div class="w-8 h-8 rounded-full bg-brand-orange/10 text-brand-orange flex items-center justify-center shrink-0">
                 <i data-lucide="truck" class="w-4 h-4"></i>
               </div>
@@ -478,7 +482,7 @@
               </div>
             </div>
 
-            <div class="bg-brand-darkBg/50 border border-white/5 rounded-2xl p-6 flex items-start gap-4">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex items-start gap-4">
               <div class="w-8 h-8 rounded-full bg-brand-orange/10 text-brand-orange flex items-center justify-center shrink-0">
                 <i data-lucide="history" class="w-4 h-4"></i>
               </div>
@@ -487,13 +491,8 @@
                 <p class="text-base text-slate-400 leading-relaxed">임대 기간 내 돌발 불량 발생 시, 즉각적인 하드웨어 1대1 무상 스왑</p>
               </div>
             </div>
-          </div>
-        </div>
-
-        <!-- 오른쪽: Unsplash 이미지 -->
-        <div class="w-full lg:w-1/2 relative" data-aos="fade-left">
-          <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-brand-orange to-brand-amber opacity-10 blur-2xl"></div>
-          <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80" alt="Server rack cords" class="rounded-2xl relative z-10 w-full border border-white/10 shadow-2xl object-cover h-[450px]">
+          
+        
         </div>
 
       </div>
