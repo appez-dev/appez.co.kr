@@ -1,0 +1,14 @@
+# AI 크롤러 전용 차단 규칙
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+# 일반 검색 엔진은 모두 허용
+User-agent: *
+Allow: /
+Sitemap: https://appez.co.kr/sitemap.xml

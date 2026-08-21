@@ -161,52 +161,77 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
         
         <!-- 왼쪽: 연락 정보 및 지도 -->
-        <div class="lg:col-span-5 space-y-8" data-aos="fade-right">
-          <span class="text-brand-orange font-bold text-base uppercase tracking-widest block">Contact Information</span>
+        <div class="lg:col-span-5 space-y-8" data-aos="fade-right">          <span class="text-brand-orange font-bold text-base uppercase tracking-widest block">Contact Information</span>
           
-          <address class="not-italic space-y-6 text-base text-slate-300">
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-xl bg-brand-orange/10 border border-brand-orange/20 text-brand-orange flex items-center justify-center shrink-0">
-                <i data-lucide="map-pin" class="w-5 h-5"></i>
+          <!-- 지도 영역 (토글 탭 버튼 + 지도) -->
+          <div class="space-y-4">
+            <!-- 세련된 다크 톤의 토글 탭 버튼 -->
+            <div class="flex rounded-xl bg-brand-darkBg p-1 border border-white/10 max-w-xs">
+              <button id="btn-map-kr" class="flex-1 py-2.5 text-sm font-bold rounded-lg transition-all duration-300 bg-brand-orange text-white" onclick="switchMap('kr')">
+                한국 본사
+              </button>
+              <button id="btn-map-vn" class="flex-1 py-2.5 text-sm font-bold rounded-lg transition-all duration-300 text-slate-400 hover:text-white" onclick="switchMap('vn')">
+                베트남 지사
+              </button>
+            </div>
+            
+            <!-- 지도 컨테이너 -->
+            <div class="glass-panel border border-white/5 rounded-2xl p-2 relative overflow-hidden h-[350px] bg-brand-cardBg">
+              <div id="map-kr" class="w-full h-full">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.9218926594267!2d126.8617151762853!3d37.55690397204115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9d8c09b321ed%3A0x143b9d5348b2d85c!2z7JWx7J207KeA!5e0!3m2!1sko!2skr!4v1781139191307!5m2!1sko!2skr" class="w-full h-full border-0 rounded-xl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
-              <div>
-                <h4 class="font-extrabold text-slate-200 text-base mb-1">본사 주소</h4>
-                <p class="text-base text-slate-400 leading-relaxed">
-                  서울시 강서구 양천로 583, B동 907~908호<br>(염창동, 우림블루나인 비즈니스 타워)
-                </p>
+              <div id="map-vn" class="w-full h-full hidden">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1862.1641524967163!2d105.7891780717061!3d21.01954578637553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab14bda54897%3A0xb544230b31495b37!2sPVI%20Customer%20Support%20North%20Office!5e0!3m2!1sko!2skr!4v1782376309945!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
               </div>
             </div>
-
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-xl bg-brand-orange/10 border border-brand-orange/20 text-brand-orange flex items-center justify-center shrink-0">
-                <i data-lucide="phone" class="w-5 h-5"></i>
-              </div>
-              <div>
-                <h4 class="font-extrabold text-slate-200 text-base mb-1">대표 번호 및 팩스</h4>
-                <p class="text-base text-slate-400 leading-relaxed">
-                  T. 02-2135-5030<br>F. 02-2135-5040 (대표 팩스)
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-xl bg-brand-orange/10 border border-brand-orange/20 text-brand-orange flex items-center justify-center shrink-0">
-                <i data-lucide="mail" class="w-5 h-5"></i>
-              </div>
-              <div>
-                <h4 class="font-extrabold text-slate-200 text-base mb-1">비즈니스 메일</h4>
-                <p class="text-base text-slate-400 leading-relaxed">
-                  info@appez.co.kr (상시 견적 수령용)
-                </p>
-              </div>
-            </div>
-          </address>
-
-          <!-- 구글 지도 실매립 (w-full, 높이 300px) -->
-          <div class="glass-panel border border-white/5 rounded-2xl p-2 relative overflow-hidden h-[300px] bg-brand-cardBg">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.9218926594267!2d126.8617151762853!3d37.55690397204115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9d8c09b321ed%3A0x143b9d5348b2d85c!2z7JWx7J207KeA!5e0!3m2!1sko!2skr!4v1781139191307!5m2!1sko!2skr" class="w-full h-full border-0 rounded-xl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-        </div>
+
+          <!-- 지도 하단 오피스 정보 카드 2단 그리드 (대칭형 카드 UI) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+            <!-- 한국 본사 카드 -->
+            <div class="glass-panel border border-white/5 rounded-2xl p-6 bg-brand-cardBg space-y-4">
+              <div class="flex items-center gap-3 border-b border-white/5 pb-3">
+                <div class="w-8 h-8 rounded-lg bg-brand-orange/10 border border-brand-orange/20 text-brand-orange flex items-center justify-center shrink-0">
+                  <i data-lucide="map-pin" class="w-4 h-4"></i>
+                </div>
+                <h4 class="font-extrabold text-slate-200 text-base">한국 본사</h4>
+              </div>
+              <address class="not-italic space-y-3 text-sm text-slate-400 leading-relaxed font-outfit">
+                <p class="break-keep">
+                  <strong class="text-slate-300 block mb-1">주소</strong>
+                  서울시 강서구 양천로 583, B동 907~908호 (염창동, 우림블루나인 비즈니스 타워)
+                </p>
+                <p>
+                  <strong class="text-slate-300 block mb-1">연락처</strong>
+                  T. 02-2135-5030<br>F. 02-2135-5040
+                </p>
+                <p>
+                  <strong class="text-slate-300 block mb-1">이메일</strong>
+                  info@appez.co.kr
+                </p>
+              </address>
+            </div>
+
+            <!-- 베트남 지사 카드 -->
+            <div class="glass-panel border border-white/5 rounded-2xl p-6 bg-brand-cardBg space-y-4">
+              <div class="flex items-center gap-3 border-b border-white/5 pb-3">
+                <div class="w-8 h-8 rounded-lg bg-brand-orange/10 border border-brand-orange/20 text-brand-orange flex items-center justify-center shrink-0">
+                  <i data-lucide="map-pin" class="w-4 h-4"></i>
+                </div>
+                <h4 class="font-extrabold text-slate-200 text-base">베트남 지사</h4>
+              </div>
+              <address class="not-italic space-y-3 text-sm text-slate-400 leading-relaxed font-outfit">
+                <p class="break-keep">
+                  <strong class="text-slate-300 block mb-1">주소</strong>
+                  하노이시 꺼우저이구 옌화동 PVI 타워 22층 아발론 오피스 2~3호
+                </p>
+                <p>
+                  <strong class="text-slate-300 block mb-1">비고</strong>
+                  글로벌 기술 지원 및 현지 비즈니스 허브
+                </p>
+              </address>
+            </div>
+          </div></div>
 
         <!-- 오른쪽: Web3forms 문의하기 폼 -->
         <div class="lg:col-span-7" data-aos="fade-left">
@@ -326,20 +351,28 @@
         <!-- 푸터 열 3: 본사 정보 -->
         <div>
           <h4 class="text-base font-bold text-slate-300 uppercase tracking-widest mb-4">Office Info</h4>
-          <address class="not-italic space-y-3 text-base leading-relaxed">
+            <div class="space-y-6">
+              <address class="not-italic space-y-3 text-base leading-relaxed">
             <p class="flex items-start gap-2.5">
               <i data-lucide="map-pin" class="w-4.5 h-4.5 text-brand-orange shrink-0"></i>
-              <span class="text-slate-300">서울시 강서구 양천로 583,<br>B동 907~908호 (우림블루나인)</span>
+              <span class="text-slate-300 break-keep">서울시 강서구 양천로 583,<br>B동 907~908호 (우림블루나인)</span>
             </p>
             <p class="flex items-center gap-2.5">
               <i data-lucide="phone" class="w-4.5 h-4.5 text-brand-orange shrink-0"></i>
-              <span class="text-slate-300">T. 02-2135-5030</span>
+              <span class="text-slate-300 break-keep">T. 02-2135-5030</span>
             </p>
             <p class="flex items-center gap-2.5">
               <i data-lucide="printer" class="w-4.5 h-4.5 text-brand-orange shrink-0"></i>
-              <span class="text-slate-300">F. 02-2135-5040</span>
+              <span class="text-slate-300 break-keep">F. 02-2135-5040</span>
             </p>
           </address>
+                            <address class="not-italic space-y-3 text-base leading-relaxed border-t border-white/5 pt-4">
+                <p class="flex items-start gap-2.5">
+                  <i data-lucide="map-pin" class="w-4.5 h-4.5 text-brand-orange shrink-0"></i>
+                  <span class="text-slate-300 break-keep">베트남 지사 : 하노이시 꺼우저이구 옌화동 PVI 타워 22층 아발론 오피스 2~3호</span>
+                </p>
+              </address>
+            </div>
         </div>
 
       </div>
@@ -500,5 +533,30 @@ ${originalMessage}
       }
     });
   </script>
-</body>
+  <script>
+    function switchMap(type) {
+      const btnKr = document.getElementById('btn-map-kr');
+      const btnVn = document.getElementById('btn-map-vn');
+      const mapKr = document.getElementById('map-kr');
+      const mapVn = document.getElementById('map-vn');
+      
+      if (type === 'kr') {
+        btnKr.classList.add('bg-brand-orange', 'text-white');
+        btnKr.classList.remove('text-slate-400', 'hover:text-white');
+        btnVn.classList.remove('bg-brand-orange', 'text-white');
+        btnVn.classList.add('text-slate-400', 'hover:text-white');
+        
+        mapKr.classList.remove('hidden');
+        mapVn.classList.add('hidden');
+      } else {
+        btnVn.classList.add('bg-brand-orange', 'text-white');
+        btnVn.classList.remove('text-slate-400', 'hover:text-white');
+        btnKr.classList.remove('bg-brand-orange', 'text-white');
+        btnKr.classList.add('text-slate-400', 'hover:text-white');
+        
+        mapVn.classList.remove('hidden');
+        mapKr.classList.add('hidden');
+      }
+    }
+  </script></body>
 </html>

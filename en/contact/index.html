@@ -159,52 +159,77 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
         
         <!-- Left: Contact Details & Maps -->
-        <div class="lg:col-span-5 space-y-8" data-aos="fade-right">
-          <span class="text-brand-orange font-bold text-base uppercase tracking-widest block">Contact Information</span>
+        <div class="lg:col-span-5 space-y-8" data-aos="fade-right">          <span class="text-brand-orange font-bold text-base uppercase tracking-widest block">Contact Information</span>
           
-          <address class="not-italic space-y-6 text-base text-slate-300 font-outfit">
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-xl bg-brand-orange/10 border border-brand-orange/20 text-brand-orange flex items-center justify-center shrink-0">
-                <i data-lucide="map-pin" class="w-5 h-5"></i>
+          <!-- Map Area (Toggle Tabs + Maps) -->
+          <div class="space-y-4">
+            <!-- Sleek Dark-tone Toggle Tabs -->
+            <div class="flex rounded-xl bg-brand-darkBg p-1 border border-white/10 max-w-xs">
+              <button id="btn-map-kr" class="flex-1 py-2.5 text-sm font-bold rounded-lg transition-all duration-300 bg-brand-orange text-white" onclick="switchMap('kr')">
+                Korea HQ
+              </button>
+              <button id="btn-map-vn" class="flex-1 py-2.5 text-sm font-bold rounded-lg transition-all duration-300 text-slate-400 hover:text-white" onclick="switchMap('vn')">
+                Vietnam Office
+              </button>
+            </div>
+            
+            <!-- Map Container -->
+            <div class="glass-panel border border-white/5 rounded-2xl p-2 relative overflow-hidden h-[350px] bg-brand-cardBg">
+              <div id="map-kr" class="w-full h-full">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.9218926594267!2d126.8617151762853!3d37.55690397204115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9d8c09b321ed%3A0x143b9d5348b2d85c!2sAeb-Iji!5e0!3m2!1sen!2skr!4v1781139340432!5m2!1sen!2skr" class="w-full h-full border-0 rounded-xl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
-              <div>
-                <h4 class="font-extrabold text-slate-200 text-base mb-1">Head Office</h4>
-                <p class="text-base text-slate-400 leading-relaxed font-outfit">
-                  B-907~908, Woolim Blue9, 583 Yangcheon-ro,<br>Gangseo-gu, Seoul, Republic of Korea
-                </p>
+              <div id="map-vn" class="w-full h-full hidden">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1862.1641523265653!2d105.7891781!3d21.0195458!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab14bda54897%3A0xb544230b31495b37!2sPVI%20Customer%20Support%20North%20Office!5e0!3m2!1sen!2skr!4v1782376554377!5m2!1sen!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
               </div>
             </div>
+          </div>
 
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-xl bg-brand-orange/10 border border-brand-orange/20 text-brand-orange flex items-center justify-center shrink-0">
-                <i data-lucide="phone" class="w-5 h-5"></i>
+          <!-- Office Info Cards 2-column Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+            <!-- Korea HQ Card -->
+            <div class="glass-panel border border-white/5 rounded-2xl p-6 bg-brand-cardBg space-y-4">
+              <div class="flex items-center gap-3 border-b border-white/5 pb-3">
+                <div class="w-8 h-8 rounded-lg bg-brand-orange/10 border border-brand-orange/20 text-brand-orange flex items-center justify-center shrink-0">
+                  <i data-lucide="map-pin" class="w-4 h-4"></i>
+                </div>
+                <h4 class="font-extrabold text-slate-200 text-base">Korea HQ</h4>
               </div>
-              <div>
-                <h4 class="font-extrabold text-slate-200 text-base mb-1">Phone & Fax</h4>
-                <p class="text-base text-slate-400 leading-relaxed font-outfit">
+              <address class="not-italic space-y-3 text-sm text-slate-400 leading-relaxed font-outfit">
+                <p class="break-keep">
+                  <strong class="text-slate-300 block mb-1">Address</strong>
+                  B-907~908, Woolim Blue9, 583 Yangcheon-ro, Gangseo-gu, Seoul, Republic of Korea
+                </p>
+                <p>
+                  <strong class="text-slate-300 block mb-1">Contact</strong>
                   T. +82-2-2135-5030<br>F. +82-2-2135-5040
                 </p>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-xl bg-brand-orange/10 border border-brand-orange/20 text-brand-orange flex items-center justify-center shrink-0">
-                <i data-lucide="mail" class="w-5 h-5"></i>
-              </div>
-              <div>
-                <h4 class="font-extrabold text-slate-200 text-base mb-1">Email</h4>
-                <p class="text-base text-slate-400 leading-relaxed font-outfit">
+                <p>
+                  <strong class="text-slate-300 block mb-1">Email</strong>
                   info@appez.co.kr
                 </p>
-              </div>
+              </address>
             </div>
-          </address>
 
-          <!-- Google Maps Iframe -->
-          <div class="glass-panel border border-white/5 rounded-2xl p-2 relative overflow-hidden h-[300px] bg-brand-cardBg">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.9218926594267!2d126.8617151762853!3d37.55690397204115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9d8c09b321ed%3A0x143b9d5348b2d85c!2sAeb-Iji!5e0!3m2!1sen!2skr!4v1781139340432!5m2!1sen!2skr" class="w-full h-full border-0 rounded-xl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
+            <!-- Vietnam Office Card -->
+            <div class="glass-panel border border-white/5 rounded-2xl p-6 bg-brand-cardBg space-y-4">
+              <div class="flex items-center gap-3 border-b border-white/5 pb-3">
+                <div class="w-8 h-8 rounded-lg bg-brand-orange/10 border border-brand-orange/20 text-brand-orange flex items-center justify-center shrink-0">
+                  <i data-lucide="map-pin" class="w-4 h-4"></i>
+                </div>
+                <h4 class="font-extrabold text-slate-200 text-base">Vietnam Office</h4>
+              </div>
+              <address class="not-italic space-y-3 text-sm text-slate-400 leading-relaxed font-outfit">
+                <p class="break-keep">
+                  <strong class="text-slate-300 block mb-1">Address</strong>
+                  Room 2-3, Avalon Office, 22nd Floor, PVI Tower, Yen Hoa Ward, Cau Giay District, Hanoi, Vietnam
+                </p>
+                <p>
+                  <strong class="text-slate-300 block mb-1">Note</strong>
+                  Global Technical Support & Local Business Hub
+                </p>
+              </address>
+            </div>
+          </div></div>
 
         <!-- Right: Web3forms Form -->
         <div class="lg:col-span-7" data-aos="fade-left">
@@ -319,20 +344,28 @@
         <!-- Footer Col 3 -->
         <div>
           <h4 class="text-base font-bold text-slate-300 uppercase tracking-widest mb-4">Office Info</h4>
-          <address class="not-italic space-y-3 text-base leading-relaxed">
+            <div class="space-y-6">
+              <address class="not-italic space-y-3 text-base leading-relaxed">
             <p class="flex items-start gap-2.5">
               <i data-lucide="map-pin" class="w-4.5 h-4.5 text-brand-orange shrink-0"></i>
-              <span class="text-slate-300">B-907~908, Woolim Blue9, 583 Yangcheon-ro, Gangseo-gu, Seoul, Republic of Korea</span>
+              <span class="text-slate-300 break-keep">B-907~908, Woolim Blue9, 583 Yangcheon-ro, Gangseo-gu, Seoul, Republic of Korea</span>
             </p>
             <p class="flex items-center gap-2.5">
               <i data-lucide="phone" class="w-4.5 h-4.5 text-brand-orange shrink-0"></i>
-              <span class="text-slate-300">T. +82-2-2135-5030</span>
+              <span class="text-slate-300 break-keep">T. +82-2-2135-5030</span>
             </p>
             <p class="flex items-center gap-2.5">
               <i data-lucide="printer" class="w-4.5 h-4.5 text-brand-orange shrink-0"></i>
-              <span class="text-slate-300">F. +82-2-2135-5040</span>
+              <span class="text-slate-300 break-keep">F. +82-2-2135-5040</span>
             </p>
           </address>
+                            <address class="not-italic space-y-3 text-base leading-relaxed font-outfit border-t border-white/5 pt-4">
+                <p class="flex items-start gap-2.5">
+                  <i data-lucide="map-pin" class="w-4.5 h-4.5 text-brand-orange shrink-0"></i>
+                  <span class="text-slate-300 break-keep">Vietnam Office : Room 2-3, Avalon Office, 22nd Floor, PVI Tower, Yen Hoa Ward, Cau Giay District, Hanoi, Vietnam</span>
+                </p>
+              </address>
+            </div>
         </div>
 
       </div>
@@ -493,5 +526,30 @@ ${originalMessage}
       }
     });
   </script>
-</body>
+  <script>
+    function switchMap(type) {
+      const btnKr = document.getElementById('btn-map-kr');
+      const btnVn = document.getElementById('btn-map-vn');
+      const mapKr = document.getElementById('map-kr');
+      const mapVn = document.getElementById('map-vn');
+      
+      if (type === 'kr') {
+        btnKr.classList.add('bg-brand-orange', 'text-white');
+        btnKr.classList.remove('text-slate-400', 'hover:text-white');
+        btnVn.classList.remove('bg-brand-orange', 'text-white');
+        btnVn.classList.add('text-slate-400', 'hover:text-white');
+        
+        mapKr.classList.remove('hidden');
+        mapVn.classList.add('hidden');
+      } else {
+        btnVn.classList.add('bg-brand-orange', 'text-white');
+        btnVn.classList.remove('text-slate-400', 'hover:text-white');
+        btnKr.classList.remove('bg-brand-orange', 'text-white');
+        btnKr.classList.add('text-slate-400', 'hover:text-white');
+        
+        mapVn.classList.remove('hidden');
+        mapKr.classList.add('hidden');
+      }
+    }
+  </script></body>
 </html>
